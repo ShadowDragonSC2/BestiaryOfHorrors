@@ -3,7 +3,7 @@
     <CActorEventMacro id="AttackElevationMacro">
         <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20" Send="AnimGroupApply Superior"/>
         <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation LE -20" Send="AnimGroupApply Inferior"/>
-        <On Terms="WeaponStart.*.AttackStop" Send="AnimGroupRemove Superior"/>
-        <On Terms="WeaponStart.*.AttackStop" Send="AnimGroupRemove Inferior"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimGroupRemove Superior"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimGroupRemove Inferior"/>
     </CActorEventMacro>
 </Catalog>

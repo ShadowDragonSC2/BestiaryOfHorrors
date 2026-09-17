@@ -117,3 +117,5 @@ Effect/Name/Energion_Blast@Random=Random
 Effect/Name/Energion_Blast@LM=LM
 Effect/Name/Energion_Blast@Damage=Damage
 Effect/Name/Energion_Blast=CP
+Actor/Name/AttackElevationMacro=Attack Elevation
+Actor/EditorPrefix/AttackElevationMacro=Macro - 
