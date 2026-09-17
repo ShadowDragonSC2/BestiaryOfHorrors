@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="27">
+    <ObjectUnit Id="1102253471" Position="51.0268,61.278,0" Rotation="3.1772" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1920231296" Position="44.628,60.9602,0" Rotation="2.114" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1931796689" Position="49.419,63.395,0" Rotation="4.5434" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="2076306406" Position="47.448,65.2924,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1282539329" Position="49.904,64.1235,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="45471684" Position="47.399,63.669,0" Rotation="1.0507" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="210287190" Position="48.918,62.3034,0" Rotation="4.5693" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="257317825" Position="45.7968,60.6127,0" Rotation="2.4218" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1011188767" Position="49.1442,60.8933,0" Rotation="4.643" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1930605936" Position="48.7775,64.5844,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1669873250" Position="46.2922,64.5332,0" Rotation="0.9677" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="5236258" Position="46.5346,62.3034,0" Rotation="2.0292" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="752569095" Position="44.6533,64.2504,0" Rotation="1.2797" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="9854780" Position="50.8896,63.026,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1620606401" Position="44.7993,61.9025,0" Rotation="1.9187" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1994289401" Position="50.0664,62.5661,0" Rotation="2.7897" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="290002252" Position="48.1894,61.4614,0" Rotation="3.7238" Scale="1,1,1" UnitType="Marine" Player="2"/>
+</PlacedObjects>

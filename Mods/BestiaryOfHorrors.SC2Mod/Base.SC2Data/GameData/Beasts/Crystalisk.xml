@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectCreateUnit id="Crystalisk_Symbionte@CU">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="KerriganInfestBroodling"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="Crystalisk_Symbionte@Damage">
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <Amount value="35"/>
+        <AreaArray Radius="2.5" Fraction="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="Crystalisk_Symbionte@Delay">
+        <EditorCategories value="Race:Zerg"/>
+        <ExpireDelay value="5"/>
+        <ExpireEffect value="Crystalisk_Symbionte@CU"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="Crystalisk_Symbionte@LM">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="Crystalisk_Symbionte@Set"/>
+        <AmmoUnit value="Crystalisk_Symbionte@AttackMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="Crystalisk_Symbionte@Set">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="Crystalisk_Symbionte@Damage"/>
+        <EffectArray value="Crystalisk_Symbionte@Delay"/>
+    </CEffectSet>
+    <CAbilEffectTarget id="Crystalisk_Symbionte">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="Crystalisk_Symbionte@LM"/>
+        <Range value="10"/>
+        <PrepTime value="0.5"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Crystalisk_Symbionte"/>
+    </CAbilEffectTarget>
+    <CButton id="Crystalisk_Symbionte">
+        <Icon value="Assets\Textures\btn-unit-zerg-brutaliskgainssymbiote.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="Crystalisk" parent="UnitButton_OnlyGround">
+        <Icon value="Assets\Textures\btn-unit-zerg-kraith.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CActorSimple id="Crystalisk_Symbionte@Animation">
+        <EditorCategories value=""/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Abil.Crystalisk_Symbionte.SourcePrepStart" Target="_Unit" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="AnimPlay Spell Attack"/>
+        <On Terms="ActorCreation" Send="Destroy"/>
+    </CActorSimple>
+    <CActorAction id="Crystalisk_Symbionte@Attack" parent="GenericAttack" effectImpact="Crystalisk_Symbionte@Damage" effectLaunch="Crystalisk_Symbionte@LM">
+        <EditorCategories value=""/>
+    </CActorAction>
+    <CActorMissile id="Crystalisk_Symbionte@AttackMissile" parent="GenericAttackMissile" unitName="Crystalisk_Symbionte@AttackMissile">
+        <EditorCategories value=""/>
+    </CActorMissile>
+    <CActorUnit id="Crystalisk" parent="AdvancedUnitStandard" unitName="Crystalisk">
+        <WalkAnimMoveSpeed value="1.25"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-kraith.dds"/>
+    </CActorUnit>
+    <CModel id="Crystalisk_Symbionte@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\FungalInfestationAreaImpact\FungalInfestationAreaImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+    <CModel id="Crystalisk_Symbionte@AttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Zerg\CorruptorMissileLaunch\CorruptorMissileLaunch.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+    <CModel id="Crystalisk_Symbionte@AttackMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\ArcadeCorruptorMissile\ArcadeCorruptorMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="Crystalisk" parent="Unit">
+        <Model value="Assets\Units\Zerg\Kraith\Kraith.m3"/>
+        <SelectionRadius value="2.000000"/>
+    </CModel>
+    <CModel id="Crystalisk@Death" parent="UnitDeath">
+        <Model value="Assets\Units\Zerg\KraithDeath\KraithDeath.m3"/>
+    </CModel>
+    <CModel id="Crystalisk@Portrait" parent="Portrait">
+        <Model value="Assets\Portraits\Zerg\KraithPortrait\KraithPortrait.m3"/>
+    </CModel>
+    <CMoverMissile id="Crystalisk_Symbionte@AttackMissile" parent="MissileDefault"/>
+    <CSound id="Crystalisk@Death" parent="Zerg_ExplosionLarge"/>
+    <CSound id="Crystalisk@What" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_InhaleExert_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_InhaleExert_2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_InhaleExert_3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_InhaleExert_4.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="Crystalisk@Yes" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_Snarl_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_Snort_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Kraith_Vox_Snort_2.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="Crystalisk_Symbionte@AttackImpact" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\StukovInfestedDiamondBack_FungalSnare_Impact_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedDiamondBack_FungalSnare_Impact_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedDiamondBack_FungalSnare_Impact_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedDiamondBack_FungalSnare_Impact_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedDiamondBack_FungalSnare_Impact_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedDiamondBack_FungalSnare_Impact_06.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="Crystalisk_Symbionte@AttackLaunch" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\StukovInfestedSiegeTank_GrabInfested_Launch_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedSiegeTank_GrabInfested_Launch_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedSiegeTank_GrabInfested_Launch_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedSiegeTank_GrabInfested_Launch_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedSiegeTank_GrabInfested_Launch_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\StukovInfestedSiegeTank_GrabInfested_Launch_06.wav" FacialGroup=""/>
+        <Pitch value="-3.000000,-1.000000"/>
+    </CSound>
+    <CDataCollectionUnit id="Crystalisk" parent="UnitGround">
+        <EditorCategories value="DataGroup:Unit,Race:Zerg,DataFamily:Campaign,ObjectType:Unit"/>
+        <DataRecord Entry="Actor,Crystalisk"/>
+        <DataRecord Entry="Button,Crystalisk"/>
+        <DataRecord Entry="Model,Crystalisk"/>
+        <DataRecord Entry="Model,Crystalisk@Death"/>
+        <DataRecord Entry="Model,Crystalisk@Portrait"/>
+        <DataRecord Entry="Unit,Crystalisk"/>
+        <DataRecord Entry="Sound,Crystalisk@Death"/>
+        <DataRecord Entry="Sound,Crystalisk@What"/>
+        <DataRecord Entry="Sound,Crystalisk@Yes"/>
+        <DataRecord Entry="Unit,Crystalisk"/>
+        <DataRecord Entry="Unit,Crystalisk"/>
+    </CDataCollectionUnit>
+    <CDataCollectionAbil id="Crystalisk_Symbionte">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,DataFamily:Campaign,ObjectType:Projectile"/>
+        <DataRecord Entry="Abil,Crystalisk_Symbionte"/>
+        <DataRecord Entry="Actor,Crystalisk_Symbionte@Animation"/>
+        <DataRecord Entry="Actor,Crystalisk_Symbionte@Attack"/>
+        <DataRecord Entry="Actor,Crystalisk_Symbionte@AttackMissile"/>
+        <DataRecord Entry="Button,Crystalisk_Symbionte"/>
+        <DataRecord Entry="Effect,Crystalisk_Symbionte@CU"/>
+        <DataRecord Entry="Effect,Crystalisk_Symbionte@Damage"/>
+        <DataRecord Entry="Effect,Crystalisk_Symbionte@Delay"/>
+        <DataRecord Entry="Effect,Crystalisk_Symbionte@LM"/>
+        <DataRecord Entry="Effect,Crystalisk_Symbionte@Set"/>
+        <DataRecord Entry="Model,Crystalisk_Symbionte@AttackLaunch"/>
+        <DataRecord Entry="Model,Crystalisk_Symbionte@AttackImpact"/>
+        <DataRecord Entry="Model,Crystalisk_Symbionte@AttackMissile"/>
+        <DataRecord Entry="Mover,Crystalisk_Symbionte@AttackMissile"/>
+        <DataRecord Entry="Sound,Crystalisk_Symbionte@AttackLaunch"/>
+        <DataRecord Entry="Sound,Crystalisk_Symbionte@AttackImpact"/>
+        <DataRecord Entry="Unit,Crystalisk_Symbionte@AttackMissile"/>
+    </CDataCollectionAbil>
+    <CUnit id="Crystalisk_Symbionte@AttackMissile" parent="MISSILE">
+        <Race value="Zerg"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>
+    </CUnit>
+    <CUnit id="Crystalisk" parent="Generic_Unit_Ground" race="Zerg">
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
+        <LifeStart value="1250"/>
+        <LifeMax value="1250"/>
+        <LifeArmor value="3"/>
+        <Speed value="1.8007"/>
+        <LateralAcceleration value="1"/>
+        <TurningRate value="45.879"/>
+        <Sight value="12"/>
+        <AbilArray Link="Crystalisk_Symbionte"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Crystalisk_Symbionte" Type="AbilCmd" AbilCmd="Crystalisk_Symbionte,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <InnerRadius value="2"/>
+        <MinimapRadius value="0.75"/>
+    </CUnit>
+</Catalog>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectCreatePersistent id="Gargantua_Jump@Offset">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="SourceUnit"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="Gargantua_Jump@Damage"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="Gargantua_Weapon@Damage" parent="DU_WEAP">
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="Gargantua_Jump@LM">
+        <ValidatorArray index="0" value="Gargantua_Jump@MinRange"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="Gargantua_Jump@Offset"/>
+        <Flags index="2D" value="1"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PlacementIgnoreBlockers" value="1"/>
+        <Flags index="PlacementIgnoreCliffTest" value="1"/>
+        <Movers Link="Gargantua_Jump"/>
+        <DeathType value="Unknown"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="Gargantua_Jump@Damage">
+        <DebugTrace value="1"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <Amount value="200"/>
+        <AreaArray Radius="3" Fraction="1"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CAbilEffectTarget id="Gargantua_Jump">
+        <CmdButtonArray index="Execute" DefaultButtonFace="Gargantua_Jump"/>
+        <Effect index="0" value="Gargantua_Jump@LM"/>
+        <PrepTime value="0.5"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <RangeSlop value="25"/>
+        <Range value="20"/>
+        <FinishTime value="0.8"/>
+    </CAbilEffectTarget>
+    <CValidatorLocationCompareRange id="Gargantua_Jump@MinRange">
+        <ResultFailed value="Error,Error/TargetToNearby"/>
+        <Compare value="GE"/>
+        <Range value="3"/>
+    </CValidatorLocationCompareRange>
+    <CButton id="Gargantua" parent="UnitButton_OnlyGround">
+        <Icon value="Assets\Textures\Btn\Unit\Zerg\drakon@unit.dds"/>
+    </CButton>
+    <!-- ========= Abilities ========== -->
+    <CButton id="Gargantua_Jump">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehakacliffjump.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CActorUnit id="Gargantua" parent="AdvancedStandard_Ground" unitName="Gargantua">
+        <On Terms="ModelEvent; ModelEventName DeathFX" Send="SetOpacity 0.000000 1.000000"/>
+        <DeathArray index="Normal" ModelLink="Gargantua"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <EventDataFootprint index="0" Name="Footstep_Left" Actor="Gargantua@FootStep_Left" Model="Gargantua@FootStep"/>
+        <EventDataFootprint Name="Footstep_Right" Actor="Gargantua@FootStep_Right" Model="Gargantua@FootStep"/>
+        <EventDataSound Name="Footstep" Sound="Gargantua@Footstep"/>
+    </CActorUnit>
+    <CActorModel id="Gargantua@FootStep_Left" parent="ModelAnimationStyleOneShot">
+        <EditorCategories value=""/>
+        <HostSiteOps Ops="SOpAttachOrigin SOpMoveLeftFoot" HoldPosition="1"/>
+        <Model value="Gargantua@FootStep"/>
+    </CActorModel>
+    <CActorModel id="Gargantua@FootStep_Right" parent="ModelAnimationStyleOneShot">
+        <EditorCategories value=""/>
+        <HostSiteOps Ops="SOpAttachOrigin SOpMoveRightFoot" HoldPosition="1"/>
+        <Model value="Gargantua@FootStep"/>
+    </CActorModel>
+    <CActorForceSphere id="Gargantua_Jump@Force">
+        <EditorCategories value=""/>
+        <On Terms="Effect.Gargantua_Jump@Damage.Start" Send="Create"/>
+        <Host Scope="Effect"/>
+        <Duration value="0.300000"/>
+        <Magnitude value="15.000000,25.000000"/>
+        <Radius value="3.250000,0.500000"/>
+        <HostSiteOps Ops="SOpTargetPoint"/>
+    </CActorForceSphere>
+    <CActorSound id="Gargantua_Jump@ImpactSound" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.Gargantua_Jump@Damage.Start" Send="Create"/>
+    </CActorSound>
+    <CActorSplat id="Gargantua_Jump@Splat">
+        <EditorCategories value=""/>
+        <On Terms="Effect.Gargantua_Jump@Damage.Start" Send="Create"/>
+        <HostSiteOps Ops="SOpTargetPoint"/>
+        <FadeOut value="5.000000"/>
+        <HoldTime value="10.000000"/>
+    </CActorSplat>
+    <CActorAction id="Gargantua_Weapon@Attack" parent="GenericAttack" effectAttack="Gargantua_Weapon@Damage">
+        <ImpactMap index="Metal" Sound="PhysicsImpactMetalHeavyMassive"/>
+        <ImpactPhysics Name="AttackWeapon" MatchKeys="Basic" Physics="Gargantua_Weapon@AttackForce"/>
+    </CActorAction>
+    <CActorSimple id="Gargantua_Jump@Animation">
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Abil.Gargantua_Jump.TargetPrepStart" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ContentForceLooping,OpeningPlayForever"/>
+        <On Terms="Effect.Gargantua_Jump@Damage.Start" Target="_Unit" Send="AnimBracketStop Jump"/>
+        <On Terms="AnimBracketState.*.AfterClosing" Send="Destroy"/>
+    </CActorSimple>
+    <CActorSound id="Gargantua_Jump@LaunchSound" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.Gargantua_Jump@LM.Start" Send="Create"/>
+    </CActorSound>
+    <CActorForceBox id="Gargantua_Weapon@AttackForce">
+        <EditorCategories value=""/>
+        <Host Subject="::Main" Scope="Caster"/>
+        <HostSiteOps Ops="SOpAttachTarget3 SOpShadow"/>
+        <Height value="3.000000"/>
+        <Length value="3.000000"/>
+        <Width value="3.000000"/>
+    </CActorForceBox>
+    <CActorSiteOpLocalOffset id="SOpMoveLeftFoot">
+        <EditorCategories value=""/>
+        <LocalOffset value="1.000000,-3.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="SOpMoveRightFoot">
+        <EditorCategories value=""/>
+        <LocalOffset value="-1.000000,-3.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CModel id="Gargantua" parent="BOH_Unit" Race="Beasts">
+        <Events>
+            <Anim value="Death,02"/>
+            <Name value="DeathFX"/>
+            <Type value="Actor"/>
+            <Time value="6.500000"/>
+        </Events>
+        <Events>
+            <Anim value="Death,03"/>
+            <Name value="DeathFX"/>
+            <Type value="Actor"/>
+            <Time value="7.000000"/>
+        </Events>
+        <Events>
+            <Anim value="Walk"/>
+            <Name value="Footstep_Right"/>
+            <Type value="FootprintRight"/>
+            <Time value="0.100000"/>
+        </Events>
+        <Events>
+            <Anim value="Walk"/>
+            <Name value="Footstep_Left"/>
+            <Type value="FootprintLeft"/>
+            <Time value="0.682000"/>
+        </Events>
+        <Events>
+            <Anim value="Walk"/>
+            <Name value="Footstep"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+        </Events>
+        <Events>
+            <Anim value="Walk"/>
+            <Name value="Footstep"/>
+            <Type value="Sound"/>
+            <Time value="0.682000"/>
+        </Events>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <SelectionRadius value="1.350000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.700000"/>
+        <TipabilityLength value="2.187500"/>
+        <TipabilityWidth value="2.187500"/>
+        <TipabilityPitchMax value="35.000000"/>
+        <TipabilityRollMax value="35.000000"/>
+    </CModel>
+    <CModel id="Gargantua@FootStep">
+        <Model value="Assets\Effects\Zerg\ZurvanTentacleImpact\ZurvanTentacleImpact.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="Gargantua@Portrait" parent="Portrait">
+        <Model value="Assets\Portraits\Zerg\LurkerPortrait\LurkerPortrait.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Image value="Assets\Textures\lurkerportrait_static.dds"/>
+        <Lighting value="LurkerPortrait"/>
+    </CModel>
+    <CModel id="Gargantua_Jump@Splat" parent="Splat">
+        <Model value="Assets\Splats\Splat_ZerglingBurrowed\Splat_ZerglingBurrowed_02.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="5.000000,5.000000,5.000000"/>
+        <ScaleMin value="5.000000,5.000000,5.000000"/>
+    </CModel>
+    <!-- ========== Weapons ========== -->
+    <CWeaponLegacy id="Gargantua_Weapon">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="Gargantua_Weapon@Damage"/>
+        <Effect value="Gargantua_Weapon@Damage"/>
+        <Options index="Melee" value="1"/>
+        <Range value="0.1"/>
+        <TargetFilters value="Ground,Visible;Self,Missile,Dead,Hidden,Invulnerable"/>
+        <Period value="0.95"/>
+    </CWeaponLegacy>
+    <CMoverMissile id="Gargantua_Jump" parent="MissileDefault">
+        <MotionPhases index="0">
+            <Driver value="AdaptableParabola"/>
+            <Acceleration value="0"/>
+            <MinSpeed value="10"/>
+            <MaxSpeed value="10"/>
+            <ClearanceAcceleration value="75"/>
+            <ActorTracking value="Actual"/>
+            <Outro value="0"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <AdaptableParabolaIsUpright value="1"/>
+            <AdaptableParabolaClearance value="6,1"/>
+            <YawPitchRoll value="0"/>
+            <AdaptableParabolaDistances index="Launch" value="1"/>
+            <AdaptableParabolaDistances index="PreApex" value="0.3"/>
+            <AdaptableParabolaDistances index="PostApex" value="0.3"/>
+            <AdaptableParabolaDistances index="Land" value="1"/>
+            <AdaptableParabolaAccels index="Launch" value="0"/>
+            <AdaptableParabolaAccels index="Ascent" value="0"/>
+            <AdaptableParabolaAccels index="Apex" value="0"/>
+            <AdaptableParabolaAccels index="Descent" value="0"/>
+            <AdaptableParabolaAccels index="Land" value="0"/>
+        </MotionPhases>
+        <MotionPhases index="1" removed="1"/>
+    </CMoverMissile>
+    <CSound id="Gargantua@Footstep" parent="Movement">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS06.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS07.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\MonsterHuge_BaseFootstepFS08.wav" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="Gargantua@Attack" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_00.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_01.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_02.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_03.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_04.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_05.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_06.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_07.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Attack_08.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Gargantua@Death" parent="Zerg_ExplosionLarge"/>
+    <CSound id="Gargantua@DeathVoice" parent="DeathVoice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Aberration_Death_00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Death_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Death_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Death_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Death_04.wav" FacialGroup=""/>
+        <Chance value="100"/>
+    </CSound>
+    <CSound id="Gargantua@What" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Aberration_What_00.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_What_01.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_What_02.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_What_03.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_What_04.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_What_05.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Gargantua@Yes" parent="Voice">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_00.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_01.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_02.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_03.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_04.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_05.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_06.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_07.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_08.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Aberration_Yes_09.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Gargantua_Jump@ImpactSound" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large4.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large5.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large6.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large7.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RockDebris_ImpactExplosion_Large8.wav" FacialGroup=""/>
+        <Pitch value="-1.940000,-0.690000"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="Gargantua_Weapon@AttackLaunch" parent="Zerg_AttackLaunch_LargeSwingSingle"/>
+    <CSound id="Gargantua_Jump@LaunchSound" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zurvan_AttackLaunch_00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zurvan_AttackLaunch_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zurvan_AttackLaunch_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zurvan_AttackLaunch_03.wav" FacialGroup=""/>
+        <Pitch value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="Gargantua_Weapon@AttackImpact" parent="Ultralisk_AttackImpact"/>
+    <CDataCollectionUnit id="Gargantua" parent="UnitGround">
+        <EditorCategories value="DataGroup:Unit,Race:Zerg,DataFamily:Campaign,ObjectType:Unit"/>
+        <DataRecord Entry="Button,Gargantua"/>
+        <DataRecord Entry="Unit,Gargantua"/>
+        <DataRecord Entry="Actor,Gargantua"/>
+        <DataRecord Entry="Model,Gargantua"/>
+        <DataRecord Entry="Sound,Gargantua@Death"/>
+        <DataRecord Entry="Model,Gargantua@Portrait"/>
+        <DataRecord Entry="Sound,Gargantua@DeathVoice"/>
+        <DataRecord Entry="Sound,Gargantua@What"/>
+        <DataRecord Entry="Sound,Gargantua@Yes"/>
+        <DataRecord Entry="Sound,Gargantua@Attack"/>
+        <DataRecord Entry="Actor,Gargantua@FootStep_Left"/>
+        <DataRecord Entry="Actor,Gargantua@FootStep_Right"/>
+        <DataRecord Entry="Model,Gargantua@FootStep"/>
+        <DataRecord Entry="Sound,Gargantua@Footstep"/>
+        <DataRecord Entry="Unit,Gargantua"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Gargantua_Jump" parent="AbilityMisssile">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,DataFamily:Campaign,ObjectType:Unit"/>
+        <DataRecord Entry="Abil,Gargantua_Jump"/>
+        <DataRecord Entry="Actor,Gargantua_Jump@Animation"/>
+        <DataRecord Entry="Button,Gargantua_Jump"/>
+        <DataRecord Entry="Effect,Gargantua_Jump@LM"/>
+        <DataRecord Entry="Effect,Gargantua_Jump@Damage"/>
+        <DataRecord Entry="Mover,Gargantua_Jump"/>
+        <DataRecord Entry="Validator,Gargantua_Jump@MinRange"/>
+        <DataRecord Entry="Actor,Gargantua_Jump@LaunchSound"/>
+        <DataRecord Entry="Sound,Gargantua_Jump@LaunchSound"/>
+        <DataRecord Entry="Actor,Gargantua_Jump@ImpactSound"/>
+        <DataRecord Entry="Sound,Gargantua_Jump@ImpactSound"/>
+        <DataRecord Entry="Actor,Gargantua_Jump@Force"/>
+        <DataRecord Entry="Actor,Gargantua_Jump@Splat"/>
+        <DataRecord Entry="Effect,Gargantua_Jump@Offset"/>
+        <DataRecord Entry="Model,Gargantua_Jump@Splat"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Gargantua_Weapon" parent="Weapon_Instant">
+        <EditorCategories value="DataGroup:Weapon,Race:Zerg,DataFamily:Campaign,ObjectType:Other"/>
+        <DataRecord Entry="Actor,Gargantua_Weapon@Attack"/>
+        <DataRecord Entry="Effect,Gargantua_Weapon@Damage"/>
+        <DataRecord Entry="Sound,Gargantua_Weapon@AttackLaunch"/>
+        <DataRecord Entry="Sound,Gargantua_Weapon@AttackImpact"/>
+        <DataRecord Entry="Weapon,Gargantua_Weapon"/>
+        <DataRecord Entry="Actor,Gargantua_Weapon@AttackForce"/>
+    </CDataCollectionUnit>
+    <CUnit id="Gargantua" parent="Generic_Unit_Ground" race="Zerg">
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeRegenDelay value="2.5"/>
+        <LifeRegenRate value="3"/>
+        <LateralAcceleration value="1.4375"/>
+        <TurningRate value="649.8632"/>
+        <Sight value="13"/>
+        <AbilArray Link="Gargantua_Jump"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Gargantua_Jump" Type="AbilCmd" AbilCmd="Gargantua_Jump,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="2.1875"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
+        <InnerRadius value="2.1875"/>
+        <MinimapRadius value="0.75"/>
+    </CUnit>
+</Catalog>

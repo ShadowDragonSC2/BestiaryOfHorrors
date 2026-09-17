@@ -1,0 +1,4 @@
+﻿Character/Name/Alvine=Элвина
+Character/Name/Alvine/Var1=Portrait
+Character/Name/Vassel=Вассел
+Character/Name/Vassel/Var1=Portrait

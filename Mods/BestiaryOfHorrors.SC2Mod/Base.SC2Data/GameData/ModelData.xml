@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel default="1" id="BOH_Portrait" parent="Portrait">
+        <?token id="Race" type="CRaceLink" value="Neutral"?>
+        <?token id="Prefix" value="Portraits"?>
+        <Model value="Assets/##Prefix##/##Race##/##id##.m3"/>
+        <Image value="Assets/Textures/##Prefix##/##id##.dds"/>
+    </CModel>
+    <CModel default="1" id="BOH_Unit" parent="Unit">
+        <?token id="Prefix" value="Units"?>
+        <?token id="Race" type="CRaceLink" value="Neutral"?>
+        <Model value="Assets/##Prefix##/##Race##/##id##.m3"/>
+    </CModel>
+    <CModel default="1" id="BOH_UnitDeath" parent="UnitDeath">
+        <?token id="Prefix" value="Units"?>
+        <?token id="Race" type="CRaceLink" value="Neutral"?>
+        <Model value="Assets/##Prefix##/##Race##/##id##.m3"/>
+    </CModel>
+</Catalog>

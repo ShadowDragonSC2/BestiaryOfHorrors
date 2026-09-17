@@ -1,0 +1,13 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: BOH_Core
+//--------------------------------------------------------------------------------------------------
+// Preset Declarations
+
+// Function Declarations
+void lib1C156DFE_gf_CinematicFailure (int lp_player, point lp_panPoint, fixed lp_radiusReveal, text lp_message, fixed lp_afterDuration);
+void lib1C156DFE_gf_CinematicModeTransition (bool lp_onOffOptions, playergroup lp_players, fixed lp_duration);
+actor lib1C156DFE_gf_CreateUnitSelectCampaign (string lp_unitSelect, point lp_point);
+void lib1C156DFE_gf_UnburrowUnit (unit lp_unit, abilcmd lp_unburrowAbility, abilcmd lp_moveAbility, point lp_movePoint, fixed lp_delayMove);
+

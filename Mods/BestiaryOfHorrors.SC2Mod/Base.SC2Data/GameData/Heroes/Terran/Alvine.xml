@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit id="Alivne" parent="GenericUnitMinimal" unitName="Alvine">
+        <PortraitModel value="HallPortrait"/>
+    </CActorUnit>
+    <CCharacter id="Alvine">
+        <Age value="25"/>
+        <Gender value="Female"/>
+        <Race value="Terran"/>
+        <Image value="Assets\Textures\femaledominionofficer1portrait_static.dds"/>
+        <Color value="255,236,168,251"/>
+        <Variations Name="Character/Name/Alvine/Var1" Model="SiegeTankPortrait">
+            <DefaultCategories value="Default"/>
+            <DefaultCategories value="ConversationType:Mission"/>
+        </Variations>
+    </CCharacter>
+    <CUnit id="Alvine"/>
+</Catalog>

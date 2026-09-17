@@ -1,0 +1,4 @@
+﻿Button/Hotkey/Crystalisk_Symbionte=Q
+Button/Hotkey/Gargantua_Jump=Q
+Button/Hotkey/StoneScantipede_Eating=E
+Button/Hotkey/Vassel_Grenade=Q

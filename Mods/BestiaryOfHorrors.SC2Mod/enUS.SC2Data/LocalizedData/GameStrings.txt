@@ -1,0 +1,53 @@
+﻿Abil/Name/Crystalisk_Symbionte=Симбионт
+Abil/Name/Gargantua_Jump=Прыжок
+Abil/Name/StoneScantipede_Eating=Eating
+Abil/Name/Vassel_Grenade=Граната
+Button/Name/Crystalisk=Породить кристаллиска
+Button/Name/Crystalisk_Symbionte=Симбионт
+Button/Name/Gargantua=Породить Гаргантюа
+Button/Name/Gargantua_Jump=Прыжок
+Button/Name/KukulzaGuardian=Породить древнего стража
+Button/Name/StoneScantipede_Eating=Eating
+Button/Name/Vassel=Нанять Вассела
+Button/Name/Vassel_BleedingBullets=Кровоточащие патроны
+Button/Name/Vassel_Grenade=Граната
+Button/Tooltip/Crystalisk_Symbionte=Выпускает паразита в указанную точку, который при попадании взрывается, нанеся <d ref="Effect,Crystalisk_Symbionte@Damage,Amount"/> ед. урона по площади, Через <d time="[d ref='Effect,Crystalisk_Symbionte@Delay,ExpireDelay'/]"/> в точке куда попал паразит, породиться симбионт.
+Button/Tooltip/Gargantua_Jump=Совершает прыжок на дальнее растояние, после чего в точке приземления наносит <d ref="Effect,Gargantua_Jump@Damage,Amount"/> ед. урона по площади
+Button/Tooltip/StoneScantipede_Eating=Нажмите <k val="E"/>, затем укажите точку, чтобы начать там есть камни.
+Button/Tooltip/Vassel=Спецагент.</n>В прошлом был "Призраком" доминиона.
+Button/Tooltip/Vassel_BleedingBullets=После каждого выстрела атакуемая цель кровоточит в течение <d time="[d ref='Behavior,Vassel_BleedingBullets@Target,Duration'/]"/> получая по <d ref="Effect,Vassel_BleedingBullets@Damage,Amount" precision="1"/> урона.
+Button/Tooltip/Vassel_Grenade=Наносит взрывной урон по области в размере <c val="#ColorLightGoldGradient"><d ref="Effect,Vassel_Grenade@Damage,Amount"/></c> ед.
+DataCollection/Name/Crystalisk_Symbionte=Симбионт
+DataCollection/Name/Gargantua_Jump=Прыжок
+DataCollection/Name/Vassel_BleedingBullets=Bleeding Bullets
+DocInfo/DescShort=Any
+DocInfo/Name=Just Another StarCraft II Mod
+Effect/Name/Crystalisk_Symbionte@CU=CU
+Effect/Name/Crystalisk_Symbionte@Damage=Damage
+Effect/Name/Crystalisk_Symbionte@Delay=Delay
+Effect/Name/Crystalisk_Symbionte@LM=LM
+Effect/Name/Crystalisk_Symbionte@Set=Set
+Effect/Name/Gargantua_Jump@Damage=Damage
+Effect/Name/Gargantua_Jump@LM=LM
+Effect/Name/Gargantua_Jump@Offset=Offset
+Effect/Name/Gargantua_Weapon@Damage=Damage
+Effect/Name/StoneScantipede_Eating@CP=CP
+Effect/Name/StoneScantipede_Eating@MU=MU
+Effect/Name/Vassel_BleedingBullets@AB=AB
+Effect/Name/Vassel_BleedingBullets@Damage=Damage
+Effect/Name/Vassel_Grenade@Damage=Damage
+Effect/Name/Vassel_Grenade@LM=LM
+Effect/Name/Vassel_Weapon@Damage=Damage
+Error/TargetToNearby=Указанная цель слишком близко
+Race/Name/Beasts=Beasts
+Unit/Category/Terr=Персонажи терранов
+Unit/Name/Crystalisk=Кристаллиск
+Unit/Name/Crystalisk_Symbionte@AttackMissile=Attack Missile
+Unit/Name/Gargantua=Гаргантюа
+Unit/Name/KukulzaGuardian=Древний Страж
+Unit/Name/RockScantipede=Rock Scantipede
+Unit/Name/Vassel=Вассел
+Unit/Name/Vassel_Grenade@AttackMissile=Attack Missile
+UnitKillRank/Vassel=Охотник на тварей
+Weapon/Name/Gargantua_Weapon=Удар лапой
+Weapon/Name/Vassel_Weapon=Винтовка

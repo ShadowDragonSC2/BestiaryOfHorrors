@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Includes>
+    <Catalog path="GameData/base.xml"/>
+    <Catalog path="GameData/Beasts/Crystalisk.xml"/>
+    <Catalog path="GameData/Beasts/Gargantua.xml"/>
+    <Catalog path="GameData/Beasts/Kukulza Guardian.xml"/>
+    <Catalog path="GameData/Critters/StoneScantipede.xml"/>
+    <Catalog path="GameData/Heroes/Terran/Alvine.xml"/>
+    <Catalog path="GameData/Heroes/Terran/Vassel (Ghost).xml"/>
+</Includes>

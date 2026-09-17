@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectCreatePersistent id="StoneScantipede_Eating@CP">
+        <OffsetVectorEndLocation Value="CasterUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="StoneScantipede_Eating@MU"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="StoneScantipede_Eating@MU"/>
+        <PeriodicPeriodArray value="0.85"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="StoneScantipede_Eating@MU">
+        <ImpactUnit Value="Caster"/>
+    </CEffectModifyUnit>
+    <!-- ========== Abilities ========== -->
+    <CAbilEffectTarget id="StoneScantipede_Eating">
+        <Effect index="0" value="StoneScantipede_Eating@CP"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StoneScantipede_Eating"/>
+    </CAbilEffectTarget>
+    <CButton id="StoneScantipede_Eating">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CActorUnit id="RockScantipede" parent="AdvancedStandard_Ground" unitName="RockScantipede">
+        <HighlightTooltip value="Unit/Name/Bogus"/>
+        <UnitIcon value="Assets\Textures\Wireframe-critter-scantipede.dds"/>
+        <Wireframe>
+            <Image index="0" value="Assets\Textures\wireframe-critter-scantipede.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorModel id="StoneScantipede_Eating@Model" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.StoneScantipede_Eating@MU.Start; At Caster" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="AnimPlay Attack Attack RandomStartOffset"/>
+        <Host Subject="_Unit"/>
+        <HostSiteOps Ops="SOpAttachWeapon02 SOpMoveByDot75" HoldPosition="1" HoldRotation="1"/>
+    </CActorModel>
+    <CModel id="RockScantipede" parent="Unit">
+        <Model value="Assets\Units\Critters\ScantipedeEx1\ScantipedeEx1.m3"/>
+        <Lighting value="Scantipede"/>
+    </CModel>
+    <CModel id="RockScantipede@Death" parent="ScantipedeDeath"/>
+    <CModel id="RockScantipede@Portrait" parent="ScantipedePortrait"/>
+    <CModel id="StoneScantipede_Eating@Model">
+        <Model value="Assets\Effects\Other\PhysicsImpactRockLarge\PhysicsImpactRockLarge.m3"/>
+    </CModel>
+    <CSound id="RockScantipede@Death" parent="Zerg_ExplosionSmall"/>
+    <CSound id="RockScantipede@What" parent="Scantipede_What"/>
+    <CDataCollectionUnit id="RockScantipede" parent="UnitGround">
+        <DataRecord Entry="Unit,RockScantipede"/>
+        <DataRecord Entry="Actor,RockScantipede"/>
+        <DataRecord Entry="Model,RockScantipede"/>
+        <DataRecord Entry="Model,RockScantipede@Death"/>
+        <DataRecord Entry="Model,RockScantipede@Portrait"/>
+        <DataRecord Entry="Sound,RockScantipede@Death"/>
+        <DataRecord Entry="Sound,RockScantipede@What"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="StoneScantipede_Eating" parent="AbilityBase">
+        <EditorCategories value="DataGroup:Ability,Race:Neutral,DataFamily:Campaign,ObjectType:Environment"/>
+        <DataRecord Entry="Abil,StoneScantipede_Eating"/>
+        <DataRecord Entry="Button,StoneScantipede_Eating"/>
+        <DataRecord Entry="Actor,StoneScantipede_Eating@Model"/>
+        <DataRecord Entry="Effect,StoneScantipede_Eating@CP"/>
+        <DataRecord Entry="Effect,StoneScantipede_Eating@MU"/>
+        <DataRecord Entry="Model,StoneScantipede_Eating@Model"/>
+    </CDataCollectionUnit>
+    <CUnit id="RockScantipede" parent="Generic_Unit_Ground" race="Neut">
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <Speed value="2.5"/>
+        <BehaviorArray Link="CritterWander"/>
+        <Sight value="8"/>
+        <AbilArray Link="StoneScantipede_Eating"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="StoneScantipede_Eating" Type="AbilCmd" AbilCmd="StoneScantipede_Eating,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <LifeArmorName value="Unit/LifeArmorName/Bogus"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/Bogus"/>
+        <GlossaryCategory value="Unit/Category/Bogus"/>
+        <HotkeyCategory value="Unit/Category/Bogus"/>
+        <KillDisplay value="Never"/>
+    </CUnit>
+</Catalog>

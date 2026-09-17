@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="KukulzaGuardian" parent="UnitButton_OnlyGround" Category="Hero" Race="Beasts"/>
+    <CActorUnit id="KukulzaGuardian" parent="AdvancedUnitStandard" unitName="KukulzaGuardian" Race="Beasts"/>
+    <CModel id="KukulzaGuardian" parent="BOH_Unit" Race="Beasts"/>
+    <CModel id="KukulzaGuardian@Death" parent="BOH_UnitDeath" Race="Beasts"/>
+    <CModel id="KukulzaGuardian@Portrait" parent="BOH_Portrait" Race="Beasts"/>
+    <CUnit id="KukulzaGuardian" parent="Generic_Unit_Air" race="Beasts"/>
+</Catalog>

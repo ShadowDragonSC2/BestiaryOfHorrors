@@ -1,0 +1,110 @@
+include "TriggerLibs/NativeLib"
+include "TriggerLibs/VoidCampaignMissionLib"
+
+include "Lib1C156DFE_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: BOH_Core
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void lib1C156DFE_InitLibraries () {
+    libNtve_InitVariables();
+    libVCMI_InitVariables();
+}
+
+// Presets
+// Functions
+void lib1C156DFE_gf_CinematicFailure (int lp_player, point lp_panPoint, fixed lp_radiusReveal, text lp_message, fixed lp_afterDuration) {
+    // Automatic Variable Declarations
+    // Implementation
+    CinematicFade(false, 1.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    SoundChannelMute(PlayerGroupAll(), c_soundCategoryMusic, true);
+    lib1C156DFE_gf_CinematicModeTransition(true, PlayerGroupAll(), 1.0);
+    if ((lp_radiusReveal > 0.0)) {
+        VisRevealArea(lp_player, RegionCircle(lp_panPoint, lp_radiusReveal), 0.0, false);
+    }
+
+    libNtve_gf_SwooshCamera(lp_player, CameraInfoGetValue(CameraInfoDefault(), c_cameraValueDistance), ((CameraInfoGetValue(CameraInfoDefault(), c_cameraValueDistance)) - 8.0), lp_panPoint, 1.5);
+    CinematicFade(true, 1.5, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, true);
+    if ((lp_message != null)) {
+        Wait(1.0, c_timeReal);
+        libVCMI_gf_DisplayCampaignMessage(PlayerGroupAll(), libVCMI_ge_CampaignMessageType_Warning, lp_message, libVCMI_ge_CampaignMessageFormatNotFormat_FormatMessage);
+    }
+
+    Wait(lp_afterDuration, c_timeGame);
+}
+
+void lib1C156DFE_gf_CinematicModeTransition (bool lp_onOffOptions, playergroup lp_players, fixed lp_duration) {
+    // Automatic Variable Declarations
+    // Implementation
+    if ((lp_onOffOptions == true)) {
+        UISetMode(lp_players, c_uiModeFullscreen, lp_duration);
+    }
+    else {
+        UISetMode(lp_players, c_uiModeConsole, lp_duration);
+    }
+    Wait(lp_duration, c_timeGame);
+    libNtve_gf_CinematicMode(lp_onOffOptions, lp_players, 0.0);
+}
+
+actor lib1C156DFE_gf_CreateUnitSelectCampaign (string lp_unitSelect, point lp_point) {
+    // Automatic Variable Declarations
+    // Implementation
+    libNtve_gf_CreateModelAtPoint(((lp_unitSelect)), lp_point);
+    return libNtve_gf_ActorLastCreated();
+}
+
+trigger auto_lib1C156DFE_gf_UnburrowUnit_Trigger = null;
+unit auto_lib1C156DFE_gf_UnburrowUnit_lp_unit;
+abilcmd auto_lib1C156DFE_gf_UnburrowUnit_lp_unburrowAbility;
+abilcmd auto_lib1C156DFE_gf_UnburrowUnit_lp_moveAbility;
+point auto_lib1C156DFE_gf_UnburrowUnit_lp_movePoint;
+fixed auto_lib1C156DFE_gf_UnburrowUnit_lp_delayMove;
+
+void lib1C156DFE_gf_UnburrowUnit (unit lp_unit, abilcmd lp_unburrowAbility, abilcmd lp_moveAbility, point lp_movePoint, fixed lp_delayMove) {
+    auto_lib1C156DFE_gf_UnburrowUnit_lp_unit = lp_unit;
+    auto_lib1C156DFE_gf_UnburrowUnit_lp_unburrowAbility = lp_unburrowAbility;
+    auto_lib1C156DFE_gf_UnburrowUnit_lp_moveAbility = lp_moveAbility;
+    auto_lib1C156DFE_gf_UnburrowUnit_lp_movePoint = lp_movePoint;
+    auto_lib1C156DFE_gf_UnburrowUnit_lp_delayMove = lp_delayMove;
+
+    if (auto_lib1C156DFE_gf_UnburrowUnit_Trigger == null) {
+        auto_lib1C156DFE_gf_UnburrowUnit_Trigger = TriggerCreate("auto_lib1C156DFE_gf_UnburrowUnit_TriggerFunc");
+    }
+
+    TriggerExecute(auto_lib1C156DFE_gf_UnburrowUnit_Trigger, false, false);
+}
+
+bool auto_lib1C156DFE_gf_UnburrowUnit_TriggerFunc (bool testConds, bool runActions) {
+    unit lp_unit = auto_lib1C156DFE_gf_UnburrowUnit_lp_unit;
+    abilcmd lp_unburrowAbility = auto_lib1C156DFE_gf_UnburrowUnit_lp_unburrowAbility;
+    abilcmd lp_moveAbility = auto_lib1C156DFE_gf_UnburrowUnit_lp_moveAbility;
+    point lp_movePoint = auto_lib1C156DFE_gf_UnburrowUnit_lp_movePoint;
+    fixed lp_delayMove = auto_lib1C156DFE_gf_UnburrowUnit_lp_delayMove;
+
+    // Automatic Variable Declarations
+    // Implementation
+    UnitIssueOrder(lp_unit, Order(lp_unburrowAbility), c_orderQueueReplace);
+    Wait(lp_delayMove, c_timeGame);
+    if ((lp_movePoint != null)) {
+        UnitIssueOrder(lp_unit, OrderTargetingPoint(lp_moveAbility, lp_movePoint), c_orderQueueReplace);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool lib1C156DFE_InitLib_completed = false;
+
+void lib1C156DFE_InitLib () {
+    if (lib1C156DFE_InitLib_completed) {
+        return;
+    }
+
+    lib1C156DFE_InitLib_completed = true;
+
+    lib1C156DFE_InitLibraries();
+}
+
