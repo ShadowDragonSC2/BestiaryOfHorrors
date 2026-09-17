@@ -3,4 +3,5 @@
 <Actor id="SYSTEM_ActorConfig"/>
 <Terrain id="Zerus"/>
 <Unit id="Marine"/>
+<Unit id="Energion"/>
 </Preload>

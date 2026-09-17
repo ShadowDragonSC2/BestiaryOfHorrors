@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalog>
+    <CUnit id="Energion" parent="Generic_Unit_Ground" race="Beasts">
+        <LifeMax value="1500"/>
+        <LifeStart value="1500"/>
+        <Height value="1.75"/>
+        <AbilArray Link="Energion_Blast"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Energion_Blast" Type="AbilCmd" AbilCmd="Energion_Blast,Execute" Row="2"/>
+        </CardLayouts>
+    </CUnit>
+
+    <CActorUnit id="Energion" parent="AdvancedStandard_Ground" unitName="Energion"/>
+
+    <CModel id="Energion" parent="Unit">
+        <EditorCategories value="Race:Beasts"/>
+        <Model value="Assets\Units\Neutral\Slayn_Elemental\Slayn_Elemental.m3"/>
+    </CModel>
+
+    <CSound id="Energion@Attack" parent="Voice"/>
+
+    <CDataCollectionUnit id="Energion">
+        <DataRecord Entry="Unit,Energion"/>
+        <DataRecord Entry="Actor,Energion"/>
+        <DataRecord Entry="Model,Energion"/>
+        <DataRecord Entry="Sound,Energion@Attack"/>
+    </CDataCollectionUnit>
+
+    <!-- ========== Abilities ========== -->
+
+    <!-- Blast -->
+    <CButton id="Energion_Blast">
+        <Icon value="Assets\Textures\btn-ability-protoss-chargedblast.dds"/>
+    </CButton>
+
+    <CAbilEffectTarget id="Energion_Blast">
+        <Arc value="360"/>
+        <Flags index="Transient" value="1"/>
+        <Range index="0" value="15"/>
+        <EditorCategories value="Race:Beasts"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Energion_Blast"/>
+    </CAbilEffectTarget>
+
+    <CEffectCreatePersistent id="Energion_Blast">
+        <EditorCategories value="Race:Beasts"/>
+        <WhichLocation Value="TargetPoint"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="Energion_Blast@Random"/>
+        <PeriodicPeriodArray value="0.45"/>
+        <PeriodicValidator value="CasterNotDead"/>
+    </CEffectCreatePersistent>
+    <CEffectRandomPointInCircle id="Energion_Blast@Random">
+        <EditorCategories value="Race:Beasts"/>
+        <DebugTrace value="1"/>
+        <Radius value="4"/>
+        <Effect value="Energion_Blast@LM"/>
+        <WhichLocation Value="TargetPoint"/>
+    </CEffectRandomPointInCircle>
+    <CEffectLaunchMissile id="Energion_Blast@LM">
+        <EditorCategories value="Race:Beasts"/>
+        <AmmoUnit value="Energion_Blast@AttackMissile"/>
+        <ImpactEffect value="Energion_Blast@Damage"/>
+        <ImpactLocation Value="TargetPoint"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="Energion_Blast@Damage" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Beasts"/>
+        <Amount value="40"/>
+        <AreaArray Radius="2" Fraction="1"/>
+        <SearchFilters value="Ground;Ally,Player,Self,Invulnerable,Missile,Hidden"/>
+        <ImpactLocation Value="TargetPoint"/>
+    </CEffectDamage>
+
+    <CActorAction id="Energion_Blast@Attack" parent="GenericAttack" effectLaunch="Energion_Blast@LM" effectImpact="Energion_Blast@Damage"/>
+    <CActorMissile id="Energion_Blast@AttackMissile" parent="GenericAttackMissile" unitName="Energion_Blast@AttackMissile"/>
+    <CActorModel id="Energion_Blast@Splat" parent="ModelAddition">
+        <On Terms="Effect.Energion_Blast@LM.Launch" Send="Create"/>
+        <On Terms="Effect.Energion_Blast@Damage.Start" Send="Destroy"/>
+        <HostSiteOps Ops="SOpTargetPoint"/>
+    </CActorModel>
+    
+    <CModel id="Energion_Blast@AttackImpact" parent="ImpactFX">
+        <EditorCategories value="Race:Beasts"/>
+        <Model value="Assets\Effects\Protoss\AmonShards_Orange_AnimaShower_Missile_Impact\AmonShards_Orange_AnimaShower_Missile_Impact.m3"/>
+        <ScaleMin value="0.50,0.50,0.50"/>
+        <ScaleMax value="0.50,0.50,0.50"/>
+    </CModel>
+    <CModel id="Energion_Blast@AttackMissile" parent="MissileFX">
+        <EditorCategories value="Race:Beasts"/>
+        <Model value="Assets\Effects\Protoss\AmonShards_Orange_AnimaShower_Missile\AmonShards_Orange_AnimaShower_Missile.m3"/>
+        <ScaleMin value="0.65,0.65,0.65"/>
+        <ScaleMax value="0.65,0.65,0.65"/>
+    </CModel>
+    <CModel id="Energion_Blast@Splat" parent="Splat">
+        <ScaleMin value="0.50,0.50,0.50"/>
+        <ScaleMax value="0.50,0.50,0.50"/>
+        <Model value="Assets\UI\Cursors\ZergGenericAOECursor\ZergGenericAOECursor.m3"/>
+    </CModel>
+
+    <CSound id="Energion_Blast@AttackLaunch" parent="Spell">
+        <AssetArray File="Assets\Sounds\FenixChampion_ThunderousCharge_AttackLaunch01_1ch.wav"/>
+        <AssetArray File="Assets\Sounds\FenixChampion_ThunderousCharge_AttackLaunch02_1ch.wav"/>
+        <AssetArray File="Assets\Sounds\FenixChampion_ThunderousCharge_AttackLaunch03_1ch.wav"/>
+    </CSound>
+    <CSound id="Energion_Blast@AttackImpact" parent="Spell">
+        <AssetArray File="Assets\Sounds\AC_StrikeFighter_BombBlast_01.wav"/>
+        <AssetArray File="Assets\Sounds\AC_StrikeFighter_BombBlast_02.wav"/>
+        <AssetArray File="Assets\Sounds\AC_StrikeFighter_BombBlast_03.wav"/>
+    </CSound>
+
+    <CUnit id="Energion_Blast@AttackMissile" parent="MISSILE_INVULNERABLE"/>
+    <CMoverMissile id="Energion_Blast@AttackMissile" parent="RavasaurWeapon"/>
+
+    <CDataCollectionUnit id="Energion_Blast">
+        <EditorCategories value="DataFamily:Campaign,DataGroup:Weapon,ObjectType:Projectile,Race:Beasts"/>
+        <DataRecord Entry="Weapon,Energion_Blast"/>
+        <DataRecord Entry="Effect,Energion_Blast"/>
+        <DataRecord Entry="Effect,Energion_Blast@Random"/>
+        <DataRecord Entry="Effect,Energion_Blast@LM"/>
+        <DataRecord Entry="Effect,Energion_Blast@Damage"/>
+        <DataRecord Entry="Actor,Energion_Blast@Attack"/>
+        <DataRecord Entry="Actor,Energion_Blast@AttackMissile"/>
+        <DataRecord Entry="Model,Energion_Blast@AttackImpact"/>
+        <DataRecord Entry="Model,Energion_Blast@AttackMissile"/>
+        <DataRecord Entry="Unit,Energion_Blast@AttackMissile"/>
+        <DataRecord Entry="Mover,Energion_Blast@AttackMissile"/>
+    </CDataCollectionUnit>
+
+    <!-- Explode -->
+    
+    <CActorModel id="Energion_Explode@Model">
+        <On Terms="Abil.Energion_Explode.PrepStart" Send="Create"/>
+    </CActorModel>
+    <CModel id="Energion_Explode@Model">
+        <Model value="Assets\Units\Neutral\Slayn_Elemental_Death\Slayn_Elemental_Death.m3"/>
+    </CModel>
+
+</Catalog>

@@ -29,14 +29,14 @@ bool gt_MeleeInitialization_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    VisRevealArea(1, RegionEntireMap(), 0.0, false);
+    TriggerDebugOutput(1, StringToText((EventPlayerEffectUsed())), true);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void gt_MeleeInitialization_Init () {
     gt_MeleeInitialization = TriggerCreate("gt_MeleeInitialization_Func");
-    TriggerAddEventMapInit(gt_MeleeInitialization);
+    TriggerAddEventPlayerEffectUsed(gt_MeleeInitialization, 1, null);
 }
 
 //--------------------------------------------------------------------------------------------------

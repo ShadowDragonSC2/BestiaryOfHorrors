@@ -1,55 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CEffectDamage id="Vassel_Grenade@Damage">
-        <EditorCategories value="Race:Terran"/>
-        <Amount value="125"/>
-        <AreaArray Radius="2.5" Fraction="1"/>
-        <SearchFilters value="Ground,Visible;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
-    </CEffectDamage>
-    <CEffectLaunchMissile id="Vassel_Grenade@LM">
-        <EditorCategories value="Race:Terran"/>
-        <ImpactLocation Value="TargetPoint"/>
-        <ImpactEffect value="Vassel_Grenade@Damage"/>
-        <AmmoUnit value="Vassel_Grenade@AttackMissile"/>
-    </CEffectLaunchMissile>
-    <CEffectDamage id="Vassel_Weapon@Damage" parent="DU_WEAP">
-        <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="10"/>
-        <AttributeBonus index="Mechanical" value="-10"/>
-        <Amount value="35"/>
-    </CEffectDamage>
-    <CEffectApplyBehavior id="Vassel_BleedingBullets@AB">
-        <ValidatorArray value="IsBiological"/>
-        <EditorCategories value="Race:Terran"/>
-        <Behavior value="Vassel_BleedingBullets@Target"/>
-    </CEffectApplyBehavior>
-    <CEffectDamage id="Vassel_BleedingBullets@Damage">
-        <EditorCategories value="Race:Terran"/>
-        <Amount value="1"/>
-        <Death value="Squish"/>
-    </CEffectDamage>
-    <CAbilEffectTarget id="Vassel_Grenade">
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="Vassel_Grenade@LM"/>
-        <Range value="8"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Vassel_Grenade"/>
-        <PrepTime value="0.8"/>
-        <UninterruptibleArray index="Prep" value="1"/>
-        <CursorEffect value="Vassel_Grenade@Damage"/>
-    </CAbilEffectTarget>
     <CButton id="Vassel" parent="UnitButton_GroundAir">
         <Icon value="Assets\Textures\btn-unit-terran-blackops-ghost.dds"/>
     </CButton>
-    <!-- ========== Behaviors ========== -->
-    <CButton id="Vassel_BleedingBullets">
-        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-canisterrifle.dds"/>
-        <EditorCategories value="Race:Terran"/>
-    </CButton>
-    <CButton id="Vassel_Grenade">
-        <Icon value="Assets\Textures\btn-upgrade-nova-btn-upgrade-nova-flashgrenade.dds"/>
-        <EditorCategories value="Race:Terran"/>
-    </CButton>
+    <CUnit id="Vassel" parent="Generic_Unit_Ground" race="Terr">
+        <EditorCategories value="ObjectType:Hero,ObjectFamily:Campaign"/>
+        <LifeMax value="300"/>
+        <LifeStart value="300"/>
+        <LifeRegenRate value="3"/>
+        <LifeRegenDelay value="5"/>
+        <LifeArmor value="1"/>
+        <EnergyMax value="400"/>
+        <EnergyStart value="400"/>
+        <EnergyRegenRate value="10"/>
+        <EnergyRegenDelay value="5"/>
+        <CargoSize value="2"/>
+        <Sight value="10"/>
+        <BehaviorArray Link="Vassel_BleedingBullets"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Vassel_BleedingBullets" Type="Passive" Behavior="Vassel_BleedingBullets" Row="1" Column="0"/>
+            <LayoutButtons Face="Vassel_Grenade" Type="AbilCmd" AbilCmd="Vassel_Grenade,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <AbilArray Link="Vassel_Grenade"/>
+    </CUnit>
+    
     <CActorUnit id="Vassel" parent="AdvancedStandard_Ground" unitName="Vassel">
+        <Macros value="AttackElevationMacro"/>
         <AnimBlendTime value="-0.800000"/>
         <WalkAnimMoveSpeed value="2.25"/>
         <UnitKillRank Text="UnitKillRank/Vassel"/>
@@ -64,52 +42,7 @@
         </Wireframe>
         <Macros value="Vassel_Grenade@Animation"/>
     </CActorUnit>
-    <CActorEventMacro id="Vassel_Grenade@Animation">
-        <On Terms="Abil.Vassel_Grenade.SourcePrepStart" Send="AnimBracketStart Spell Spell,A Spell,B Spell,C"/>
-        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Spell"/>
-        <On Terms="Abil.Vassel_Grenade.SourceCastStart" Send="AnimBracketStop Spell"/>
-    </CActorEventMacro>
-    <CActorAction id="Vassel_Grenade@Attack" parent="GenericAttack" effectImpact="Vassel_Grenade@Damage" effectLaunch="Vassel_Grenade@LM"/>
-    <CActorMissile id="Vassel_Grenade@AttackMissile" parent="GenericAttackMissile" unitName="Vassel_Grenade@AttackMissile">
-        <EditorCategories value=""/>
-    </CActorMissile>
-    <CActorRange id="Vassel_Grenade@Range" parent="RangeAbil" abil="Vassel_Grenade">
-        <EditorCategories value=""/>
-    </CActorRange>
-    <CActorForceCylinder id="Vassel_Weapon@AttackForce">
-        <HostSiteOps Ops="SOpIncomingDirectDot25"/>
-        <Receiver Subject="::Main"/>
-        <Duration value="0.150000"/>
-        <Magnitude value="13.000000,9.000000"/>
-        <HostEndSiteOps Ops="SOpIncomingDirectDot25 SOpMoveBy2"/>
-        <Radius value="0.600000,0.150000"/>
-    </CActorForceCylinder>
-    <CActorSplat id="Vassel_Grenade@Cursor" parent="TerranCursorSplat" abil="Vassel_Grenade">
-        <EditorCategories value=""/>
-    </CActorSplat>
-    <CActorSplat id="Vassel_Grenade@Splat" parent="GenericUnitSplat">
-        <EditorCategories value=""/>
-        <On index="2" Terms="Effect.Vassel_Grenade@Damage.Start" Send="Create"/>
-        <On Terms="Effect.Vassel_Grenade@Damage.Start" Send="TimerSet 10.000000 kill"/>
-        <On Terms="TimerExpired; TimerName kill" Send="Destroy"/>
-        <HostSiteOps Ops="SOpTargetPoint"/>
-        <FadeIn value="2.000000"/>
-        <FadeOut value="10.000000"/>
-    </CActorSplat>
-    <CActorAction id="Vassel_Weapon@Attack" parent="GenericAttack" effectAttack="Vassel_Weapon@Damage">
-        <ImpactPhysics Name="CannisterRifleImpact" MatchKeys="Basic" Physics="Vassel_Weapon@AttackForce"/>
-    </CActorAction>
-    <CCharacter id="Vassel">
-        <Age value="28"/>
-        <Race value="Terran"/>
-        <Image value="Assets\Textures\blackops_ghostportrait_static.dds"/>
-        <Color value="255,0,136,236"/>
-        <Variations Name="Character/Name/Vassel/Var1" Model="Vassel@Portrait">
-            <DefaultCategories value="Default"/>
-            <DefaultCategories value="ConversationType:Mission"/>
-        </Variations>
-        <Unit value="Vassel"/>
-    </CCharacter>
+    
     <CModel id="Vassel" parent="Unit">
         <Model value="Assets\Units\Terran\Ghost_CovertOps_Collection\Ghost_CovertOps_Collection.m3"/>
         <EditorCategories value="Race:Terran"/>
@@ -134,6 +67,165 @@
         <Model value="Assets\Portraits\Terran\Ghost_CovertOps_Collection_Portrait\Ghost_CovertOps_Collection_Portrait.m3"/>
         <EditorCategories value="Race:Terran"/>
     </CModel>
+    
+    <CSound id="Vassel@DeathVoice" parent="Ghost_Death"/>
+    <CSound id="Vassel@Death" parent="Ghost_Explode"/>
+    <CSound id="Vassel@Attack" parent="Ghost_Attack"/>
+    <CSound id="Vassel@Help" parent="Ghost_Help"/>
+    <CSound id="Vassel@Pissed" parent="Ghost_Pissed"/>
+    <CSound id="Vassel@Yes" parent="Ghost_Yes"/>
+    <CSound id="Vassel@What" parent="Ghost_What"/>
+    <CSound id="Vassel@Ready" parent="Ghost_Ready"/>
+    
+    <CCharacter id="Vassel">
+        <Age value="28"/>
+        <Race value="Terran"/>
+        <Image value="Assets\Textures\blackops_ghostportrait_static.dds"/>
+        <Color value="255,0,136,236"/>
+        <Variations Name="Character/Name/Vassel/Var1" Model="Vassel@Portrait">
+            <DefaultCategories value="Default"/>
+            <DefaultCategories value="ConversationType:Mission"/>
+        </Variations>
+        <Unit value="Vassel"/>
+    </CCharacter>
+    
+    <CDataCollectionUnit id="Vassel" parent="UnitGround">
+        <EditorCategories value="DataFamily:Campaign,DataGroup:Unit,ObjectType:Hero,Race:Terran"/>
+        <DataRecord Entry="Button,Vassel"/>
+        <DataRecord Entry="Unit,Vassel"/>
+        <DataRecord Entry="Actor,Vassel"/>
+        <DataRecord Entry="Model,Vassel"/>
+        <DataRecord Entry="Model,Vassel@Death"/>
+        <DataRecord Entry="Model,Vassel@Portrait"/>
+        <DataRecord Entry="Model,Vassel@DeathBlast"/>
+        <DataRecord Entry="Model,Vassel@DeathDisintegrate"/>
+        <DataRecord Entry="Model,Vassel@DeathFire"/>
+        <DataRecord Entry="Sound,Vassel@DeathVoice"/>
+        <DataRecord Entry="Sound,Vassel@Attack"/>
+        <DataRecord Entry="Sound,Vassel@Help"/>
+        <DataRecord Entry="Sound,Vassel@Pissed"/>
+        <DataRecord Entry="Sound,Vassel@Yes"/>
+        <DataRecord Entry="Sound,Vassel@What"/>
+        <DataRecord Entry="Sound,Vassel@Ready"/>
+        <DataRecord Entry="Sound,Vassel@Death"/>
+        <DataRecord Entry="Character,Vassel"/>
+    </CDataCollectionUnit>
+
+    <!-- ========== Weapons ========== -->
+    <CWeaponLegacy id="Vassel_Weapon">
+        <EditorCategories value="Race:Terran"/>
+        <Range value="7"/>
+        <Period value="1.15"/>
+        <TargetFilters value="Visible;Missile,Dead,Hidden,Invulnerable"/>
+        <DisplayEffect value="Vassel_Weapon@Damage"/>
+        <Effect value="Vassel_Weapon@Damage"/>
+    </CWeaponLegacy>
+
+    <CEffectDamage id="Vassel_Weapon@Damage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AttributeBonus index="Light" value="10"/>
+        <AttributeBonus index="Mechanical" value="-10"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+
+    <CActorAction id="Vassel_Weapon@Attack" parent="GenericAttack" effectAttack="Vassel_Weapon@Damage">
+        <ImpactPhysics Name="CannisterRifleImpact" MatchKeys="Basic" Physics="Vassel_Weapon@AttackForce"/>
+    </CActorAction>
+    <CActorForceCylinder id="Vassel_Weapon@AttackForce">
+        <HostSiteOps Ops="SOpIncomingDirectDot25"/>
+        <Receiver Subject="::Main"/>
+        <Duration value="0.150000"/>
+        <Magnitude value="13.000000,9.000000"/>
+        <HostEndSiteOps Ops="SOpIncomingDirectDot25 SOpMoveBy2"/>
+        <Radius value="0.600000,0.150000"/>
+    </CActorForceCylinder>
+    
+    <CModel id="Vassel_Weapon@BunkerAttackLaunch" parent="GhostBunkerAttackLaunch"/>
+    <CModel id="Vassel_Weapon@AttackLaunch" parent="GhostAttackLaunch"/>
+    <CModel id="Vassel_Weapon@AttackImpact" parent="GhostAttackImpact"/>
+    
+    <CSound id="Vassel_Weapon@AttackLaunch" parent="Combat">
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_01b.wav"/>
+        <AssetArray File="Assets\Sounds\Unused\Liberator_AG_Launch_01c.wav"/>
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_03a.wav"/>
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_03b.wav"/>
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04a.wav"/>
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04b.wav"/>
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04c.wav"/>
+        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04d.wav"/>
+    </CSound>
+    <CSound id="Vassel_Weapon@BunkerAttackLaunch" parent="Vassel_Weapon@AttackLaunch"/>
+    <CSound id="Vassel_Weapon@AttackImpact" parent="Terran_SingleBulletAttackImpact"/>
+
+    <CDataCollectionUnit id="Vassel_Weapon" parent="Weapon_Instant">
+        <EditorCategories value="DataGroup:Weapon,DataFamily:Campaign,ObjectType:Other,Race:Terran"/>
+        <DataRecord Entry="Weapon,Vassel_Weapon"/>
+        <DataRecord Entry="Effect,Vassel_Weapon@Damage"/>
+        <DataRecord Entry="Actor,Vassel_Weapon@Attack"/>
+        <DataRecord Entry="Model,Vassel_Weapon@BunkerAttackLaunch"/>
+        <DataRecord Entry="Model,Vassel_Weapon@AttackLaunch"/>
+        <DataRecord Entry="Model,Vassel_Weapon@AttackImpact"/>
+        <DataRecord Entry="Sound,Vassel_Weapon@BunkerAttackLaunch"/>
+        <DataRecord Entry="Sound,Vassel_Weapon@AttackLaunch"/>
+        <DataRecord Entry="Sound,Vassel_Weapon@AttackImpact"/>
+        <DataRecord Entry="Actor,Vassel_Weapon@AttackForce"/>
+    </CDataCollectionUnit>
+
+    <!-- ========== Abilities ========== -->
+     
+    <CButton id="Vassel_Grenade">
+        <Icon value="Assets\Textures\btn-upgrade-nova-btn-upgrade-nova-flashgrenade.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    
+    <CAbilEffectTarget id="Vassel_Grenade">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="Vassel_Grenade@LM"/>
+        <Range value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Vassel_Grenade"/>
+        <PrepTime value="0.8"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <CursorEffect value="Vassel_Grenade@Damage"/>
+    </CAbilEffectTarget>
+
+    <CEffectLaunchMissile id="Vassel_Grenade@LM">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="Vassel_Grenade@Damage"/>
+        <AmmoUnit value="Vassel_Grenade@AttackMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="Vassel_Grenade@Damage">
+        <EditorCategories value="Race:Terran"/>
+        <Amount value="125"/>
+        <AreaArray Radius="2.5" Fraction="1"/>
+        <SearchFilters value="Ground,Visible;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    
+    <CActorAction id="Vassel_Grenade@Attack" parent="GenericAttack" effectImpact="Vassel_Grenade@Damage" effectLaunch="Vassel_Grenade@LM"/>
+    <CActorEventMacro id="Vassel_Grenade@Animation">
+        <On Terms="Abil.Vassel_Grenade.SourcePrepStart" Send="AnimBracketStart Spell Spell,A Spell,B Spell,C"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Spell"/>
+        <On Terms="Abil.Vassel_Grenade.SourceCastStart" Send="AnimBracketStop Spell"/>
+    </CActorEventMacro>
+    <CActorMissile id="Vassel_Grenade@AttackMissile" parent="GenericAttackMissile" unitName="Vassel_Grenade@AttackMissile">
+        <EditorCategories value=""/>
+    </CActorMissile>
+    <CActorRange id="Vassel_Grenade@Range" parent="RangeAbil" abil="Vassel_Grenade">
+        <EditorCategories value=""/>
+    </CActorRange>
+    <CActorSplat id="Vassel_Grenade@Cursor" parent="TerranCursorSplat" abil="Vassel_Grenade">
+        <EditorCategories value=""/>
+    </CActorSplat>
+    <CActorSplat id="Vassel_Grenade@Splat" parent="GenericUnitSplat">
+        <EditorCategories value=""/>
+        <On index="2" Terms="Effect.Vassel_Grenade@Damage.Start" Send="Create"/>
+        <On Terms="Effect.Vassel_Grenade@Damage.Start" Send="TimerSet 10.000000 kill"/>
+        <On Terms="TimerExpired; TimerName kill" Send="Destroy"/>
+        <HostSiteOps Ops="SOpTargetPoint"/>
+        <FadeIn value="2.000000"/>
+        <FadeOut value="10.000000"/>
+    </CActorSplat>
+
     <CModel id="Vassel_Grenade@AttackImpact" parent="ImpactFX">
         <Model value="Assets\COOP\Mengsk\Effects\SiegeTank_Mengsk_COOP_Impact_Upgraded\SiegeTank_Mengsk_COOP_Impact_Upgraded.m3"/>
         <EditorCategories value="Race:Terran"/>
@@ -150,18 +242,29 @@
         <ScaleMax value="2.500000,2.500000,2.500000"/>
         <ScaleMin value="2.500000,2.500000,2.500000"/>
     </CModel>
-    <CModel id="Vassel_Weapon@BunkerAttackLaunch" parent="GhostBunkerAttackLaunch"/>
-    <CModel id="Vassel_Weapon@AttackLaunch" parent="GhostAttackLaunch"/>
-    <CModel id="Vassel_Weapon@AttackImpact" parent="GhostAttackImpact"/>
-    <!-- ========== Weapons ========== -->
-    <CWeaponLegacy id="Vassel_Weapon">
+    
+    <CSound id="Vassel_Grenade@AttackImpact" parent="Spell">
         <EditorCategories value="Race:Terran"/>
-        <Range value="7"/>
-        <Period value="1.15"/>
-        <TargetFilters value="Visible;Missile,Dead,Hidden,Invulnerable"/>
-        <DisplayEffect value="Vassel_Weapon@Damage"/>
-        <Effect value="Vassel_Weapon@Damage"/>
-    </CWeaponLegacy>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium4.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium5.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium6.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium7.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium8.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium9.wav" FacialGroup=""/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="Vassel_Grenade@AttackLaunch" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Core_AttackLaunch00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Core_AttackLaunch01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Core_AttackLaunch02.wav" FacialGroup=""/>
+        <Pitch value="12.000000,12.000000"/>
+    </CSound>
+
     <CMoverMissile id="Vassel_Grenade@AttackMissile">
         <MotionPhases>
             <Driver value="AdaptableParabola"/>
@@ -184,138 +287,39 @@
             <AdaptableParabolaAccels index="Land" value="3200"/>
         </MotionPhases>
     </CMoverMissile>
-    <CSound id="Vassel@DeathVoice" parent="Ghost_Death"/>
-    <CSound id="Vassel@Death" parent="Ghost_Explode"/>
-    <CSound id="Vassel@Attack" parent="Ghost_Attack"/>
-    <CSound id="Vassel@Help" parent="Ghost_Help"/>
-    <CSound id="Vassel@Pissed" parent="Ghost_Pissed"/>
-    <CSound id="Vassel@Yes" parent="Ghost_Yes"/>
-    <CSound id="Vassel@What" parent="Ghost_What"/>
-    <CSound id="Vassel@Ready" parent="Ghost_Ready"/>
-    <CSound id="Vassel_Grenade@AttackImpact" parent="Spell">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium0.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium1.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium2.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium3.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium4.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium5.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium6.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium7.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium8.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Terran_BuildingExplosionMedium9.wav" FacialGroup=""/>
-        <Volume value="2.000000,2.000000"/>
-    </CSound>
-    <CSound id="Vassel_Grenade@AttackLaunch" parent="Spell">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\Core_AttackLaunch00.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Core_AttackLaunch01.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Core_AttackLaunch02.wav" FacialGroup=""/>
-        <Pitch value="12.000000,12.000000"/>
-    </CSound>
-    <CSound id="Vassel_Weapon@AttackLaunch" parent="Combat">
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_01b.wav"/>
-        <AssetArray File="Assets\Sounds\Unused\Liberator_AG_Launch_01c.wav"/>
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_03a.wav"/>
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_03b.wav"/>
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04a.wav"/>
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04b.wav"/>
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04c.wav"/>
-        <AssetArray File="Assets\Sounds\Liberator_AG_Launch_04d.wav"/>
-    </CSound>
-    <CSound id="Vassel_Weapon@BunkerAttackLaunch" parent="Vassel_Weapon@AttackLaunch"/>
-    <CSound id="Vassel_Weapon@AttackImpact" parent="Terran_SingleBulletAttackImpact"/>
-    <CDataCollectionUnit id="Vassel" parent="UnitGround">
-        <EditorCategories value="DataFamily:Campaign,DataGroup:Unit,ObjectType:Hero,Race:Terran"/>
-        <DataRecord Entry="Button,Vassel"/>
-        <DataRecord Entry="Unit,Vassel"/>
-        <DataRecord Entry="Actor,Vassel"/>
-        <DataRecord Entry="Model,Vassel"/>
-        <DataRecord Entry="Model,Vassel@Death"/>
-        <DataRecord Entry="Model,Vassel@Portrait"/>
-        <DataRecord Entry="Sound,Vassel@DeathVoice"/>
-        <DataRecord Entry="Sound,Vassel@Attack"/>
-        <DataRecord Entry="Sound,Vassel@Help"/>
-        <DataRecord Entry="Sound,Vassel@Pissed"/>
-        <DataRecord Entry="Sound,Vassel@Yes"/>
-        <DataRecord Entry="Sound,Vassel@What"/>
-        <DataRecord Entry="Sound,Vassel@Ready"/>
-        <DataRecord Entry="Model,Vassel@DeathBlast"/>
-        <DataRecord Entry="Model,Vassel@DeathDisintegrate"/>
-        <DataRecord Entry="Model,Vassel@DeathFire"/>
-        <DataRecord Entry="Sound,Vassel@Death"/>
-        <DataRecord Entry="Character,Vassel"/>
-        <DataRecord Entry="Unit,Vassel"/>
-        <DataRecord Entry="Unit,Vassel"/>
-    </CDataCollectionUnit>
-    <CDataCollectionUnit id="Vassel_BleedingBullets">
-        <EditorCategories value="DataGroup:Buff,Race:Terran,DataFamily:Campaign,ObjectType:Spell"/>
-        <DataRecord Entry="Behavior,Vassel_BleedingBullets@Target"/>
-        <DataRecord Entry="Behavior,Vassel_BleedingBullets"/>
-        <DataRecord Entry="Button,Vassel_BleedingBullets"/>
-        <DataRecord Entry="Effect,Vassel_BleedingBullets@AB"/>
-        <DataRecord Entry="Effect,Vassel_BleedingBullets@Damage"/>
-        <DataRecord Entry="Behavior,Vassel_BleedingBullets"/>
-    </CDataCollectionUnit>
+    
+    <CUnit id="Vassel_Grenade@AttackMissile" parent="MISSILE">
+        <Race value="Terr"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>
+    </CUnit>
+    
     <CDataCollectionUnit id="Vassel_Grenade" parent="AbilityBase">
         <EditorCategories value="DataGroup:Ability,Race:Terran,DataFamily:Campaign,ObjectType:Spell"/>
+        <DataRecord Entry="Button,Vassel_Grenade"/>
         <DataRecord Entry="Abil,Vassel_Grenade"/>
+        <DataRecord Entry="Effect,Vassel_Grenade@Damage"/>
+        <DataRecord Entry="Effect,Vassel_Grenade@LM"/>
         <DataRecord Entry="Actor,Vassel_Grenade@Animation"/>
         <DataRecord Entry="Actor,Vassel_Grenade@Attack"/>
         <DataRecord Entry="Actor,Vassel_Grenade@AttackMissile"/>
         <DataRecord Entry="Actor,Vassel_Grenade@Range"/>
         <DataRecord Entry="Actor,Vassel_Grenade@Splat"/>
         <DataRecord Entry="Actor,Vassel_Grenade@Cursor"/>
-        <DataRecord Entry="Button,Vassel_Grenade"/>
-        <DataRecord Entry="Effect,Vassel_Grenade@Damage"/>
-        <DataRecord Entry="Effect,Vassel_Grenade@LM"/>
         <DataRecord Entry="Model,Vassel_Grenade@AttackImpact"/>
         <DataRecord Entry="Model,Vassel_Grenade@AttackMissile"/>
         <DataRecord Entry="Model,Vassel_Grenade@Splat"/>
-        <DataRecord Entry="Mover,Vassel_Grenade@AttackMissile"/>
         <DataRecord Entry="Sound,Vassel_Grenade@AttackLaunch"/>
         <DataRecord Entry="Sound,Vassel_Grenade@AttackImpact"/>
+        <DataRecord Entry="Mover,Vassel_Grenade@AttackMissile"/>
         <DataRecord Entry="Unit,Vassel_Grenade@AttackMissile"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Vassel_Weapon" parent="Weapon_Instant">
-        <EditorCategories value="DataGroup:Weapon,DataFamily:Campaign,ObjectType:Other,Race:Terran"/>
-        <DataRecord Entry="Weapon,Vassel_Weapon"/>
-        <DataRecord Entry="Effect,Vassel_Weapon@Damage"/>
-        <DataRecord Entry="Actor,Vassel_Weapon@Attack"/>
-        <DataRecord Entry="Model,Vassel_Weapon@BunkerAttackLaunch"/>
-        <DataRecord Entry="Model,Vassel_Weapon@AttackLaunch"/>
-        <DataRecord Entry="Model,Vassel_Weapon@AttackImpact"/>
-        <DataRecord Entry="Sound,Vassel_Weapon@BunkerAttackLaunch"/>
-        <DataRecord Entry="Sound,Vassel_Weapon@AttackLaunch"/>
-        <DataRecord Entry="Sound,Vassel_Weapon@AttackImpact"/>
-        <DataRecord Entry="Actor,Vassel_Weapon@AttackForce"/>
-    </CDataCollectionUnit>
-    <CUnit id="Vassel" parent="Generic_Unit_Ground" race="Terr">
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Campaign"/>
-        <LifeMax value="300"/>
-        <LifeStart value="300"/>
-        <LifeRegenRate value="3"/>
-        <LifeRegenDelay value="5"/>
-        <LifeArmor value="1"/>
-        <EnergyMax value="400"/>
-        <EnergyStart value="400"/>
-        <EnergyRegenRate value="10"/>
-        <EnergyRegenDelay value="5"/>
-        <CargoSize value="2"/>
-        <Sight value="10"/>
-        <BehaviorArray Link="Vassel_BleedingBullets"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons Face="Vassel_BleedingBullets" Type="Passive" Behavior="Vassel_BleedingBullets" Row="1" Column="0"/>
-            <LayoutButtons Face="Vassel_Grenade" Type="AbilCmd" AbilCmd="Vassel_Grenade,Execute" Row="2" Column="0"/>
-        </CardLayouts>
-        <AbilArray Link="Vassel_Grenade"/>
-    </CUnit>
-    <CUnit id="Vassel_Grenade@AttackMissile" parent="MISSILE">
-        <Race value="Terr"/>
-        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>
-    </CUnit>
+
+    <!-- ========== Behaviors ========== -->
+    <CButton id="Vassel_BleedingBullets">
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-canisterrifle.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    
     <CBehaviorBuff id="Vassel_BleedingBullets">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran"/>
@@ -331,4 +335,24 @@
         <Period value="0.1"/>
         <PeriodicEffect value="Vassel_BleedingBullets@Damage"/>
     </CBehaviorBuff>
+
+    <CEffectApplyBehavior id="Vassel_BleedingBullets@AB">
+        <ValidatorArray value="IsBiological"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="Vassel_BleedingBullets@Target"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="Vassel_BleedingBullets@Damage">
+        <EditorCategories value="Race:Terran"/>
+        <Amount value="1"/>
+        <Death value="Squish"/>
+    </CEffectDamage>
+    
+    <CDataCollectionUnit id="Vassel_BleedingBullets">
+        <EditorCategories value="DataGroup:Buff,Race:Terran,DataFamily:Campaign,ObjectType:Spell"/>
+        <DataRecord Entry="Behavior,Vassel_BleedingBullets@Target"/>
+        <DataRecord Entry="Behavior,Vassel_BleedingBullets"/>
+        <DataRecord Entry="Button,Vassel_BleedingBullets"/>
+        <DataRecord Entry="Effect,Vassel_BleedingBullets@AB"/>
+        <DataRecord Entry="Effect,Vassel_BleedingBullets@Damage"/>
+    </CDataCollectionUnit>
 </Catalog>

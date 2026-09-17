@@ -2,6 +2,7 @@
 <Includes>
     <Catalog path="GameData/base.xml"/>
     <Catalog path="GameData/Beasts/Crystalisk.xml"/>
+    <Catalog path="GameData/Beasts/Energion.xml"/>
     <Catalog path="GameData/Beasts/Gargantua.xml"/>
     <Catalog path="GameData/Beasts/Kukulza Guardian.xml"/>
     <Catalog path="GameData/Critters/StoneScantipede.xml"/>

@@ -1,16 +1,16 @@
-﻿Abil/Name/Crystalisk_Symbionte=Симбионт
-Abil/Name/Gargantua_Jump=Прыжок
+﻿Abil/Name/Crystalisk_Symbionte=Symbionte
+Abil/Name/Gargantua_Jump=Jump
 Abil/Name/StoneScantipede_Eating=Eating
-Abil/Name/Vassel_Grenade=Граната
+Abil/Name/Vassel_Grenade=Grenade
 Button/Name/Crystalisk=Породить кристаллиска
-Button/Name/Crystalisk_Symbionte=Симбионт
+Button/Name/Crystalisk_Symbionte=Symbionte
 Button/Name/Gargantua=Породить Гаргантюа
-Button/Name/Gargantua_Jump=Прыжок
+Button/Name/Gargantua_Jump=Jump
 Button/Name/KukulzaGuardian=Породить древнего стража
 Button/Name/StoneScantipede_Eating=Eating
 Button/Name/Vassel=Нанять Вассела
-Button/Name/Vassel_BleedingBullets=Кровоточащие патроны
-Button/Name/Vassel_Grenade=Граната
+Button/Name/Vassel_BleedingBullets=Bleeding bullets
+Button/Name/Vassel_Grenade=Grenade
 Button/Tooltip/Crystalisk_Symbionte=Выпускает паразита в указанную точку, который при попадании взрывается, нанеся <d ref="Effect,Crystalisk_Symbionte@Damage,Amount"/> ед. урона по площади, Через <d time="[d ref='Effect,Crystalisk_Symbionte@Delay,ExpireDelay'/]"/> в точке куда попал паразит, породиться симбионт.
 Button/Tooltip/Gargantua_Jump=Совершает прыжок на дальнее растояние, после чего в точке приземления наносит <d ref="Effect,Gargantua_Jump@Damage,Amount"/> ед. урона по площади
 Button/Tooltip/StoneScantipede_Eating=Нажмите <k val="E"/>, затем укажите точку, чтобы начать там есть камни.
@@ -48,6 +48,6 @@ Unit/Name/KukulzaGuardian=Древний Страж
 Unit/Name/RockScantipede=Rock Scantipede
 Unit/Name/Vassel=Вассел
 Unit/Name/Vassel_Grenade@AttackMissile=Attack Missile
-UnitKillRank/Vassel=Охотник на тварей
+UnitKillRank/Vassel=Охотник на чудовищ
 Weapon/Name/Gargantua_Weapon=Удар лапой
 Weapon/Name/Vassel_Weapon=Винтовка

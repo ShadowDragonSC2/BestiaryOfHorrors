@@ -1,20 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlacedObjects Version="27">
-    <ObjectUnit Id="1102253471" Position="51.0268,61.278,0" Rotation="3.1772" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="1920231296" Position="44.628,60.9602,0" Rotation="2.114" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="1931796689" Position="49.419,63.395,0" Rotation="4.5434" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="2138771864" Position="61.885,39.0627,0" Rotation="0.482" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="2076306406" Position="47.448,65.2924,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="181153563" Position="68.5876,49.3598,0" Rotation="2.152" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1755846890" Position="60.452,38.5952,0" Rotation="5.327" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="418912482" Position="67.709,53.797,0" Rotation="5.0292" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1859654335" Position="68.3232,46.9423,0" Rotation="3.0732" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1528407803" Position="65.7817,36.2333,0" Rotation="4.8103" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1649115515" Position="64.5063,58.0944,0" Rotation="3.2861" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="262946009" Position="63.4291,49.3598,0" Rotation="4.3823" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="476822904" Position="63.6835,45.6242,0" Rotation="2.8625" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="364868412" Position="61.246,46.3144,0" Rotation="4.7683" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1297804713" Position="64.6325,38.6882,0" Rotation="1.3955" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="9854780" Position="50.8896,63.026,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="449981412" Position="58.1757,41.637,0" Rotation="0.4572" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="726845961" Position="66.5185,34.5192,0" Rotation="5.444" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="460496075" Position="59.9245,37.9204,0" Rotation="2.2814" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1611655406" Position="67.103,44.6684,0" Rotation="4.7053" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="480106261" Position="61.5603,51.96,0" Rotation="1.5598" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1185056979" Position="63.333,58.6848,0" Rotation="3.8142" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="407310990" Position="58.3166,37.1994,0" Rotation="2.6013" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1054224830" Position="60.2487,52.4975,0" Rotation="3.5183" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1918411325" Position="59.4111,43.6538,0" Rotation="2.7795" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1772359477" Position="63.7143,35.7746,0" Rotation="2.71" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1100398593" Position="61.2111,42.216,0" Rotation="3.3371" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="368576301" Position="63.3295,50.1154,0" Rotation="0.7407" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="1282539329" Position="49.904,64.1235,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1948967383" Position="64.389,51.3945,0" Rotation="1.3825" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="45471684" Position="47.399,63.669,0" Rotation="1.0507" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="210287190" Position="48.918,62.3034,0" Rotation="4.5693" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="257317825" Position="45.7968,60.6127,0" Rotation="2.4218" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="1011188767" Position="49.1442,60.8933,0" Rotation="4.643" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="577946796" Position="65.99,45.9018,0" Rotation="2.721" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="91336039" Position="67.37,46.4768,0" Rotation="3.0886" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1670833988" Position="58.6896,43.3894,0" Rotation="0.912" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1581829283" Position="59.374,49.5502,0" Rotation="1.4255" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="1930605936" Position="48.7775,64.5844,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="1669873250" Position="46.2922,64.5332,0" Rotation="0.9677" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="5236258" Position="46.5346,62.3034,0" Rotation="2.0292" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="4228885" Position="59.504,38.9997,0" Rotation="4.2336" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1291234711" Position="62.0954,48.957,0" Rotation="2.1718" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="752569095" Position="44.6533,64.2504,0" Rotation="1.2797" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="9854780" Position="50.8896,63.026,0" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1119679088" Position="59.3813,40.2446,0" Rotation="2.7531" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="1620606401" Position="44.7993,61.9025,0" Rotation="1.9187" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="1994289401" Position="50.0664,62.5661,0" Rotation="2.7897" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1870454747" Position="59.9477,45.5617,0" Rotation="0.8933" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1304963516" Position="65.906,43.4448,0" Rotation="0.7253" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="290002252" Position="48.1894,61.4614,0" Rotation="3.7238" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="590114837" Position="62.7307,42.9104,0" Rotation="1.4575" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="733146739" Position="59.3398,47.1108,0" Rotation="0.443" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="288673333" Position="65.1491,49.0698,0" Rotation="5.7558" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="2010557896" Position="62.5073,44.8044,0" Rotation="5.1132" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1102253471" Position="51.0268,61.278,0" Rotation="3.1772" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="202760532" Position="62.4716,47.5153,0" Rotation="1.7878" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="450557413" Position="61.064,47.1108,0" Rotation="3.7194" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1347851395" Position="63.999,53.4848,0" Rotation="0.2343" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="403078691" Position="52.183,37.438,0" Rotation="0.4692" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="909452828" Position="60.981,43.5275,0" Rotation="4.5344" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="407857316" Position="61.1877,52.8605,0" Rotation="1.3591" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1300428303" Position="55.152,38.0112,0" Rotation="0.8842" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1395509189" Position="59.736,53.1528,0" Rotation="0.1618" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="210287190" Position="48.918,62.3034,0" Rotation="4.5693" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="784321748" Position="65.2983,47.06,0" Rotation="1.3901" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1011188767" Position="49.1442,60.8933,0" Rotation="4.643" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="2069115834" Position="67.9826,48.8237,0" Rotation="0.3073" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="438491147" Position="61.2558,59.0686,0" Rotation="4.1682" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="383091708" Position="68.558,50.5844,0" Rotation="2.7236" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1980756967" Position="67.5112,42.216,0" Rotation="1.5236" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1219453350" Position="56.709,43.1914,0" Rotation="0.1276" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1886155302" Position="62.8872,46.1323,0" Rotation="2.0803" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="251129041" Position="62.0895,41.2331,0" Rotation="3.0253" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1485051368" Position="64.9392,41.0666,0" Rotation="4.505" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1971114913" Position="57.542,38.2866,0" Rotation="0.0512" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="121556781" Position="60.7333,56.0563,0" Rotation="4.1386" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="539143805" Position="64.6267,37.7988,0" Rotation="3.4587" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1931796689" Position="49.419,63.395,0" Rotation="4.5434" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1920231296" Position="44.628,60.9602,0" Rotation="2.114" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1071323370" Position="63.3603,44.3393,0" Rotation="1.148" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="143248038" Position="66.7741,50.031,0" Rotation="2.5883" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="988812321" Position="63.4916,57.8034,0" Rotation="1.449" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="2141076171" Position="45.8613,52.842,0" Rotation="1.378" Scale="1,1,1" UnitType="Energion" Player="1"/>
+    <ObjectUnit Id="1269567704" Position="60.1582,43.8327,0" Rotation="1.1032" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1077093734" Position="60.6782,44.8044,0" Rotation="5.9475" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="846900806" Position="69.4355,49.9892,0" Rotation="2.4731" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1603530903" Position="63.8161,43.2624,0" Rotation="3.6586" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1194895430" Position="65.958,50.843,0" Rotation="2.2138" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="257317825" Position="45.7968,60.6127,0" Rotation="2.4218" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1696353615" Position="57.3942,37.1103,0" Rotation="1.7907" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1906898630" Position="59.153,37.981,0" Rotation="0.3691" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="5236258" Position="46.5346,62.3034,0" Rotation="2.0292" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="1334670692" Position="68.38,52.026,0" Rotation="2.784" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="379574090" Position="67.4941,52.2036,0" Rotation="1.6948" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="901537930" Position="65.3908,35.4064,0" Rotation="3.9946" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1339035345" Position="61.6118,47.831,0" Rotation="4.2556" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1441925374" Position="60.2395,49.8852,0" Rotation="3.406" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1423305215" Position="60.447,42.1826,0" Rotation="2.405" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1912519365" Position="65.0014,53.5192,0" Rotation="1.977" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1994289401" Position="50.0664,62.5661,0" Rotation="2.7897" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="458436506" Position="62.9548,54.846,0" Rotation="0.8366" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="2018925455" Position="58.0634,44.1176,0" Rotation="0.8583" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="1712063722" Position="64.8725,43.5104,0" Rotation="1.675" Scale="1,1,1" UnitType="Marine" Player="1"/>
 </PlacedObjects>
