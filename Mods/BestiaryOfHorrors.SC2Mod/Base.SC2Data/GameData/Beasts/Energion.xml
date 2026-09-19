@@ -1,68 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Catalog>
-    <CUnit id="Energion" parent="Generic_Unit_Ground" race="Beasts">
-        <LifeMax value="1500"/>
-        <LifeStart value="1500"/>
+
+    <CUnit id="StormElemental" parent="Generic_Unit_Ground" race="Beasts">
+        <Radius value="1"/>
+        <LifeMax value="2500"/>
+        <LifeStart value="2500"/>
+        <PushPriority value="25"/>
         <Height value="1.75"/>
-        <AbilArray Link="Energion_Blast"/>
+        <AbilArray Link="StormElemental_Blast"/>
+        <AbilArray Link="StormElemental_Explode"/>
+        <Acceleration value="3"/>
+        <Deceleration value="1.75"/>
+        <LateralAcceleration value="1"/>
+        <Response value="Nothing"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Energion_Blast" Type="AbilCmd" AbilCmd="Energion_Blast,Execute" Row="2"/>
+            <LayoutButtons Face="StormElemental_Blast" Type="AbilCmd" AbilCmd="StormElemental_Blast,Execute" Row="2"/>
+            <LayoutButtons Face="StormElemental_Explode" Type="AbilCmd" AbilCmd="StormElemental_Explode,Execute" Row="2" Column="1"/>
         </CardLayouts>
     </CUnit>
 
-    <CActorUnit id="Energion" parent="AdvancedStandard_Ground" unitName="Energion"/>
+    <CActorUnit id="StormElemental" parent="AdvancedStandard_Ground" unitName="StormElemental">
+        <HeroIcon value="Assets\Textures\tip_slaynelemental.dds"/>
+    </CActorUnit>
 
-    <CModel id="Energion" parent="Unit">
+    <CModel id="StormElemental" parent="Unit">
         <EditorCategories value="Race:Beasts"/>
         <Model value="Assets\Units\Neutral\Slayn_Elemental\Slayn_Elemental.m3"/>
+        <SelectionRadius value="2"/>
+    </CModel>
+    <CModel id="StormElemental@Death" parent="UnitDeath">
+        <Model value="Assets\Units\Neutral\Slayn_Elemental_Death\Slayn_Elemental_Death.m3"/>
     </CModel>
 
-    <CSound id="Energion@Attack" parent="Voice"/>
+    <CSound id="StormElemental@Attack" parent="Voice"/>
 
-    <CDataCollectionUnit id="Energion">
-        <DataRecord Entry="Unit,Energion"/>
-        <DataRecord Entry="Actor,Energion"/>
-        <DataRecord Entry="Model,Energion"/>
-        <DataRecord Entry="Sound,Energion@Attack"/>
+    <CDataCollectionUnit id="StormElemental">
+        <DataRecord Entry="Unit,StormElemental"/>
+        <DataRecord Entry="Actor,StormElemental"/>
+        <DataRecord Entry="Model,StormElemental"/>
+        <DataRecord Entry="Sound,StormElemental@Attack"/>
     </CDataCollectionUnit>
 
     <!-- ========== Abilities ========== -->
 
     <!-- Blast -->
-    <CButton id="Energion_Blast">
+    <CButton id="StormElemental_Blast">
         <Icon value="Assets\Textures\btn-ability-protoss-chargedblast.dds"/>
     </CButton>
 
-    <CAbilEffectTarget id="Energion_Blast">
+    <CAbilEffectTarget id="StormElemental_Blast">
         <Arc value="360"/>
-        <Flags index="Transient" value="1"/>
-        <Range index="0" value="15"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Range index="0" value="25"/>
         <EditorCategories value="Race:Beasts"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Energion_Blast"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StormElemental_Blast"/>
     </CAbilEffectTarget>
 
-    <CEffectCreatePersistent id="Energion_Blast">
+    <CEffectCreatePersistent id="StormElemental_Blast">
         <EditorCategories value="Race:Beasts"/>
         <WhichLocation Value="TargetPoint"/>
-        <PeriodCount value="4"/>
-        <PeriodicEffectArray value="Energion_Blast@Random"/>
+        <PeriodCount value="5"/>
+        <PeriodicEffectArray value="StormElemental_Blast@Random"/>
         <PeriodicPeriodArray value="0.45"/>
         <PeriodicValidator value="CasterNotDead"/>
     </CEffectCreatePersistent>
-    <CEffectRandomPointInCircle id="Energion_Blast@Random">
+    <CEffectRandomPointInCircle id="StormElemental_Blast@Random">
         <EditorCategories value="Race:Beasts"/>
         <DebugTrace value="1"/>
         <Radius value="4"/>
-        <Effect value="Energion_Blast@LM"/>
+        <Effect value="StormElemental_Blast@LM"/>
         <WhichLocation Value="TargetPoint"/>
     </CEffectRandomPointInCircle>
-    <CEffectLaunchMissile id="Energion_Blast@LM">
+    <CEffectLaunchMissile id="StormElemental_Blast@LM">
         <EditorCategories value="Race:Beasts"/>
-        <AmmoUnit value="Energion_Blast@AttackMissile"/>
-        <ImpactEffect value="Energion_Blast@Damage"/>
+        <AmmoUnit value="StormElemental_Blast@AttackMissile"/>
+        <ImpactEffect value="StormElemental_Blast@Damage"/>
         <ImpactLocation Value="TargetPoint"/>
     </CEffectLaunchMissile>
-    <CEffectDamage id="Energion_Blast@Damage" parent="DU_WEAP_SPLASH">
+    <CEffectDamage id="StormElemental_Blast@Damage" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Beasts"/>
         <Amount value="40"/>
         <AreaArray Radius="2" Fraction="1"/>
@@ -70,68 +85,154 @@
         <ImpactLocation Value="TargetPoint"/>
     </CEffectDamage>
 
-    <CActorAction id="Energion_Blast@Attack" parent="GenericAttack" effectLaunch="Energion_Blast@LM" effectImpact="Energion_Blast@Damage"/>
-    <CActorMissile id="Energion_Blast@AttackMissile" parent="GenericAttackMissile" unitName="Energion_Blast@AttackMissile"/>
-    <CActorModel id="Energion_Blast@Splat" parent="ModelAddition">
-        <On Terms="Effect.Energion_Blast@LM.Launch" Send="Create"/>
-        <On Terms="Effect.Energion_Blast@Damage.Start" Send="Destroy"/>
+    <CActorAction id="StormElemental_Blast@Attack" parent="GenericAttack" effectLaunch="StormElemental_Blast@LM" effectImpact="StormElemental_Blast@Damage"/>
+    <CActorMissile id="StormElemental_Blast@AttackMissile" parent="GenericAttackMissile" unitName="StormElemental_Blast@AttackMissile"/>
+    <CActorModel id="StormElemental_Blast@Splat" parent="ModelAddition">
+        <On Terms="Effect.StormElemental_Blast@LM.Launch" Send="Create"/>
+        <On Terms="Effect.StormElemental_Blast@Damage.Start; FromEffectTreeDescendant" Send="Destroy"/>
         <HostSiteOps Ops="SOpTargetPoint"/>
     </CActorModel>
     
-    <CModel id="Energion_Blast@AttackImpact" parent="ImpactFX">
+    <CModel id="StormElemental_Blast@AttackImpact" parent="ImpactFX">
         <EditorCategories value="Race:Beasts"/>
         <Model value="Assets\Effects\Protoss\AmonShards_Orange_AnimaShower_Missile_Impact\AmonShards_Orange_AnimaShower_Missile_Impact.m3"/>
         <ScaleMin value="0.50,0.50,0.50"/>
         <ScaleMax value="0.50,0.50,0.50"/>
     </CModel>
-    <CModel id="Energion_Blast@AttackMissile" parent="MissileFX">
+    <CModel id="StormElemental_Blast@AttackMissile" parent="MissileFX">
         <EditorCategories value="Race:Beasts"/>
         <Model value="Assets\Effects\Protoss\AmonShards_Orange_AnimaShower_Missile\AmonShards_Orange_AnimaShower_Missile.m3"/>
         <ScaleMin value="0.65,0.65,0.65"/>
         <ScaleMax value="0.65,0.65,0.65"/>
     </CModel>
-    <CModel id="Energion_Blast@Splat" parent="Splat">
+    <CModel id="StormElemental_Blast@Splat" parent="Splat">
         <ScaleMin value="0.50,0.50,0.50"/>
         <ScaleMax value="0.50,0.50,0.50"/>
         <Model value="Assets\UI\Cursors\ZergGenericAOECursor\ZergGenericAOECursor.m3"/>
     </CModel>
 
-    <CSound id="Energion_Blast@AttackLaunch" parent="Spell">
+    <CSound id="StormElemental_Blast@AttackLaunch" parent="Spell">
         <AssetArray File="Assets\Sounds\FenixChampion_ThunderousCharge_AttackLaunch01_1ch.wav"/>
         <AssetArray File="Assets\Sounds\FenixChampion_ThunderousCharge_AttackLaunch02_1ch.wav"/>
         <AssetArray File="Assets\Sounds\FenixChampion_ThunderousCharge_AttackLaunch03_1ch.wav"/>
     </CSound>
-    <CSound id="Energion_Blast@AttackImpact" parent="Spell">
+    <CSound id="StormElemental_Blast@AttackImpact" parent="Spell">
         <AssetArray File="Assets\Sounds\AC_StrikeFighter_BombBlast_01.wav"/>
         <AssetArray File="Assets\Sounds\AC_StrikeFighter_BombBlast_02.wav"/>
         <AssetArray File="Assets\Sounds\AC_StrikeFighter_BombBlast_03.wav"/>
     </CSound>
 
-    <CUnit id="Energion_Blast@AttackMissile" parent="MISSILE_INVULNERABLE"/>
-    <CMoverMissile id="Energion_Blast@AttackMissile" parent="RavasaurWeapon"/>
+    <CUnit id="StormElemental_Blast@AttackMissile" parent="MISSILE_INVULNERABLE"/>
+    <CMoverMissile id="StormElemental_Blast@AttackMissile" parent="RavasaurWeapon"/>
 
-    <CDataCollectionUnit id="Energion_Blast">
+    <CDataCollectionUnit id="StormElemental_Blast">
         <EditorCategories value="DataFamily:Campaign,DataGroup:Weapon,ObjectType:Projectile,Race:Beasts"/>
-        <DataRecord Entry="Weapon,Energion_Blast"/>
-        <DataRecord Entry="Effect,Energion_Blast"/>
-        <DataRecord Entry="Effect,Energion_Blast@Random"/>
-        <DataRecord Entry="Effect,Energion_Blast@LM"/>
-        <DataRecord Entry="Effect,Energion_Blast@Damage"/>
-        <DataRecord Entry="Actor,Energion_Blast@Attack"/>
-        <DataRecord Entry="Actor,Energion_Blast@AttackMissile"/>
-        <DataRecord Entry="Model,Energion_Blast@AttackImpact"/>
-        <DataRecord Entry="Model,Energion_Blast@AttackMissile"/>
-        <DataRecord Entry="Unit,Energion_Blast@AttackMissile"/>
-        <DataRecord Entry="Mover,Energion_Blast@AttackMissile"/>
+        <DataRecord Entry="Weapon,StormElemental_Blast"/>
+        <DataRecord Entry="Effect,StormElemental_Blast"/>
+        <DataRecord Entry="Effect,StormElemental_Blast@Random"/>
+        <DataRecord Entry="Effect,StormElemental_Blast@LM"/>
+        <DataRecord Entry="Effect,StormElemental_Blast@Damage"/>
+        <DataRecord Entry="Actor,StormElemental_Blast@Attack"/>
+        <DataRecord Entry="Actor,StormElemental_Blast@AttackMissile"/>
+        <DataRecord Entry="Model,StormElemental_Blast@AttackImpact"/>
+        <DataRecord Entry="Model,StormElemental_Blast@AttackMissile"/>
+        <DataRecord Entry="Unit,StormElemental_Blast@AttackMissile"/>
+        <DataRecord Entry="Mover,StormElemental_Blast@AttackMissile"/>
     </CDataCollectionUnit>
 
     <!-- Explode -->
+    <CButton id="StormElemental_Explode">
+        <Icon value="Assets/Textures/btn-ability-protoss-psistorm-color.dds"/>
+    </CButton>
+
+    <CAbilEffectInstant id="StormElemental_Explode">
+        <CmdButtonArray index="Execute" DefaultButtonFace="StormElemental_Explode"/>
+        <PrepTime value="3"/>
+        <FinishTime value="1.5"/>
+        <ProgressButtonArray index="Prep" value="StormElemental_Explode"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+    </CAbilEffectInstant>
+
+    <CEffectSet id="StormElemental_Explode">
+        <EffectArray value="StormElemental_Explode@Damage"/>
+        <EffectArray value="StormElemental_Explode@Search"/>
+    </CEffectSet>
+    <CEffectDamage id="StormElemental_Explode@Damage" parent="DU_WEAP_SPLASH">
+        <Amount value="75"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <AreaArray Radius="2" Fraction="1"/>
+        <AreaArray Radius="6" Fraction="0.25"/>
+        <SearchFilters value="-;Self,Invulnerable,Hidden,Missile"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="StormElemental_Explode@Search">
+        <AreaArray Radius="6" Effect="UnitKnockbackBy4"/>
+        <SearchFilters value="-;Self,Invulnerable,Hidden,Missile"/>
+    </CEffectEnumArea>
     
-    <CActorModel id="Energion_Explode@Model">
-        <On Terms="Abil.Energion_Explode.PrepStart" Send="Create"/>
+    <CActorModel id="StormElemental_Explode@ChargeModel" parent="ModelAnimationStyleOneShot">
+        <On Terms="Abil.StormElemental_Explode.SourcePrepStart" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetVisibility"/>
+        <On Terms="Abil.StormElemental_Explode.SourcePrepStop" Target="_Unit" Send="SetVisibility 1"/>
+        <On Terms="ActorCreation" Send="AnimSetTimeScale BSD 0.4"/>
+        <On Terms="Abil.StormElemental_Explode.SourcePrepStop" Send="AnimSetTimeScale BSD 1"/>
+        <HostSiteOps Ops="SOpAttachOrigin" HoldPosition="1"/>
     </CActorModel>
-    <CModel id="Energion_Explode@Model">
+    <CActorModel id="StormElemental_Explode@ImpactModel" parent="ModelAnimationStyleOneShot">
+        <On Terms="Abil.StormElemental_Explode.SourcePrepStop" Send="Create"/>
+        <HostSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorModel>
+    <CActorSplat id="StormElemental_Explode@Splat">
+        <On Terms="Effect.StormElemental_Explode@Damage.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="Print актор_сплата_создан"/>
+        <FadeIn value="1"/>
+        <FadeOut value="15"/>
+        <!-- <HoldTime value="10"/> -->
+        <!-- <Host Subject="_Unit"/>
+        <HostSiteOps Ops="SOpTargetPoint"/> -->
+    </CActorSplat>
+
+    <CActorSound id="StormElemental_Explode@ChargeSound" parent="SoundOneShot">
+        <On Terms="Abil.StormElemental_Explode.SourcePrepStart" Send="Create"/>
+    </CActorSound>
+    <CActorSound id="StormElemental_Explode@ImpactSound" parent="SoundOneShot">
+        <On Terms="Effect.StormElemental_Explode@Damage.Start" Send="Create"/>
+        <Layers Sound="StormElemental_Explode@ImpactSound_01">
+            <Chance value="100"/>
+        </Layers>
+        <Layers Sound="StormElemental_Explode@ImpactSound_02">
+            <PlayDelay value="1000"/>
+            <Chance value="100"/>
+        </Layers>
+    </CActorSound>
+
+    <CModel id="StormElemental_Explode@ChargeModel" parent="PersistentSpellFX">
         <Model value="Assets\Units\Neutral\Slayn_Elemental_Death\Slayn_Elemental_Death.m3"/>
     </CModel>
+    <CModel id="StormElemental_Explode@ImpactModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Void_Narud_Psionic_Shock_Wave\Void_Narud_Psionic_Shock_Wave.m3"/>
+    </CModel>
+    <CModel id="StormElemental_Explode@Splat" parent="Splat">
+        <Model value="Assets\Doodads\MarSaraCrack\MarSaraCrack_00.m3"/>
+    </CModel>
+
+    <CSound id="StormElemental_Explode@ChargeSound" parent="Spell">
+        <AssetArray File="Assets\Sounds\SlaynElemental_Zone_ChargeUp_01a.wav"/>
+        <AssetArray File="Assets\Sounds\SlaynElemental_Zone_ChargeUp_03.wav"/>
+        <AssetArray File="Assets\Sounds\SlaynElemental_Zone_ChargeUp_05.wav"/>
+        <AssetArray File="Assets\Sounds\SlaynElemental_Zone_ChargeUp_08.wav"/>
+        <AssetArray File="Assets\Sounds\SlaynElemental_Zone_ChargeUp_14.wav"/>
+    </CSound>
+    <CSound id="StormElemental_Explode@ImpactSound" parent="Spell">
+        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_01.wav"/>
+        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_02.wav"/>
+        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_03.wav"/>
+    </CSound>
+    <CSound id="StormElemental_Explode@ImpactSound_01" parent="Spell">
+        <AssetArray File="Assets\Sounds\SOA_OrbitalStrike_Impact08_1ch.wav"/>
+    </CSound>
+    <CSound id="StormElemental_Explode@ImpactSound_02" parent="Spell">
+        <AssetArray File="Assets\Sounds\Spell_Leap_Impact_00.wav"/>
+    </CSound>
 
 </Catalog>
