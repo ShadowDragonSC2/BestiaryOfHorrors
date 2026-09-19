@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Includes>
+    <Catalog path="GameData/BoH_constants.xml"/>
     <Catalog path="GameData/base.xml"/>
     <Catalog path="GameData/Beasts/Crystalisk.xml"/>
     <Catalog path="GameData/Beasts/Energion.xml"/>

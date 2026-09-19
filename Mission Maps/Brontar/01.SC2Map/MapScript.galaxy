@@ -1,0 +1,1026 @@
+//==================================================================================================
+// 
+// Generated Map Script
+// 
+// Name:   Just Another StarCraft II Map
+// 
+//==================================================================================================
+include "TriggerLibs/NativeLib"
+include "TriggerLibs/LibertyLib"
+include "TriggerLibs/VoidCampaignMissionLib"
+include "Lib1C156DFE"
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+void InitLibs () {
+    libNtve_InitLib();
+    libLbty_InitLib();
+    libVCMI_InitLib();
+    lib1C156DFE_InitLib();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Constants
+//--------------------------------------------------------------------------------------------------
+const int gv_p1_USERS = 1;
+const int gv_p3_BEASTS = 3;
+
+//--------------------------------------------------------------------------------------------------
+// Global Variables
+//--------------------------------------------------------------------------------------------------
+int gv_current_Cutscene;
+int gv_oBJECTIVE_MAIN;
+unit gv_kARAK_VICTIM;
+unit gv_sCANTIPEDE_HUNTER;
+unit gv_fIRST_HYDRALISK;
+unit gv_hERO;
+unit gv_aREA_01DEBRIS_ROCKS;
+unit gv_aREA_01ROCKSCANTIPEDE;
+unit gv_bOSS_STORM_ELEMENTAL;
+actor gv_pING_AREA_01_DEBRIS_ROCKS;
+actor gv_pING_AREA_01_ROCKS_SCANTIPEDE;
+int gv_scene_Brigde;
+bool gv_sceneBridge_isCreated;
+int gv_currentPoint;
+string gv_strpoint;
+revealer gv_revealerArena;
+revealer gv_revealerArenaP3;
+
+void InitGlobals () {
+    gv_current_Cutscene = c_cutsceneNone;
+    gv_oBJECTIVE_MAIN = c_invalidObjectiveId;
+    gv_kARAK_VICTIM = UnitFromId(292004532);
+    gv_sCANTIPEDE_HUNTER = UnitFromId(1935110580);
+    gv_fIRST_HYDRALISK = UnitFromId(686152563);
+    gv_hERO = UnitFromId(1250296474);
+    gv_aREA_01DEBRIS_ROCKS = UnitFromId(1245760615);
+    gv_aREA_01ROCKSCANTIPEDE = UnitFromId(494724233);
+    gv_bOSS_STORM_ELEMENTAL = UnitFromId(1034094003);
+    gv_scene_Brigde = c_cutsceneNone;
+    gv_currentPoint = 2;
+    gv_strpoint = "BOSS - Storm Elemental - Move";
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Variables
+//--------------------------------------------------------------------------------------------------
+trigger gt_Init;
+trigger gt_InitUnits;
+trigger gt_InitAutoRevealRegions;
+trigger gt_InitConversations;
+trigger gt_Area1MoveVassel1;
+trigger gt_Area1ExplodeRock;
+trigger gt_PingsExplodeRock;
+trigger gt_Karakdies;
+trigger gt_SceneBridge;
+trigger gt_CrushedBridge;
+trigger gt_EnterInCave;
+trigger gt_DefeatVasselIsDead;
+trigger gt_BossStormElementalInitQ;
+trigger gt_BossStormElementalEnd;
+trigger gt_StormElementalMoving;
+trigger gt_StormElementalAttackManager;
+trigger gt_StormElementalAttackVariant1;
+trigger gt_StormElementalAttackVariant2;
+trigger gt_Objective1Setup;
+trigger gt_Objectve1Incompletepart1;
+trigger gt_TransmissionExplodingRocks;
+trigger gt_TransmissionExplodingRocksZergsDies;
+trigger gt_ConvoIntroMission;
+trigger gt_ConvoRocksScantipede;
+trigger gt_KillSelectionPingScantipede;
+trigger gt_SceneBossElementalIntroSetup;
+trigger gt_into;
+trigger gt_DropVassel;
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Init
+//--------------------------------------------------------------------------------------------------
+bool gt_Init_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    RegionPlayableMapSet(RegionFromId(1));
+    libNtve_gf_ShowHideUnit(gv_hERO, false);
+
+    TriggerExecute(gt_into, true, false);
+    TriggerExecute(gt_InitUnits, true, false);
+    TriggerExecute(gt_InitAutoRevealRegions, true, false);
+    TriggerExecute(gt_InitConversations, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Init_Init () {
+    gt_Init = TriggerCreate("gt_Init_Func");
+    TriggerAddEventMapInit(gt_Init);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Init Units
+//--------------------------------------------------------------------------------------------------
+bool gt_InitUnits_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    unitgroup autoBCEC03CF_g;
+    int autoBCEC03CF_u;
+    unit autoBCEC03CF_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitSetPropertyFixed(gv_kARAK_VICTIM, c_unitPropLifeMax, 5.0);
+    libNtve_gf_MakeUnitInvulnerable(gv_aREA_01DEBRIS_ROCKS, true);
+    autoBCEC03CF_g = UnitGroupFromId(4);
+    autoBCEC03CF_u = UnitGroupCount(autoBCEC03CF_g, c_unitCountAll);
+    for (;; autoBCEC03CF_u -= 1) {
+        autoBCEC03CF_var = UnitGroupUnitFromEnd(autoBCEC03CF_g, autoBCEC03CF_u);
+        if (autoBCEC03CF_var == null) { break; }
+        UnitIssueOrder(autoBCEC03CF_var, OrderTargetingPoint(AbilityCommand("StoneScantipede_Eating", 0), UnitGetPosition(autoBCEC03CF_var)), c_orderQueueReplace);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_InitUnits_Init () {
+    gt_InitUnits = TriggerCreate("gt_InitUnits_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Init Auto-Reveal Regions
+//--------------------------------------------------------------------------------------------------
+bool gt_InitAutoRevealRegions_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libLbty_gf_AutoRevealRegion(RegionFromId(7), RegionFromId(7), gv_p1_USERS);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_InitAutoRevealRegions_Init () {
+    gt_InitAutoRevealRegions = TriggerCreate("gt_InitAutoRevealRegions_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Init Conversations
+//--------------------------------------------------------------------------------------------------
+bool gt_InitConversations_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    ConversationDataRegisterPortrait("char_Vassel", libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft));
+    ConversationDataRegisterPortrait("char_Alvine", libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft));
+    ConversationDataRegisterUnit("char_Vassel", UnitFromId(1250296474));
+    ConversationDataRegisterUnit("char_Alvine", UnitFromId(1680412882));
+    PortraitSetCamera(libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "Portrait");
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_InitConversations_Init () {
+    gt_InitConversations = TriggerCreate("gt_InitConversations_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Area 1 - Move Vassel 1
+//--------------------------------------------------------------------------------------------------
+bool gt_Area1MoveVassel1_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    unitgroup auto8698D993_g;
+    int auto8698D993_u;
+    unit auto8698D993_var;
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetOwner(EventUnit()) == gv_p1_USERS))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    UnitIssueOrder(gv_hERO, OrderTargetingPoint(AbilityCommand("move", 0), PointFromId(377668121)), c_orderQueueReplace);
+    libNtve_gf_MakeUnitUncommandable(gv_hERO, true);
+    CameraPan(gv_p1_USERS, PointFromId(1954198887), 2.0, -1, 10.0, false);
+    Wait(1.0, c_timeGame);
+    auto8698D993_g = UnitGroupFromId(2);
+    auto8698D993_u = UnitGroupCount(auto8698D993_g, c_unitCountAll);
+    for (;; auto8698D993_u -= 1) {
+        auto8698D993_var = UnitGroupUnitFromEnd(auto8698D993_g, auto8698D993_u);
+        if (auto8698D993_var == null) { break; }
+        lib1C156DFE_gf_UnburrowUnit(auto8698D993_var, AbilityCommand("BurrowZerglingUp", 0), AbilityCommand("move", 0), RegionRandomPoint(RegionCircle(UnitGetPosition(gv_fIRST_HYDRALISK), 2.0)), 2.0);
+        Wait(RandomFixed(0.15, 0.45), c_timeGame);
+    }
+    Wait(1.5, c_timeGame);
+    libNtve_gf_MakeUnitUncommandable(gv_hERO, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Area1MoveVassel1_Init () {
+    gt_Area1MoveVassel1 = TriggerCreate("gt_Area1MoveVassel1_Func");
+    TriggerAddEventUnitRegion(gt_Area1MoveVassel1, null, RegionFromId(7), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Area 1 - Explode Rock
+//--------------------------------------------------------------------------------------------------
+bool gt_Area1ExplodeRock_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    point lv__tPoint;
+    region lv__regPoint;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv__tPoint = EventPlayerEffectUsedPoint(c_effectLocationTargetPoint);
+    lv__regPoint = RegionCircle(lv__tPoint, 3.0);
+
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+
+        if (!((libNtve_gf_UnitInRegion(gv_aREA_01DEBRIS_ROCKS, lv__regPoint) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    UnitKill(gv_aREA_01DEBRIS_ROCKS);
+    libNtve_gf_KillModel(gv_pING_AREA_01_DEBRIS_ROCKS);
+    UISetButtonHighlighted(PlayerGroupAll(), AbilityCommand("Vassel_Grenade", 0), false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Area1ExplodeRock_Init () {
+    gt_Area1ExplodeRock = TriggerCreate("gt_Area1ExplodeRock_Func");
+    TriggerAddEventPlayerEffectUsed(gt_Area1ExplodeRock, 1, "Vassel_Grenade@Damage");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Pings - Explode Rock
+//--------------------------------------------------------------------------------------------------
+bool gt_PingsExplodeRock_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    fixed lv_delay;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_delay = 2.0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    UISetButtonHighlighted(PlayerGroupAll(), AbilityCommand("Vassel_Grenade", 0), true);
+    CameraPan(gv_p1_USERS, UnitGetPosition(gv_aREA_01DEBRIS_ROCKS), lv_delay, -1, 10.0, false);
+    Wait((lv_delay + 1.0), c_timeGame);
+    gv_pING_AREA_01_DEBRIS_ROCKS = lib1C156DFE_gf_CreateUnitSelectCampaign("BriefingUnitSelectRed", UnitGetPosition(gv_aREA_01DEBRIS_ROCKS));
+    TriggerEnable(gt_Area1ExplodeRock, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_PingsExplodeRock_Init () {
+    gt_PingsExplodeRock = TriggerCreate("gt_PingsExplodeRock_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Karak dies
+//--------------------------------------------------------------------------------------------------
+bool gt_Karakdies_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    unitgroup auto48BFD958_g;
+    int auto48BFD958_u;
+    unit auto48BFD958_var;
+
+    // Conditions
+    if (testConds) {
+        if (!((EventUnit() == gv_hERO))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    CameraPan(gv_p1_USERS, RegionGetCenter(RegionFromId(5)), 2.0, -1, 10.0, false);
+    VisRevealArea(gv_p1_USERS, RegionFromId(5), 12.0, false);
+    Wait(1.0, c_timeGame);
+    UnitIssueOrder(gv_hERO, OrderTargetingPoint(AbilityCommand("move", 0), PointFromId(593920457)), c_orderQueueReplace);
+    libNtve_gf_MakeUnitUncommandable(gv_hERO, true);
+    UnitIssueOrder(gv_sCANTIPEDE_HUNTER, OrderTargetingUnit(AbilityCommand("attack", 0), gv_kARAK_VICTIM), c_orderQueueReplace);
+    Wait(2.0, c_timeGame);
+    auto48BFD958_g = UnitGroupFromId(3);
+    auto48BFD958_u = UnitGroupCount(auto48BFD958_g, c_unitCountAll);
+    for (;; auto48BFD958_u -= 1) {
+        auto48BFD958_var = UnitGroupUnitFromEnd(auto48BFD958_g, auto48BFD958_u);
+        if (auto48BFD958_var == null) { break; }
+        lib1C156DFE_gf_UnburrowUnit(auto48BFD958_var, AbilityCommand("BurrowZerglingUp", 0), null, null, 0.0);
+    }
+    Wait(2.0, c_timeGame);
+    libNtve_gf_MakeUnitUncommandable(gv_hERO, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Karakdies_Init () {
+    gt_Karakdies = TriggerCreate("gt_Karakdies_Func");
+    TriggerAddEventUnitRegion(gt_Karakdies, null, RegionFromId(6), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Scene - Bridge
+//--------------------------------------------------------------------------------------------------
+bool gt_SceneBridge_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((gv_sceneBridge_isCreated == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    CutsceneCreateNoPosition("Cutscenes\\Cave_Bridge.SC2Cutscene", PlayerGroupAll(), true);
+    gv_scene_Brigde = CutsceneLastCreated();
+    gv_sceneBridge_isCreated = true;
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_SceneBridge_Init () {
+    gt_SceneBridge = TriggerCreate("gt_SceneBridge_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Crushed Bridge
+//--------------------------------------------------------------------------------------------------
+bool gt_CrushedBridge_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    CutsceneGoToBookmark(gv_scene_Brigde, "Crushed_Bridge");
+    CutscenePlay(gv_scene_Brigde);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_CrushedBridge_Init () {
+    gt_CrushedBridge = TriggerCreate("gt_CrushedBridge_Func");
+    TriggerAddEventUnitRegion(gt_CrushedBridge, UnitRefFromVariable("gv_hERO"), RegionFromId(4), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Enter In Cave
+//--------------------------------------------------------------------------------------------------
+bool gt_EnterInCave_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    UISetMode(PlayerGroupAll(), c_uiModeFullscreen, 1.5);
+    libNtve_gf_SwooshCamera(1, CameraInfoGetValue(CameraInfoDefault(), c_cameraValueDistance), ((CameraInfoGetValue(CameraInfoDefault(), c_cameraValueDistance)) - 8.0), RegionGetCenter(EventUnitRegion()), 1.5);
+    CinematicFade(false, 1.5, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    Wait(1.5, c_timeReal);
+    libNtve_gf_CinematicMode(true, PlayerGroupAll(), 0.0);
+    libNtve_gf_GlobalCinematicSetting(true);
+    UnitSelect(gv_hERO, 1, false);
+    RegionPlayableMapSet(RegionFromId(2));
+    GameSetLighting("Nomat8Cave", 0.0);
+    CameraApplyInfo(1, CameraInfoFromId(577807037), 0.0, -1, 10.0, true);
+    CinematicFade(true, 2.5, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, true);
+    CameraApplyInfo(1, CameraInfoFromId(979327880), 4.0, -1, 10.0, true);
+    UnitSetPosition(EventUnit(), PointFromId(240113568), false);
+    UnitIssueOrder(EventUnit(), OrderTargetingPoint(AbilityCommand("move", 0), PointFromId(1112006150)), c_orderQueueReplace);
+    UnitIssueOrder(EventUnit(), OrderTargetingPoint(AbilityCommand("move", 0), PointFromId(1518145710)), c_orderQueueAddToEnd);
+    Wait(3.5, c_timeReal);
+    TriggerExecute(gt_SceneBridge, true, true);
+    CinematicFade(false, 1.5, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, true);
+    libNtve_gf_GlobalCinematicSetting(false);
+    Wait(2.0, c_timeReal);
+    CameraApplyInfo(1, CameraInfoFromId(597725963), 0.0, -1, 10.0, true);
+    SoundChannelDSPInsert(PlayerGroupAll(), c_soundCategoryVoice, "ReverbCave");
+    SoundChannelDSPInsert(PlayerGroupAll(), c_soundCategoryCombat, "ReverbCave");
+    SoundChannelDSPInsert(PlayerGroupAll(), c_soundCategorySpell, "ReverbCave");
+    SoundChannelDSPInsert(PlayerGroupAll(), c_soundCategoryMovement, "ReverbCave");
+
+    CinematicFade(true, 1.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    libNtve_gf_SwooshCamera(1, ((CameraInfoGetValue(CameraInfoDefault(), c_cameraValueDistance)) - 6.0), CameraInfoGetValue(CameraInfoDefault(), c_cameraValueDistance), PlayerStartLocation(1), 1.5);
+    Wait(1.75, c_timeReal);
+    UnitSelect(gv_hERO, 1, true);
+    libNtve_gf_CinematicMode(false, PlayerGroupAll(), c_transitionDurationDefault);
+    Wait(4.5, c_timeReal);
+    UnitBehaviorAdd(gv_hERO, "Flashlight", gv_hERO, 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_EnterInCave_Init () {
+    gt_EnterInCave = TriggerCreate("gt_EnterInCave_Func");
+    TriggerAddEventUnitRegion(gt_EnterInCave, UnitRefFromVariable("gv_hERO"), RegionFromId(3), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Defeat - Vassel Is Dead
+//--------------------------------------------------------------------------------------------------
+bool gt_DefeatVasselIsDead_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    point lv_pos;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_pos = UnitGetPosition(EventUnit());
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    ObjectiveSetState(gv_oBJECTIVE_MAIN, c_objectiveStateFailed);
+    Wait(1.0, c_timeGame);
+    lib1C156DFE_gf_CinematicFailure(gv_p1_USERS, lv_pos, 3.0, StringExternal("Param/Value/F879049B"), 6.0);
+    GameOver(gv_p1_USERS, c_gameOverDefeat, true, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DefeatVasselIsDead_Init () {
+    gt_DefeatVasselIsDead = TriggerCreate("gt_DefeatVasselIsDead_Func");
+    TriggerAddEventUnitDied(gt_DefeatVasselIsDead, UnitRefFromVariable("gv_hERO"));
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Boss - Storm Elemental - Init Q
+//--------------------------------------------------------------------------------------------------
+bool gt_BossStormElementalInitQ_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_DisplayBossBar(1, (CatalogFieldValueGet(c_gameCatalogActor, ((UnitGetType(gv_bOSS_STORM_ELEMENTAL))), "HeroIcon", c_playerAny)), UnitGetName(gv_bOSS_STORM_ELEMENTAL), UnitGetPropertyInt(gv_bOSS_STORM_ELEMENTAL, c_unitPropLife, c_unitPropCurrent), PlayerGroupAll());
+    libNtve_gf_SetBossBarBoss(1, gv_bOSS_STORM_ELEMENTAL, true);
+    VisRevealerCreate(gv_p1_USERS, RegionFromId(12));
+    gv_revealerArena = VisRevealerLastCreated();
+    VisRevealerCreate(gv_p3_BEASTS, RegionFromId(12));
+    gv_revealerArenaP3 = VisRevealerLastCreated();
+    libNtve_gf_ShowHideBossBar(true, 1);
+    SoundtrackPlay(PlayerGroupAll(), c_soundtrackCategoryMusic, "nDLC_Music_Nova01_BossFight", c_soundtrackCueAny, c_soundtrackIndexAny, true);
+    TriggerExecute(gt_StormElementalAttackManager, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_BossStormElementalInitQ_Init () {
+    gt_BossStormElementalInitQ = TriggerCreate("gt_BossStormElementalInitQ_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Boss - Storm Elemental - End
+//--------------------------------------------------------------------------------------------------
+bool gt_BossStormElementalEnd_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    CameraPan(gv_p1_USERS, UnitGetPosition(EventUnit()), 3.0, -1, 10.0, false);
+    CameraLockInput(gv_p1_USERS, true);
+    Wait(5.0, c_timeGame);
+    CameraLockInput(gv_p1_USERS, false);
+    Wait(2.0, c_timeGame);
+    VisRevealerDestroy(gv_revealerArena);
+    VisRevealerDestroy(gv_revealerArenaP3);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_BossStormElementalEnd_Init () {
+    gt_BossStormElementalEnd = TriggerCreate("gt_BossStormElementalEnd_Func");
+    TriggerAddEventUnitDied(gt_BossStormElementalEnd, UnitRefFromVariable("gv_bOSS_STORM_ELEMENTAL"));
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Storm Elemental - Moving
+//--------------------------------------------------------------------------------------------------
+bool gt_StormElementalMoving_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    point lv__point;
+    order lv__ord;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv__point = libNtve_gf_PointOffsetTowardsPoint(UnitGetPosition(gv_bOSS_STORM_ELEMENTAL), MinF(DistanceBetweenPoints(UnitGetPosition(gv_bOSS_STORM_ELEMENTAL), UnitGetPosition(gv_hERO)), libNtve_gf_CatalogFieldValueGetAsReal(c_gameCatalogAbil, "StormElemental_Blast", "Range[" + IntToString(0) + "]", c_playerAny)), UnitGetPosition(gv_hERO));
+    lv__ord = OrderTargetingPoint(AbilityCommand("StormElemental_Blast", 0), lv__point);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((libNtve_gf_RandomPercent() <= 75.0)) {
+        if (gv_currentPoint >= 3) {
+            gv_currentPoint = 1;
+        }
+        else {
+            gv_currentPoint = gv_currentPoint + 1;
+        }
+    }
+
+    while (!((UnitOrderCount(gv_bOSS_STORM_ELEMENTAL) == 0))) {
+        Wait(0.1, c_timeGame);
+    }
+    UnitIssueOrder(gv_bOSS_STORM_ELEMENTAL, OrderTargetingPoint(AbilityCommand("move", 0), PointFromName((gv_strpoint + " " + IntToString(gv_currentPoint)))), c_orderQueueReplace);
+    Wait(1.0, c_timeGame);
+    UnitIssueOrder(gv_bOSS_STORM_ELEMENTAL, lv__ord, c_orderQueueReplace);
+    UnitIssueOrder(gv_bOSS_STORM_ELEMENTAL, OrderTargetingPoint(AbilityCommand("move", 4), PointFromId(824813908)), c_orderQueueAddToEnd);
+    Wait(4.0, c_timeGame);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_StormElementalMoving_Init () {
+    gt_StormElementalMoving = TriggerCreate("gt_StormElementalMoving_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Storm Elemental - Attack Manager
+//--------------------------------------------------------------------------------------------------
+bool gt_StormElementalAttackManager_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_stage;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while ((UnitIsAlive(gv_bOSS_STORM_ELEMENTAL) == true)) {
+        if (((lv_stage >= 0) && (lv_stage <= 2))) {
+            TriggerExecute(gt_StormElementalAttackVariant1, true, true);
+        }
+        else if (true) {
+            TriggerExecute(gt_StormElementalAttackVariant2, true, true);
+            lv_stage = 0;
+            continue;
+        }
+        TriggerExecute(gt_StormElementalMoving, true, true);
+        lv_stage += 1;
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_StormElementalAttackManager_Init () {
+    gt_StormElementalAttackManager = TriggerCreate("gt_StormElementalAttackManager_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Storm Elemental - Attack Variant 1
+//--------------------------------------------------------------------------------------------------
+bool gt_StormElementalAttackVariant1_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    point lv__point;
+    order lv__ord;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv__point = libNtve_gf_PointOffsetTowardsPoint(UnitGetPosition(gv_bOSS_STORM_ELEMENTAL), MinF(DistanceBetweenPoints(UnitGetPosition(gv_bOSS_STORM_ELEMENTAL), UnitGetPosition(gv_hERO)), libNtve_gf_CatalogFieldValueGetAsReal(c_gameCatalogAbil, "StormElemental_Blast", "Range[" + IntToString(0) + "]", c_playerAny)), UnitGetPosition(gv_hERO));
+    lv__ord = OrderTargetingPoint(AbilityCommand("StormElemental_Blast", 0), lv__point);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while (!((UnitOrderCount(gv_bOSS_STORM_ELEMENTAL) == 0))) {
+        Wait(0.1, c_timeGame);
+    }
+    UnitIssueOrder(gv_bOSS_STORM_ELEMENTAL, lv__ord, c_orderQueueReplace);
+    Wait(5.0, c_timeGame);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_StormElementalAttackVariant1_Init () {
+    gt_StormElementalAttackVariant1 = TriggerCreate("gt_StormElementalAttackVariant1_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Storm Elemental - Attack Variant 2
+//--------------------------------------------------------------------------------------------------
+bool gt_StormElementalAttackVariant2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while (!((UnitOrderCount(gv_bOSS_STORM_ELEMENTAL) == 0))) {
+        Wait(0.1, c_timeGame);
+    }
+    UnitIssueOrder(gv_bOSS_STORM_ELEMENTAL, OrderTargetingPoint(AbilityCommand("move", 0), PointFromId(824813908)), c_orderQueueReplace);
+    UnitIssueOrder(gv_bOSS_STORM_ELEMENTAL, Order(AbilityCommand("StormElemental_Explode", 0)), c_orderQueueReplace);
+    Wait(5.0, c_timeGame);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_StormElementalAttackVariant2_Init () {
+    gt_StormElementalAttackVariant2 = TriggerCreate("gt_StormElementalAttackVariant2_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective 1 - Setup
+//--------------------------------------------------------------------------------------------------
+bool gt_Objective1Setup_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    ObjectiveCreate(StringExternal("Param/Value/D6D4AD0F"), StringToText(""), c_objectiveStateActive, true);
+    gv_oBJECTIVE_MAIN = ObjectiveLastCreated();
+    TriggerEnable(gt_Objectve1Incompletepart1, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Objective1Setup_Init () {
+    gt_Objective1Setup = TriggerCreate("gt_Objective1Setup_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objectve 1 - Incomplete part 1
+//--------------------------------------------------------------------------------------------------
+bool gt_Objectve1Incompletepart1_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Objectve1Incompletepart1_Init () {
+    gt_Objectve1Incompletepart1 = TriggerCreate("gt_Objectve1Incompletepart1_Func");
+    TriggerEnable(gt_Objectve1Incompletepart1, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Transmission - Exploding Rocks
+//--------------------------------------------------------------------------------------------------
+bool gt_TransmissionExplodingRocks_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((EventUnit() == gv_hERO))) {
+            return false;
+        }
+
+        if (!((UnitGroupCount(UnitGroupAlliance(gv_p1_USERS, c_unitAllianceEnemy, EventUnitRegion(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) == 0))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    TriggerEnable(gt_TransmissionExplodingRocksZergsDies, false);
+    TriggerExecute(gt_PingsExplodeRock, true, false);
+    TriggerQueueEnter();
+    libVCMI_gf_SendTransmissionCampaign(gv_hERO, "BOH_Mission01_MiscConvo|Line00002", c_transmissionDurationAdd, 5.0, true, libVCMI_ge_MissionTransmissionPortraitOptioins_HidePortraitAfter, libVCMI_ge_MissionTransmissionCueSoundOptions_DefaultCueSoundBehavior);
+    TriggerQueueExit();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_TransmissionExplodingRocks_Init () {
+    gt_TransmissionExplodingRocks = TriggerCreate("gt_TransmissionExplodingRocks_Func");
+    TriggerAddEventUnitRegion(gt_TransmissionExplodingRocks, null, RegionFromId(9), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Transmission - Exploding Rocks (Zergs Dies)
+//--------------------------------------------------------------------------------------------------
+bool gt_TransmissionExplodingRocksZergsDies_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGroupCount(UnitGroupAlliance(gv_p1_USERS, c_unitAllianceEnemy, RegionFromId(9), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) == 0))) {
+            return false;
+        }
+
+        if (!((libNtve_gf_UnitInRegion(gv_hERO, RegionFromId(9)) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    TriggerExecute(gt_TransmissionExplodingRocks, false, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_TransmissionExplodingRocksZergsDies_Init () {
+    gt_TransmissionExplodingRocksZergsDies = TriggerCreate("gt_TransmissionExplodingRocksZergsDies_Func");
+    TriggerAddEventUnitDied(gt_TransmissionExplodingRocksZergsDies, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Convo - Intro Mission
+//--------------------------------------------------------------------------------------------------
+bool gt_ConvoIntroMission_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerQueueEnter();
+    ConversationDataRun("BOH_Mission01_Intro", PlayerGroupAll(), c_conversationSkipSimple, true);
+    TriggerExecute(gt_Objective1Setup, true, false);
+    libNtve_gf_CinematicMode(false, PlayerGroupAll(), c_transitionDurationDefault);
+    libNtve_gf_GlobalCinematicSetting(false);
+    TriggerQueueExit();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ConvoIntroMission_Init () {
+    gt_ConvoIntroMission = TriggerCreate("gt_ConvoIntroMission_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Convo - Rocks Scantipede
+//--------------------------------------------------------------------------------------------------
+bool gt_ConvoRocksScantipede_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetOwner(EventUnit()) == gv_p1_USERS))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    VisRevealArea(1, EventUnitRegion(), 5.0, false);
+    CameraPan(1, UnitGetPosition(UnitFromId(494724233)), 2.0, -1, 10.0, false);
+    gv_pING_AREA_01_ROCKS_SCANTIPEDE = lib1C156DFE_gf_CreateUnitSelectCampaign("BriefingUnitSelectSmall", UnitGetPosition(gv_aREA_01ROCKSCANTIPEDE));
+    TriggerEnable(gt_KillSelectionPingScantipede, true);
+    TriggerQueueEnter();
+    ConversationDataRun("BOH_Mission01_RockScantipede", PlayerGroupAll(), c_conversationSkipNone, true);
+    TriggerQueueExit();
+    Wait(2.0, c_timeGame);
+    TriggerEnable(gt_KillSelectionPingScantipede, false);
+    libNtve_gf_KillModel(gv_pING_AREA_01_ROCKS_SCANTIPEDE);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ConvoRocksScantipede_Init () {
+    gt_ConvoRocksScantipede = TriggerCreate("gt_ConvoRocksScantipede_Func");
+    TriggerAddEventUnitRegion(gt_ConvoRocksScantipede, null, RegionFromId(10), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Kill Selection Ping Scantipede
+//--------------------------------------------------------------------------------------------------
+bool gt_KillSelectionPingScantipede_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(gt_KillSelectionPingScantipede, false);
+    libNtve_gf_KillModel(gv_pING_AREA_01_ROCKS_SCANTIPEDE);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_KillSelectionPingScantipede_Init () {
+    gt_KillSelectionPingScantipede = TriggerCreate("gt_KillSelectionPingScantipede_Func");
+    TriggerEnable(gt_KillSelectionPingScantipede, false);
+    TriggerAddEventUnitDied(gt_KillSelectionPingScantipede, UnitRefFromVariable("gv_aREA_01ROCKSCANTIPEDE"));
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Scene - Boss Elemental Intro - Setup
+//--------------------------------------------------------------------------------------------------
+bool gt_SceneBossElementalIntroSetup_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unitgroup lv_units;
+
+    // Automatic Variable Declarations
+    unitgroup auto3BF86976_g;
+    int auto3BF86976_u;
+    unit auto3BF86976_var;
+    unitgroup auto5C56847B_g;
+    int auto5C56847B_u;
+    unit auto5C56847B_var;
+
+    // Variable Initialization
+    lv_units = UnitGroup(null, c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    SoundtrackPause(PlayerGroupAll(), c_soundtrackCategoryMusic, true, true);
+    CinematicFade(false, 2.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    lib1C156DFE_gf_CinematicModeTransition(true, PlayerGroupAll(), 1.5);
+    CutsceneFade(false, 0.0, Color(0,0,0), 100.0, PlayerGroupAll(), true);
+    CutsceneCreateNoPosition("Cutscenes\\Intro_Two_Boss.SC2Cutscene", PlayerGroupAll(), true);
+    CinematicFade(true, 0.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    libNtve_gf_GlobalCinematicSetting(true);
+    auto3BF86976_g = lv_units;
+    auto3BF86976_u = UnitGroupCount(auto3BF86976_g, c_unitCountAll);
+    for (;; auto3BF86976_u -= 1) {
+        auto3BF86976_var = UnitGroupUnitFromEnd(auto3BF86976_g, auto3BF86976_u);
+        if (auto3BF86976_var == null) { break; }
+        UnitIssueOrder(auto3BF86976_var, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
+        libNtve_gf_PauseUnit(auto3BF86976_var, true);
+        libNtve_gf_ShowHideUnit(auto3BF86976_var, false);
+    }
+    gv_current_Cutscene = CutsceneLastCreated();
+    WaitForCutsceneToEnd(gv_current_Cutscene);
+    UnitSetPosition(gv_hERO, PointFromId(1865282616), false);
+    auto5C56847B_g = lv_units;
+    auto5C56847B_u = UnitGroupCount(auto5C56847B_g, c_unitCountAll);
+    for (;; auto5C56847B_u -= 1) {
+        auto5C56847B_var = UnitGroupUnitFromEnd(auto5C56847B_g, auto5C56847B_u);
+        if (auto5C56847B_var == null) { break; }
+        libNtve_gf_PauseUnit(auto5C56847B_var, false);
+        libNtve_gf_ShowHideUnit(auto5C56847B_var, true);
+    }
+    CameraPan(gv_p1_USERS, UnitGetPosition(gv_hERO), 0.0, -1, 10.0, false);
+    libNtve_gf_GlobalCinematicSetting(false);
+    CutsceneFade(true, 0.0, Color(0,0,0), 100.0, PlayerGroupAll(), false);
+    CinematicFade(false, 0.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    libNtve_gf_ShowHideUnit(gv_bOSS_STORM_ELEMENTAL, true);
+    CinematicFade(true, 2.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    SoundtrackPause(PlayerGroupAll(), c_soundtrackCategoryMusic, false, true);
+    Wait(1.0, c_timeReal);
+    lib1C156DFE_gf_CinematicModeTransition(false, PlayerGroupAll(), 1.0);
+    TriggerExecute(gt_BossStormElementalInitQ, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_SceneBossElementalIntroSetup_Init () {
+    gt_SceneBossElementalIntroSetup = TriggerCreate("gt_SceneBossElementalIntroSetup_Func");
+    TriggerAddEventUnitRegion(gt_SceneBossElementalIntroSetup, UnitRefFromVariable("gv_hERO"), RegionFromId(11), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: into
+//--------------------------------------------------------------------------------------------------
+bool gt_into_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    SoundtrackPlay(PlayerGroupAll(), c_soundtrackCategoryMusic, "nDLC_Music_Cue03", c_soundtrackCueAny, c_soundtrackIndexAny, true);
+    libNtve_gf_CinematicMode(true, PlayerGroupAll(), c_transitionDurationDefault);
+    libNtve_gf_GlobalCinematicSetting(true);
+    CinematicFade(false, 0.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    CinematicFade(true, 2.0, c_fadeStyleNormal, Color(0.00, 0.00, 0.00), 0.0, false);
+    CameraApplyInfo(1, CameraInfoFromId(1876192207), 0.0, -1, 10.0, true);
+    CameraApplyInfo(1, CameraInfoFromId(505469056), 8.0, 0.0, 10.0, true);
+    Wait(4.0, c_timeReal);
+    TriggerExecute(gt_DropVassel, true, false);
+    CameraShake(1, "Medium", "Earthquake", 0.35, 0.7, 3.0);
+    Wait(4.0, c_timeReal);
+    TriggerExecute(gt_ConvoIntroMission, true, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_into_Init () {
+    gt_into = TriggerCreate("gt_into_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Drop Vassel
+//--------------------------------------------------------------------------------------------------
+bool gt_DropVassel_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libVCMI_gf_CreateDropPod(libVCMI_ge_DropPodRace_Terran, PointFromId(140775476), libNtve_gf_ConvertUnitToUnitGroup(gv_hERO), true, 1);
+    UnitIssueOrder(gv_hERO, OrderTargetingPoint(AbilityCommand("move", 0), PointFromId(1697232886)), c_orderQueueAddToEnd);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DropVassel_Init () {
+    gt_DropVassel = TriggerCreate("gt_DropVassel_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Initialization
+//--------------------------------------------------------------------------------------------------
+void InitTriggers () {
+    gt_Init_Init();
+    gt_InitUnits_Init();
+    gt_InitAutoRevealRegions_Init();
+    gt_InitConversations_Init();
+    gt_Area1MoveVassel1_Init();
+    gt_Area1ExplodeRock_Init();
+    gt_PingsExplodeRock_Init();
+    gt_Karakdies_Init();
+    gt_SceneBridge_Init();
+    gt_CrushedBridge_Init();
+    gt_EnterInCave_Init();
+    gt_DefeatVasselIsDead_Init();
+    gt_BossStormElementalInitQ_Init();
+    gt_BossStormElementalEnd_Init();
+    gt_StormElementalMoving_Init();
+    gt_StormElementalAttackManager_Init();
+    gt_StormElementalAttackVariant1_Init();
+    gt_StormElementalAttackVariant2_Init();
+    gt_Objective1Setup_Init();
+    gt_Objectve1Incompletepart1_Init();
+    gt_TransmissionExplodingRocks_Init();
+    gt_TransmissionExplodingRocksZergsDies_Init();
+    gt_ConvoIntroMission_Init();
+    gt_ConvoRocksScantipede_Init();
+    gt_KillSelectionPingScantipede_Init();
+    gt_SceneBossElementalIntroSetup_Init();
+    gt_into_Init();
+    gt_DropVassel_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Map Initialization
+//--------------------------------------------------------------------------------------------------
+void InitMap () {
+    InitLibs();
+    InitGlobals();
+    InitTriggers();
+}

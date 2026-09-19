@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CutsceneState cutsceneVersion="1.300000">
+    <CCutsceneNodeFolder guid="12208691919230460843" name="BRIDGE">
+        <CCutsceneNodeActor guid="11857444446076422760" name="Chiseled Rock" position="152.638275,6.794319,8.399345" scale="3.640149,3.640149,3.640149" rotation="-0.000021,43.999706,-114.000038" fogVisibility="1" modelLink="ChiseledRock" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="4753679554807089768" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="11321323469726042728" name="Animation Layer">
+                <CCutsceneElementAnim guid="4713160292170746472" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="3333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="10680540271217658891" name="Chiseled Rock Ex1 Large" position="153.281586,5.127251,8.375584" scale="1.668597,1.668597,1.668597" rotation="75.500053,0.000000,-90.000000" fogVisibility="1" modelLink="ChiseledRockEx1Large" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="6790342998274001931" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="10589572528531121051" name="Animation Layer">
+                <CCutsceneElementAnim guid="5243138487612679067" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="13333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="9882042797809463042" name="Chiseled Rock Ex1 Large" position="155.178055,4.905891,8.515244" scale="1.656662,1.656662,1.656662" rotation="82.146271,25.339376,-103.531364" fogVisibility="1" modelLink="ChiseledRockEx1Large" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="6060924752357486338" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="11224990111088004612" name="Animation Layer">
+                <CCutsceneElementAnim guid="8536474088555433476" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="13333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="13786021088282965556" name="Chiseled Rock Large" position="154.366379,1.686920,7.932488" scale="1.688043,1.688043,1.688043" rotation="-68.499962,-0.000003,-90.000000" fogVisibility="1" modelLink="ChiseledRockLarge" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="8428176792432834100" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="13233332125283061048" name="Animation Layer">
+                <CCutsceneElementAnim guid="4798028304538078520" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="13333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="12795032399355530351" name="Chiseled Rock Ex1" position="155.025986,1.731850,8.264012" scale="3.186959,3.186959,3.186959" rotation="2.423766,22.956467,-59.569038" fogVisibility="1" modelLink="ChiseledRockEx1" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="6250428986819824751" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="12512297143933732066" name="Animation Layer">
+                <CCutsceneElementAnim guid="6005764274265130210" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="3333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="11723843271476620806" name="Chiseled Rock Ex1 Large" position="154.680634,0.275452,7.887206" scale="1.825638,1.639312,1.820439" rotation="89.075630,3.286236,-254.203125" fogVisibility="1" modelLink="ChiseledRockEx1Large" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="7025570854095793670" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="12479364732223467014" name="Animation Layer">
+                <CCutsceneElementAnim guid="8618268568539606534" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="13333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="10473711632700501654" name="Chiseled Rock" position="155.278992,-3.065418,7.468081" scale="2.632210,2.632210,2.632210" rotation="-342.836365,36.000385,-78.037750" fogVisibility="1" modelLink="ChiseledRock" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="5247984538079817366" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="12342350164004794006" name="Animation Layer">
+                <CCutsceneElementAnim guid="9070095081754422934" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="3333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="10815301316470296324" name="Chiseled Rock" position="154.404694,-3.091194,7.165389" scale="3.115005,2.990291,2.583243" rotation="21.499996,36.999977,-90.000000" fogVisibility="1" modelLink="ChiseledRock" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="5226277983551409924" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="11144500835902738180" name="Animation Layer">
+                <CCutsceneElementAnim guid="6242743678470115076" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="3333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="13305566394550049899" name="Chiseled Rock Ex1 Large" position="155.971420,-1.037823,8.180452" scale="1.104922,1.104922,1.104922" rotation="89.027954,-3.983587,89.756851" fogVisibility="1" modelLink="ChiseledRockEx1Large" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="6026851258928192619" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="11520883697809611883" name="Animation Layer">
+                <CCutsceneElementAnim guid="8161467790499765355" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="13333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="13447580089482470935" name="Chiseled Rock Large" position="155.376984,-4.803978,5.199314" scale="1.909683,1.909683,1.909683" rotation="-66.835411,-6.647847,-93.120155" fogVisibility="1" modelLink="ChiseledRockLarge" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="8117778489806415383" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="12460932492779054615" name="Animation Layer">
+                <CCutsceneElementAnim guid="6720764415990818327" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="13333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="12937757741670600396" name="Chiseled Rock Ex1" position="151.337814,-0.278488,0.479071" scale="2.979259,2.979259,2.979259" rotation="131.423340,-49.845943,62.916821" fogVisibility="1" modelLink="ChiseledRockEx1" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="5495759348298026700" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="12012048433747988172" name="Animation Layer">
+                <CCutsceneElementAnim guid="5058036665404493516" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="3333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+            <CCutsceneNodePropertyValue guid="9851463460033950960" name="Property - Position Z" propertyName="positionZ">
+                <CCutsceneElementPropertyCurve guid="4760497282222159088" start="1510" value="6.744011" time="1510.000000" curveInValue="1509.000000,6.744011" curveOutValue="1616.666626,4.655698" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6707607717882655984" start="1830" value="0.479071" time="1830.000000" curveInValue="1723.333374,2.567385" curveOutValue="1901.666626,0.479071" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6532586184617021041" start="2045" value="0.479071" time="2045.000000" curveInValue="1973.333252,0.479071" curveOutValue="2119.666748,0.479071" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6571727918125361291" start="2269" value="0.479071" time="2269.000000" curveInValue="2194.333252,0.479071" curveOutValue="2270.000000,0.479071" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12584354224657213579" name="Property - Position Y" propertyName="positionY">
+                <CCutsceneElementPropertyCurve guid="7998801858160306315" start="1830" value="-1.178703" time="1830.000000" curveInValue="1829.000000,-1.178703" curveOutValue="1901.666626,-1.043318" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7633345440262966897" start="2045" value="-0.772549" time="2045.000000" curveInValue="1973.333252,-0.919276" curveOutValue="2119.666748,-0.619679" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8005752408030390411" start="2269" value="-0.278488" time="2269.000000" curveInValue="2194.333252,-0.278488" curveOutValue="2270.000000,-0.278488" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13047395271148099287" name="Property - Position X" propertyName="positionX">
+                <CCutsceneElementPropertyCurve guid="6618635110929716951" start="1830" value="154.206223" time="1830.000000" curveInValue="1829.000000,154.206223" curveOutValue="1901.666626,153.721161" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8678985907425562225" start="2045" value="152.751053" time="2045.000000" curveInValue="1973.333252,153.243057" curveOutValue="2112.666748,152.286514" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7096232217301615598" start="2248" value="151.337814" time="2248.000000" curveInValue="2180.333252,151.337814" curveOutValue="2249.000000,151.337814" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12767771434621799615" name="Property - Rotation X" propertyName="rotationX">
+                <CCutsceneElementPropertyCurve guid="4867738375681150143" start="1830" value="0.000002" time="1830.000000" curveInValue="1829.000000,0.000002" curveOutValue="1956.000000,43.807781" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="4820801753299750079" start="2208" value="131.423340" time="2208.000000" curveInValue="2082.000000,87.615555" curveOutValue="2209.000000,131.423340" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10917772017705094335" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                <CCutsceneElementPropertyCurve guid="8378593721746394303" start="1830" value="-90.000000" time="1830.000000" curveInValue="1829.000000,-90.000000" curveOutValue="1948.666626,-39.027725" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8380656096322456767" start="2186" value="62.916821" time="2186.000000" curveInValue="2067.333252,11.944546" curveOutValue="2187.000000,62.916821" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9404791115846321727" name="Property - Rotation Y" propertyName="rotationY">
+                <CCutsceneElementPropertyCurve guid="8796739023654946367" start="1830" value="-76.991142" time="1830.000000" curveInValue="1829.000000,-76.991142" curveOutValue="1931.000000,-67.942741" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5529799435879777855" start="2133" value="-49.845943" time="2133.000000" curveInValue="2032.000000,-58.894344" curveOutValue="2134.000000,-49.845943" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="13025675984138874662" name="Chiseled Rock Ex1" position="152.913300,4.361885,0.735117" scale="3.230842,3.230842,3.230842" rotation="-92.047195,-45.928795,-64.323196" fogVisibility="1" modelLink="ChiseledRockEx1" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="6525734785463037734" duration="5000" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="13321598732617068326" name="Animation Layer">
+                <CCutsceneElementAnim guid="8093645376058240806" duration="5000" lockedToEnd="1" anim="Stand" priority="3" originalDuration="3333" looping="1"/>
+            </CCutsceneNodeAnimLayer>
+            <CCutsceneNodePropertyValue guid="12267261687068609112" name="Property - Position Z" propertyName="positionZ">
+                <CCutsceneElementPropertyCurve guid="9039198067186891184" start="1274" value="7.416178" time="1274.000000" curveInValue="1273.000000,7.416178" curveOutValue="1371.666626,5.189157" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6571351932404922800" start="1567" value="0.735117" time="1567.000000" curveInValue="1469.333374,2.962137" curveOutValue="1714.666626,0.735117" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="4666643174374589889" start="2010" value="0.735117" time="2010.000000" curveInValue="1862.333374,0.735117" curveOutValue="2011.000000,0.735117" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12956730986739507642" name="Property - Rotation X" propertyName="rotationX">
+                <CCutsceneElementPropertyCurve guid="5544880081214087610" start="1274" value="17.969769" time="1274.000000" curveInValue="1273.000000,17.969769" curveOutValue="1373.666626,17.969769" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5668653450846537175" start="1573" value="17.969769" time="1573.000000" curveInValue="1473.333374,17.969769" curveOutValue="1718.666626,-18.702557" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7532700117134438003" start="2010" value="-92.047195" time="2010.000000" curveInValue="1864.333374,-55.374870" curveOutValue="2011.000000,-92.047195" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13030256795725557363" name="Property - Rotation Y" propertyName="rotationY">
+                <CCutsceneElementPropertyCurve guid="8824258974168084083" start="1274" value="-64.153862" time="1274.000000" curveInValue="1273.000000,-64.153862" curveOutValue="1373.666626,-64.153862" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7752341522942526935" start="1573" value="-64.153862" time="1573.000000" curveInValue="1473.333374,-64.153862" curveOutValue="1718.666626,-58.078838" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8342155114304728691" start="2010" value="-45.928795" time="2010.000000" curveInValue="1864.333374,-52.003819" curveOutValue="2011.000000,-45.928795" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12403514779683483251" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                <CCutsceneElementPropertyCurve guid="8085349437604851315" start="1274" value="-47.181290" time="1274.000000" curveInValue="1273.000000,-47.181290" curveOutValue="1519.333374,-52.895260" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6851752998181760627" start="2010" value="-64.323196" time="2010.000000" curveInValue="1764.666626,-58.609226" curveOutValue="2011.000000,-64.323196" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10665020828133187103" name="Property - Position Y" propertyName="positionY">
+                <CCutsceneElementPropertyCurve guid="8601907371996805920" start="1274" value="1.509094" time="1274.000000" curveInValue="1273.000000,1.509094" curveOutValue="1373.666626,1.509094" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8151837855945870810" start="1573" value="1.509094" time="1573.000000" curveInValue="1473.333374,1.509094" curveOutValue="1718.666626,2.460025" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6237205649922390816" start="2010" value="4.361885" time="2010.000000" curveInValue="1864.333374,3.410955" curveOutValue="2011.000000,4.361885" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10226631116437313362" name="Property - Position X" propertyName="positionX">
+                <CCutsceneElementPropertyCurve guid="6246653467698663427" start="1274" value="154.367676" time="1274.000000" curveInValue="1273.000000,154.367676" curveOutValue="1373.666626,154.367676" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="9066571701361069530" start="1573" value="154.367676" time="1573.000000" curveInValue="1473.333374,154.367676" curveOutValue="1718.666626,153.882889" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8932342130440146947" start="2010" value="152.913300" time="2010.000000" curveInValue="1864.333374,153.398087" curveOutValue="2011.000000,152.913300" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeSound guid="11857998895064817325" name="RockDebris_ImpactExplosion_Large" position="150.450241,-2.190990,7.999763" soundLink="RockDebris_ImpactExplosion_Large" soundIndex="4" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+            <CCutsceneElementObject guid="6703783873505926829" start="1018" duration="3314"/>
+        </CCutsceneNodeSound>
+        <CCutsceneNodeSound guid="13547130865930698660" name="Temple_RockExplosion_Medium" position="149.027283,-2.626659,7.999762" soundLink="Temple_RockExplosion_Medium" soundIndex="7" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+            <CCutsceneElementObject guid="5880392733927374756" start="1321" duration="2834"/>
+        </CCutsceneNodeSound>
+    </CCutsceneNodeFolder>
+    <CCutsceneNodeDirector guid="10201039727463793345" name="Director">
+        <CCutsceneNodeBookmark guid="9404093009498387904" name="Bookmarks">
+            <CCutsceneElementBookmark guid="6066512917784868288" start="255" pauseWhenHit="1"/>
+            <CCutsceneElementBookmark guid="7771339221370697274" start="701" bookmarkName="Crushed_Bridge"/>
+            <CCutsceneElementBookmark guid="4918340252443045916" start="4370" pauseWhenHit="1"/>
+        </CCutsceneNodeBookmark>
+    </CCutsceneNodeDirector>
+</CutsceneState>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CutsceneState cutsceneVersion="1.300000">
+    <CCutsceneNodeDirector guid="10211917929855061339" locked="1" name="Director">
+        <CCutsceneNodeActiveCamera guid="12481618037082566951" name="Active Camera">
+            <CCutsceneElementActiveCamera guid="5922418906006993900" cameraIndex="0" objectGuid="13416194318033830553"/>
+            <CCutsceneElementActiveCamera guid="5786908322465436208" start="11705" cameraIndex="0" objectGuid="10964238379300345893"/>
+            <CCutsceneElementActiveCamera guid="7585558117050473372" start="15855" cameraIndex="0" objectGuid="13690887078051529398"/>
+            <CCutsceneElementActiveCamera guid="7586858703347447080" start="19676" cameraIndex="0" objectGuid="13206828966662932372"/>
+            <CCutsceneElementActiveCamera guid="8824265242280129547" start="27622" cameraIndex="0" objectGuid="12526523641007350291"/>
+            <CCutsceneElementActiveCamera guid="8191633194471434861" start="34352" cameraIndex="0" objectGuid="12555186059079645880"/>
+        </CCutsceneNodeActiveCamera>
+        <CCutsceneNodeFade guid="10094785492533329310" name="Fade">
+            <CCutsceneElementFade guid="6188094368119597686" duration="1620" colorR="0.000000" colorG="0.000000" colorB="0.000000" amount="1.000000" unfadedAmount="0.000000" fadeIn="1"/>
+            <CCutsceneElementFade guid="7172137436757573022" start="46772" duration="1000" colorR="0.000000" colorG="0.000000" colorB="0.000000" amount="1.000000" unfadedAmount="0.000000" fadeIn="0"/>
+        </CCutsceneNodeFade>
+        <CCutsceneNodeEndScene guid="9884639939208059838" name="End Scene Markers">
+            <CCutsceneElementEndScene guid="7708152196669545406" start="49360"/>
+        </CCutsceneNodeEndScene>
+    </CCutsceneNodeDirector>
+    <CCutsceneNodeFog guid="13482199841613073372" locked="1" name="Fog" fogColor="0.450000,0.400000,0.300000" fogFalloff="0.175000" fogDensity="0.141000" fogStartHeight="1.728000">
+        <CCutsceneElementObject guid="8982475610478398428" duration="141670" lockedToEnd="1"/>
+        <CCutsceneNodePropertyValue guid="10361996816983406685" name="Property - Fog Falloff" propertyName="fogFalloff">
+            <CCutsceneElementPropertyCurve guid="7569149244192733277" value="0.900000" time="0.000000" curveInValue="-1.000000,0.900000" curveOutValue="3901.666748,0.658333" curveOutType="3" curveInType="3"/>
+            <CCutsceneElementPropertyCurve guid="8101277562163833905" start="11705" value="0.175000" time="11705.000000" curveInValue="13117.333008,0.175000" curveOutValue="11706.000000,0.175000" curveOutType="3" curveInType="6"/>
+        </CCutsceneNodePropertyValue>
+    </CCutsceneNodeFog>
+    <CCutsceneNodeFolder guid="12516957144364635027" locked="1" name="Cameras">
+        <CCutsceneNodeCamera guid="13416194318033830553" name="View 1" position="52.512749,96.543152,7.999065" fov="27.799999" nearClip="0.100000" farClip="600.000000" shadowClip="75.000000" depthOfField="0.400000" focalDepth="8.000000" falloffStart="0.000300" falloffEnd="8.000000" falloffStartNear="0.000000" falloffEndNear="0.000000" fstop="31.970434" maxcoc="26.975052" doftype="0.000000" roll="0.000000" distance="8.000000" pitch="-0.524871" yaw="-182.000000" heightOffset="1.000000">
+            <CCutsceneElementObject guid="8118071624038957721" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodePropertyValue guid="11241600523829768638" name="Property - Pitch" propertyName="pitch">
+                <CCutsceneElementPropertyCurve guid="5592686427473703358" value="-2.482289" time="0.000000" curveInValue="-1.000000,-2.482289" curveOutValue="1998.333374,-2.167120" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7478684239900010517" start="5995" value="-1.536780" time="5995.000000" curveInValue="3996.666992,-2.056494" curveOutValue="6925.666504,-1.294738" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8785015723605035152" start="8787" value="-0.524871" time="8787.000000" curveInValue="7856.333496,-0.524871" curveOutValue="9162.000000,-0.524871" curveOutType="4" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="8462991071659110634" start="9912" value="-2.000000" time="9912.000000" curveInValue="9537.000000,-1.924772" curveOutValue="10452.333008,-2.108395" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7190337374803382433" start="11533" value="-0.524871" time="11533.000000" curveInValue="10992.666992,-0.524871" curveOutValue="11534.000000,-0.524871" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10057536164114985406" name="Property - Yaw" propertyName="yaw">
+                <CCutsceneElementPropertyCurve guid="9037622267587588542" value="-166.455673" time="0.000000" curveInValue="-1.000000,-166.455673" curveOutValue="1998.333374,-170.027985" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8725565365356947477" start="5995" value="-177.172607" time="5995.000000" curveInValue="3996.666992,-175.471191" curveOutValue="6925.666504,-177.964996" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5285481554849761424" start="8787" value="-176.935822" time="8787.000000" curveInValue="7856.333496,-176.935822" curveOutValue="9693.333008,-176.935822" curveOutType="4" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="7256353762503313047" start="11506" value="-182.000000" time="11506.000000" curveInValue="10599.666992,-182.000000" curveOutValue="11539.333008,-182.031036" curveOutType="5" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13713894250569289246" name="Property - Roll" propertyName="roll">
+                <CCutsceneElementPropertyCurve guid="8584782307833171486" value="0.000000" time="0.000000" curveInValue="-1.000000,0.000000" curveOutValue="1998.333374,0.000000" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6300483803329423381" start="5995" value="0.000000" time="5995.000000" curveInValue="3996.666992,0.000000" curveOutValue="6925.666504,0.000000" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7020229650125450331" start="8787" value="0.000000" time="8787.000000" curveInValue="7856.333496,0.000000" curveOutValue="8937.666992,0.000000" curveOutType="4" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="8025676576729998533" start="9239" value="2.000000" time="9239.000000" curveInValue="9088.333008,2.147262" curveOutValue="9448.000000,1.795723" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5721660678170344560" start="9866" value="-2.000000" time="9866.000000" curveInValue="9657.000000,-1.588835" curveOutValue="10138.666992,-2.536417" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8422736240318260812" start="10684" value="0.000000" time="10684.000000" curveInValue="10411.333008,0.000000" curveOutValue="10685.000000,0.000000" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9858043188142928318" name="Property - Height Offset" propertyName="heightOffset">
+                <CCutsceneElementPropertyCurve guid="6214596618192679358" value="0.646653" time="0.000000" curveInValue="-1.000000,0.646653" curveOutValue="1998.333374,0.526262" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5537712416312092693" start="5995" value="0.285480" time="5995.000000" curveInValue="3996.666992,0.305342" curveOutValue="6925.666504,0.276230" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6365325457930520720" start="8787" value="0.398184" time="8787.000000" curveInValue="7856.333496,0.398184" curveOutValue="9398.666992,0.398184" curveOutType="4" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="5678940902460645553" start="10622" value="1.000000" time="10622.000000" curveInValue="10010.333008,1.000000" curveOutValue="10623.000000,1.000000" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12985940751591428382" name="Property - Distance" propertyName="distance">
+                <CCutsceneElementPropertyCurve guid="8601629236662391070" value="5.268572" time="0.000000" curveInValue="-1.000000,5.268572" curveOutValue="1998.333374,4.968295" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8089333889657301013" start="5995" value="4.367741" time="5995.000000" curveInValue="3996.666992,4.086543" curveOutValue="6925.666504,4.498701" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7959012780830061794" start="8787" value="5.573036" time="8787.000000" curveInValue="7856.333496,5.573036" curveOutValue="9062.666992,5.573036" curveOutType="4" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="8418947745296192325" start="9614" value="5.573036" time="9614.000000" curveInValue="9338.333008,5.573036" curveOutValue="10348.666992,5.573036" curveOutType="4" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="6276789517732056416" start="11818" value="8.000000" time="11818.000000" curveInValue="11083.333008,7.191012" curveOutValue="11819.000000,8.000000" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="11006057031189131710" name="Property - FStop" propertyName="fstop">
+                <CCutsceneElementPropertyCurve guid="5716296183253037502" value="0.000000" time="0.000000" curveInValue="-1.000000,0.000000" curveOutValue="1998.333374,10.656812" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5085950700803680277" start="5995" value="31.970434" time="5995.000000" curveInValue="3996.666992,26.642025" curveOutValue="6925.666504,34.451988" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5742734519190096016" start="8787" value="31.970434" time="8787.000000" curveInValue="7856.333496,31.970434" curveOutValue="8788.000000,31.970434" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9672176356694684094" name="Property - CoC Diameter" propertyName="maxcoc">
+                <CCutsceneElementPropertyCurve guid="8486637130980258238" value="0.000000" time="0.000000" curveInValue="-1.000000,0.000000" curveOutValue="1998.333374,8.991684" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5208024752371623957" start="5995" value="26.975052" time="5995.000000" curveInValue="3996.666992,22.479212" curveOutValue="6925.666504,29.068861" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5690401944711137424" start="8787" value="26.975052" time="8787.000000" curveInValue="7856.333496,26.975052" curveOutValue="8788.000000,26.975052" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9751935290950807998" name="Property - Position X" propertyName="positionX">
+                <CCutsceneElementPropertyCurve guid="5539822758813757886" value="51.150383" time="0.000000" curveInValue="-1.000000,51.150383" curveOutValue="1998.333374,51.604481" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="9182639474374174741" start="5995" value="52.512680" time="5995.000000" curveInValue="3996.666992,52.285603" curveOutValue="6925.666504,52.618435" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6449933775336048784" start="8787" value="52.512749" time="8787.000000" curveInValue="7856.333496,52.512749" curveOutValue="8788.000000,52.512749" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13131999738867478974" name="Property - Position Y" propertyName="positionY">
+                <CCutsceneElementPropertyCurve guid="6993855104759099838" value="101.611038" time="0.000000" curveInValue="-1.000000,101.611038" curveOutValue="1998.333374,99.922112" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6832278188539602965" start="5995" value="96.544250" time="5995.000000" curveInValue="3996.666992,97.389114" curveOutValue="6925.666504,96.150780" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6871993550019692688" start="8787" value="96.543152" time="8787.000000" curveInValue="7856.333496,96.543152" curveOutValue="8788.000000,96.543152" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10731178064769068966" name="Property - Depth Of Field" propertyName="depthOfField">
+                <CCutsceneElementPropertyCurve guid="7612692461871915969" value="0.050000" time="0.000000" curveInValue="-1.000000,0.050000" curveOutValue="1348.666748,0.066667" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7351117021480251145" start="4046" value="0.100000" time="4046.000000" curveInValue="2697.333008,0.023230" curveOutValue="5031.333496,0.156088" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5155548723087555590" start="7002" value="0.400000" time="7002.000000" curveInValue="6016.666504,0.300000" curveOutValue="7003.000000,0.400000" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeCamera>
+        <CCutsceneNodeCamera guid="10964238379300345893" name="View 2" position="52.126068,94.266754,7.999065" fov="27.799999" nearClip="0.100000" farClip="600.000000" shadowClip="75.000000" depthOfField="1.000000" focalDepth="8.000000" falloffStart="0.000300" falloffEnd="8.000000" falloffStartNear="0.000000" falloffEndNear="0.000000" fstop="31.970434" maxcoc="26.975052" doftype="0.000000" roll="2.730000" distance="11.000000" pitch="41.820000" yaw="-8.530008" heightOffset="1.000000">
+            <CCutsceneElementObject guid="7711775150595037221" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodePropertyValue guid="13028890245581218195" name="Property - Distance" propertyName="distance">
+                <CCutsceneElementPropertyCurve guid="8334826615529053177" value="4.547122" time="0.000000" curveInValue="-1.000000,4.547122" curveOutValue="3901.666748,4.547122" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8790411439453168663" start="11705" value="4.547122" time="11705.000000" curveInValue="7803.333008,4.547122" curveOutValue="15324.666992,4.547122" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6221695163934481401" start="22564" value="11.000000" time="22564.000000" curveInValue="18944.333984,11.000000" curveOutValue="22565.000000,11.000000" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13014318360695184377" name="Property - Pitch" propertyName="pitch">
+                <CCutsceneElementPropertyCurve guid="8387748657089518585" value="33.603809" time="0.000000" curveInValue="-1.000000,33.603809" curveOutValue="3901.666748,33.603809" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6825755216279954455" start="11705" value="33.603809" time="11705.000000" curveInValue="7803.333008,33.603809" curveOutValue="15324.666992,33.603809" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7521320991752231929" start="22564" value="41.820000" time="22564.000000" curveInValue="18944.333984,41.820000" curveOutValue="22565.000000,41.820000" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13156606173330578425" name="Property - Yaw" propertyName="yaw">
+                <CCutsceneElementPropertyCurve guid="6094556074614234105" value="-0.724969" time="0.000000" curveInValue="-1.000000,-0.724969" curveOutValue="3901.666748,-0.724969" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8013955238658761751" start="11705" value="-0.724969" time="11705.000000" curveInValue="7803.333008,-0.724969" curveOutValue="15324.666992,-0.724969" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7557049398758513657" start="22564" value="-8.530008" time="22564.000000" curveInValue="18944.333984,-8.530008" curveOutValue="22565.000000,-8.530008" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10642475654195747833" name="Property - Roll" propertyName="roll">
+                <CCutsceneElementPropertyCurve guid="8948127226475617273" value="12.259999" time="0.000000" curveInValue="-1.000000,12.259999" curveOutValue="3901.666748,12.259999" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6581357614198875159" start="11705" value="12.259999" time="11705.000000" curveInValue="7803.333008,12.259999" curveOutValue="15324.666992,12.259999" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8806303540891130873" start="22564" value="2.730000" time="22564.000000" curveInValue="18944.333984,2.730000" curveOutValue="22565.000000,2.730000" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10986408796944112633" name="Property - Depth Of Field" propertyName="depthOfField">
+                <CCutsceneElementPropertyCurve guid="8736648272385711097" value="0.000000" time="0.000000" curveInValue="-1.000000,0.000000" curveOutValue="3901.666748,0.000000" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5783900359061857303" start="11705" value="0.000000" time="11705.000000" curveInValue="7803.333008,0.000000" curveOutValue="12703.000000,0.000000" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="4757449656342191097" start="14699" value="1.000000" time="14699.000000" curveInValue="13701.000000,1.000000" curveOutValue="14700.000000,1.000000" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeCamera>
+        <CCutsceneNodeCamera guid="13690887078051529398" name="View 3" position="52.089172,96.148346,7.999180" fov="27.799999" nearClip="0.100000" farClip="600.000000" shadowClip="75.000000" depthOfField="0.336102" focalDepth="8.000000" falloffStart="0.000300" falloffEnd="8.000000" falloffStartNear="0.000000" falloffEndNear="0.000000" fstop="31.970434" maxcoc="26.975052" doftype="0.000000" roll="9.615149" distance="4.588185" pitch="-29.844654" yaw="-174.054520" heightOffset="2.280887">
+            <CCutsceneElementObject guid="4655944847134245558" duration="141670" lockedToEnd="1"/>
+        </CCutsceneNodeCamera>
+        <CCutsceneNodeCamera guid="13206828966662932372" name="View 4" position="69.488892,138.614517,7.998932" fov="27.799999" nearClip="0.100000" farClip="600.000000" shadowClip="75.000000" depthOfField="0.020000" focalDepth="8.000000" falloffStart="0.000300" falloffEnd="8.000000" falloffStartNear="0.000000" falloffEndNear="0.000000" fstop="32.000000" doftype="0.000000" roll="0.000000" distance="1.065248" pitch="49.529369" yaw="-18.935476" heightOffset="58.410629">
+            <CCutsceneElementObject guid="7608872557034899348" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodePropertyValue guid="11231628420590895168" name="Property - Pitch" propertyName="pitch">
+                <CCutsceneElementPropertyCurve guid="8174786149164059251" value="52.967579" time="0.000000" curveInValue="-1.000000,52.967579" curveOutValue="6558.666992,52.967579" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5889990565450962590" start="19676" value="52.967579" time="19676.000000" curveInValue="13117.333008,52.967579" curveOutValue="21426.333984,51.956341" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8134990451078138483" start="24927" value="49.933865" time="24927.000000" curveInValue="23176.666016,49.933865" curveOutValue="25464.333984,49.933865" curveOutType="3" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="9128817370017789452" start="26539" value="49.933865" time="26539.000000" curveInValue="26001.666016,49.933865" curveOutValue="26900.000000,49.799034" curveOutType="3" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="7460373029934552365" start="27622" value="49.529369" time="27622.000000" curveInValue="27261.000000,49.529369" curveOutValue="27623.000000,49.529369" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10268917996880988787" name="Property - Yaw" propertyName="yaw">
+                <CCutsceneElementPropertyCurve guid="7615381858749319795" value="-25.535873" time="0.000000" curveInValue="-1.000000,-25.535873" curveOutValue="6558.666992,-25.535765" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7823381252070397598" start="19676" value="-25.535549" time="19676.000000" curveInValue="13117.333008,-25.535658" curveOutValue="21426.333984,-22.394316" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7365773331761793651" start="24927" value="-16.111851" time="24927.000000" curveInValue="23176.666016,-16.111851" curveOutValue="25464.333984,-16.111851" curveOutType="3" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="7288367520825964044" start="26539" value="-16.111851" time="26539.000000" curveInValue="26001.666016,-16.111851" curveOutValue="26900.000000,-17.053059" curveOutType="3" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="6590977718289388845" start="27622" value="-18.935476" time="27622.000000" curveInValue="27261.000000,-18.935476" curveOutValue="27623.000000,-18.935476" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10924980479047567987" name="Property - Position Y" propertyName="positionY">
+                <CCutsceneElementPropertyCurve guid="5996103643977550451" value="139.712311" time="0.000000" curveInValue="-1.000000,139.712311" curveOutValue="6558.666992,139.796478" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7187369528372450974" start="19676" value="139.964813" time="19676.000000" curveInValue="13117.333008,139.880646" curveOutValue="21426.333984,139.747101" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8080926278929418867" start="24927" value="139.311661" time="24927.000000" curveInValue="23176.666016,139.311661" curveOutValue="25464.333984,139.311661" curveOutType="3" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="6574226540967720460" start="26539" value="139.311661" time="26539.000000" curveInValue="26001.666016,139.311661" curveOutValue="26900.000000,139.079285" curveOutType="3" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="7058353654258423085" start="27622" value="138.614517" time="27622.000000" curveInValue="27261.000000,138.614517" curveOutValue="27623.000000,138.614517" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13459654696814931730" name="Property - Distance" propertyName="distance">
+                <CCutsceneElementPropertyCurve guid="8200382296999751442" value="5.610984" time="0.000000" curveInValue="-1.000000,5.610984" curveOutValue="6558.666992,5.610984" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="9034283114469751840" start="19676" value="5.610984" time="19676.000000" curveInValue="13117.333008,5.610984" curveOutValue="21426.333984,6.073989" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8774654579376963617" start="24927" value="7.000000" time="24927.000000" curveInValue="23176.666016,6.536994" curveOutValue="25464.333984,7.000000" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5967597374283848446" start="26539" value="7.000000" time="26539.000000" curveInValue="26001.666016,7.000000" curveOutValue="26900.000000,5.021749" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="9001278678479564562" start="27622" value="1.065248" time="27622.000000" curveInValue="27261.000000,1.065248" curveOutValue="27623.000000,1.065248" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9311860468505947035" name="Property - Depth Of Field" propertyName="depthOfField">
+                <CCutsceneElementPropertyCurve guid="8107932413328141211" start="19676" value="0.075000" time="19676.000000" curveInValue="19675.000000,0.075000" curveOutValue="21294.000000,0.075000" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7601536062538959263" start="24530" value="0.075000" time="24530.000000" curveInValue="22912.000000,0.075000" curveOutValue="24973.666016,0.056667" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="4733192021690303953" start="25861" value="0.020000" time="25861.000000" curveInValue="25417.333984,0.038333" curveOutValue="25862.000000,0.020000" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeCamera>
+        <CCutsceneNodeCamera guid="12526523641007350291" name="View 5" position="52.717522,94.406845,7.999234" fov="27.799999" nearClip="0.100000" farClip="600.000000" shadowClip="75.000000" depthOfField="0.020000" focalDepth="8.000000" falloffStart="0.000300" falloffEnd="8.000000" falloffStartNear="0.000000" falloffEndNear="0.000000" fstop="32.000000" doftype="0.000000" roll="0.000000" distance="7.911068" pitch="0.562981" yaw="343.243073" heightOffset="0.529208">
+            <CCutsceneElementObject guid="7200080332094611987" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodePropertyValue guid="10465752917665936328" name="Property - Position X" propertyName="positionX">
+                <CCutsceneElementPropertyCurve guid="5359763276721883342" start="27622" value="51.980774" time="27622.000000" curveInValue="27621.000000,51.980774" curveOutValue="28205.333984,52.149395" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7558300236387578677" start="29372" value="52.486641" time="29372.000000" curveInValue="28788.666016,52.416969" curveOutValue="29745.333984,52.531231" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7383820583400549472" start="30492" value="52.430435" time="30492.000000" curveInValue="30118.667969,52.417435" curveOutValue="31290.666016,52.458244" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="4795630263991714906" start="32888" value="52.717522" time="32888.000000" curveInValue="32089.333984,52.717522" curveOutValue="32889.000000,52.717522" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12987536345086254983" name="Property - Position Y" propertyName="positionY">
+                <CCutsceneElementPropertyCurve guid="8891754547692767438" start="27622" value="93.955704" time="27622.000000" curveInValue="27621.000000,93.955704" curveOutValue="28205.333984,93.917488" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="4725255798385668917" start="29372" value="93.841064" time="29372.000000" curveInValue="28788.666016,93.865799" curveOutValue="29745.333984,93.825233" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="4765732219112041568" start="30492" value="93.819443" time="30492.000000" curveInValue="30118.667969,93.777283" curveOutValue="31290.666016,93.909630" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="9086279236663559258" start="32888" value="94.406845" time="32888.000000" curveInValue="32089.333984,94.406845" curveOutValue="32889.000000,94.406845" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12370275918685318901" name="Property - Position Z" propertyName="positionZ">
+                <CCutsceneElementPropertyCurve guid="5238423913669658830" start="27622" value="7.999188" time="27622.000000" curveInValue="27621.000000,7.999188" curveOutValue="28205.333984,7.999199" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8634564421666075445" start="29372" value="7.999222" time="29372.000000" curveInValue="28788.666016,7.999214" curveOutValue="29745.333984,7.999227" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7534493186244635130" start="30492" value="7.999230" time="30492.000000" curveInValue="30118.667969,7.999228" curveOutValue="31290.666016,7.999234" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="9222097454161642586" start="32888" value="7.999234" time="32888.000000" curveInValue="32089.333984,7.999234" curveOutValue="32889.000000,7.999234" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13104220398067003654" name="Property - Distance" propertyName="distance">
+                <CCutsceneElementPropertyCurve guid="7838140151622600910" start="27622" value="2.506068" time="27622.000000" curveInValue="27621.000000,2.506068" curveOutValue="28103.666016,2.444934" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8531307291836805941" start="29067" value="2.322665" time="29067.000000" curveInValue="28585.333984,2.241122" curveOutValue="29694.666016,2.428926" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5175774486322916448" start="30950" value="3.199225" time="30950.000000" curveInValue="30322.333984,2.424953" curveOutValue="31734.666016,4.167168" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8388553583155922010" start="33304" value="7.911068" time="33304.000000" curveInValue="32519.333984,7.911068" curveOutValue="33305.000000,7.911068" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12095570398385549968" name="Property - Pitch" propertyName="pitch">
+                <CCutsceneElementPropertyCurve guid="7503532817392928974" start="27622" value="-43.012836" time="27622.000000" curveInValue="27621.000000,-43.012836" curveOutValue="28103.666016,-41.991329" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7632675579462021941" start="29067" value="-39.948315" time="29067.000000" curveInValue="28585.333984,-45.425003" curveOutValue="29694.666016,-32.811562" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6517772618942032992" start="30950" value="-1.121225" time="30950.000000" curveInValue="30322.333984,-7.787519" curveOutValue="31853.000000,8.469316" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6396158317996459098" start="33659" value="0.562981" time="33659.000000" curveInValue="32756.000000,0.562981" curveOutValue="33660.000000,0.562981" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12826515353428774065" name="Property - Height Offset" propertyName="heightOffset">
+                <CCutsceneElementPropertyCurve guid="5174581316463691982" start="27622" value="1.167830" time="27622.000000" curveInValue="27621.000000,1.167830" curveOutValue="28103.666016,1.144862" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7607299083021185845" start="29067" value="1.098926" time="29067.000000" curveInValue="28585.333984,1.131701" curveOutValue="29694.666016,1.056216" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8177557451966426208" start="30950" value="0.932456" time="30950.000000" curveInValue="30322.332031,1.045710" curveOutValue="31443.333984,0.843441" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5863421509587354714" start="32430" value="0.529208" time="32430.000000" curveInValue="31936.666016,0.529208" curveOutValue="32431.000000,0.529208" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="11718372618118351010" name="Property - Yaw" propertyName="yaw">
+                <CCutsceneElementPropertyCurve guid="5466941368095017166" start="27622" value="157.735153" time="27622.000000" curveInValue="27621.000000,157.735153" curveOutValue="28103.666016,160.782013" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7652454552400163637" start="29067" value="166.875732" time="29067.000000" curveInValue="28585.333984,158.712555" curveOutValue="29694.666016,177.513275" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5429356936096033888" start="30950" value="218.789749" time="30950.000000" curveInValue="30322.333984,195.719696" curveOutValue="31853.000000,251.979752" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="7820498640196519002" start="33659" value="343.243073" time="33659.000000" curveInValue="32756.000000,343.243073" curveOutValue="33660.000000,343.243073" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeCamera>
+        <CCutsceneNodeTargetCamera guid="12555186059079645880" name="Target Camera" position="61.875053,76.167809,11.772342" fov="27.799999" nearClip="0.100000" farClip="600.000000" shadowClip="75.000000" depthOfField="0.020000" focalDepth="8.000000" falloffStart="0.000300" falloffEnd="8.000000" falloffStartNear="0.000000" falloffEndNear="0.000000" fstop="32.000000" doftype="0.000000" roll="0.000000" eyePositionX="55.123199" eyePositionY="73.206291" eyePositionZ="11.006811" targetPositionX="61.875053" targetPositionY="76.167809" targetPositionZ="11.772342">
+            <CCutsceneElementObject guid="6286097097705978552" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodePropertyValue guid="10722187357682354916" name="Property - Target Position X" propertyName="targetPositionX">
+                <CCutsceneElementPropertyCurve guid="8364818747105939417" value="55.313789" time="0.000000" curveInValue="-1.000000,55.313789" curveOutValue="11862.333984,55.313789" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8888551061788773092" start="35587" value="55.313789" time="35587.000000" curveInValue="23724.666016,55.313789" curveOutValue="37119.332031,56.631458" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5199710308177234660" start="40184" value="59.266792" time="40184.000000" curveInValue="38651.667969,58.607956" curveOutValue="41290.332031,59.742466" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="4708862698942867555" start="43503" value="59.266792" time="43503.000000" curveInValue="42396.664063,58.673180" curveOutValue="45170.667969,60.161594" curveOutType="3" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5832069133841303647" start="48506" value="61.951195" time="48506.000000" curveInValue="46838.332031,61.951195" curveOutValue="48507.000000,61.951195" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9633840012086456030" name="Property - Target Position Y" propertyName="targetPositionY">
+                <CCutsceneElementPropertyCurve guid="5977596282410569689" value="79.320908" time="0.000000" curveInValue="-1.000000,79.320908" curveOutValue="11862.333984,79.320908" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8278857922748591838" start="35587" value="79.320908" time="35587.000000" curveInValue="23724.666016,79.320908" curveOutValue="37119.332031,78.770149" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6325542868530759591" start="40184" value="77.668640" time="40184.000000" curveInValue="38651.667969,77.944023" curveOutValue="41290.332031,77.469818" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="4856962122020792419" start="43503" value="77.668640" time="43503.000000" curveInValue="42396.664063,78.010216" curveOutValue="45170.667969,77.153755" curveOutType="3" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8118607605089273951" start="48506" value="76.123993" time="48506.000000" curveInValue="46838.332031,76.123993" curveOutValue="48507.000000,76.123993" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="13595413692429765405" name="Property - Eye Position X" propertyName="eyePositionX">
+                <CCutsceneElementPropertyCurve guid="7043083994505808669" start="35587" value="56.683960" time="35587.000000" curveInValue="35586.000000,56.683960" curveOutValue="37119.332031,55.088112" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="9017823149035057684" start="40184" value="51.896416" time="40184.000000" curveInValue="38651.667969,51.896416" curveOutValue="42958.000000,51.000534" curveOutType="5" curveInType="4"/>
+                <CCutsceneElementPropertyCurve guid="6568739198001751042" start="48506" value="55.188065" time="48506.000000" curveInValue="45732.000000,55.188065" curveOutValue="48507.000000,55.188065" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9763678666508416574" name="Property - Eye Position Y" propertyName="eyePositionY">
+                <CCutsceneElementPropertyCurve guid="7179082070647060030" start="35587" value="74.915955" time="35587.000000" curveInValue="35586.000000,74.915955" curveOutValue="37119.332031,76.740860" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7842091292162486804" start="40184" value="80.390671" time="40184.000000" curveInValue="38651.667969,80.132568" curveOutValue="41290.332031,80.577019" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8405589726882502825" start="43503" value="77.556061" time="43503.000000" curveInValue="42396.664063,78.546021" curveOutValue="45170.667969,76.063812" curveOutType="3" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8394956414632862722" start="48506" value="73.079315" time="48506.000000" curveInValue="46838.332031,73.079315" curveOutValue="48507.000000,73.079315" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12225138215718280589" name="Property - Target Position Z" propertyName="targetPositionZ">
+                <CCutsceneElementPropertyCurve guid="5131196150878100877" start="35587" value="10.854972" time="35587.000000" curveInValue="35586.000000,10.854972" curveOutValue="37119.332031,11.100430" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6924310791714740154" start="40184" value="11.591346" time="40184.000000" curveInValue="38651.667969,11.426835" curveOutValue="41290.332031,11.710121" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8013166148530444304" start="43503" value="11.772342" time="43503.000000" curveInValue="42396.664063,11.772342" curveOutValue="45170.667969,11.772342" curveOutType="3" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5482134607520434271" start="48506" value="11.772342" time="48506.000000" curveInValue="46838.332031,11.772342" curveOutValue="48507.000000,11.772342" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="12629429301665432004" name="Property - Eye Position Z" propertyName="eyePositionZ">
+                <CCutsceneElementPropertyCurve guid="8175220544068485572" start="35587" value="10.811172" time="35587.000000" curveInValue="35586.000000,10.811172" curveOutValue="37119.332031,10.938663" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7093064265804957307" start="40184" value="11.193647" time="40184.000000" curveInValue="38651.667969,11.173032" curveOutValue="41290.332031,11.208531" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6803762846347922650" start="43503" value="11.006807" time="43503.000000" curveInValue="42396.664063,11.006806" curveOutValue="45170.667969,11.006808" curveOutType="3" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="8393952951358727170" start="48506" value="11.006811" time="48506.000000" curveInValue="46838.332031,11.006811" curveOutValue="48507.000000,11.006811" curveOutType="3" curveInType="4"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeTargetCamera>
+    </CCutsceneNodeFolder>
+    <CCutsceneNodeFolder guid="11139804974104064108" locked="1" name="CHARACTERS">
+        <CCutsceneNodeActor guid="12083655763940124049" name="Вассел @ Vassel (Unit)" position="54.982056,80.337494,10.121925" rotation="51.396626,-9.579221,421.834442" modelLink="Vassel" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="5877761989287126417" start="135" duration="141535" lockedToEnd="1"/>
+            <CCutsceneNodeAnimLayer guid="10399914642720728465" name="Animation Layer">
+                <CCutsceneElementAnim guid="5214519959288339797" duration="9193" anim="Stand Cover" priority="4" originalDuration="1500" looping="1" blendTime="75" blendOutTime="250"/>
+                <CCutsceneElementAnim guid="7238803291678099294" start="9193" duration="22577" anim="Attack Superior" priority="9" originalDuration="3333" blendTime="500" blendOutTime="250"/>
+                <CCutsceneElementAnim guid="7454692359249459944" start="31770" duration="900" anim="Stand Right Cover" priority="3" originalDuration="667" looping="1" blendTime="350" blendOutTime="350"/>
+                <CCutsceneElementAnim guid="7557852835134700264" start="32670" duration="662" anim="Walk Cover" priority="5" originalDuration="666" originalMoveSpeed="225.000000" movespeed="225.000000" looping="1" blendTime="500"/>
+                <CCutsceneElementAnim guid="7349633984792285428" start="33332" duration="1840" anim="Flail" priority="8" originalDuration="834" looping="1"/>
+                <CCutsceneElementAnim guid="4771733870599134817" start="35172" duration="106498" lockedToEnd="1" anim="Stand Cover" priority="4" originalDuration="1500" looping="1" blendTime="500"/>
+            </CCutsceneNodeAnimLayer>
+            <CCutsceneNodePropertyValue guid="12030870086455551129" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                <CCutsceneElementPropertyCurve guid="5755344709893623415" start="221" value="430.931061" time="221.000000" curveInValue="220.000000,430.931061" curveOutValue="10853.666992,430.931061" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6097558621419575510" start="32119" value="430.931061" time="32119.000000" curveInValue="21486.332031,430.931061" curveOutValue="32289.666016,400.597717" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="9073811564453061785" start="32631" value="339.931030" time="32631.000000" curveInValue="32460.333984,370.264374" curveOutValue="33478.000000,367.232178" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5068886241614456718" start="35172" value="421.834442" time="35172.000000" curveInValue="34325.000000,394.533295" curveOutValue="35173.000000,421.834442" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="11535673198573947223" name="Property - Position Y" propertyName="positionY">
+                <CCutsceneElementPropertyCurve guid="6777162959372820179" value="93.508636" time="0.000000" curveInValue="-1.000000,93.508636" curveOutValue="10987.666992,93.508636" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6392751695542918409" start="32963" value="93.508636" time="32963.000000" curveInValue="21975.332031,93.508636" curveOutValue="33086.000000,93.508636" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8989898392797432494" start="33332" value="93.508636" time="33332.000000" curveInValue="33209.000000,93.508636" curveOutValue="33799.332031,93.508636" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8639467661594742630" start="34734" value="84.933304" time="34734.000000" curveInValue="34266.667969,88.814316" curveOutValue="34880.000000,83.720833" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5692454958584700627" start="35172" value="80.337494" time="35172.000000" curveInValue="35026.000000,81.869431" curveOutValue="35173.000000,80.337494" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="11357160180376525522" name="Property - Position X" propertyName="positionX">
+                <CCutsceneElementPropertyCurve guid="7082353503813622482" value="52.274071" time="0.000000" curveInValue="-1.000000,52.274071" curveOutValue="10987.666992,52.274071" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5900292386061065481" start="32963" value="52.274071" time="32963.000000" curveInValue="21975.332031,52.274071" curveOutValue="33086.000000,52.274071" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="6456058285921127086" start="33332" value="52.903030" time="33332.000000" curveInValue="33209.000000,52.693378" curveOutValue="33799.332031,52.903030" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5962837467132612454" start="34734" value="53.613556" time="34734.000000" curveInValue="34266.667969,52.765060" curveOutValue="34880.000000,53.878635" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="5361629677633788626" start="35172" value="54.982056" time="35172.000000" curveInValue="35026.000000,54.525890" curveOutValue="35173.000000,54.982056" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="9995136470016334594" name="Property - Position Z" propertyName="positionZ">
+                <CCutsceneElementPropertyCurve guid="5988152267425979138" value="7.999231" time="0.000000" curveInValue="-1.000000,7.999231" curveOutValue="10987.666992,7.999231" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="8624490528737369353" start="32963" value="7.999231" time="32963.000000" curveInValue="21975.332031,7.999231" curveOutValue="33086.000000,7.999231" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="4707231792938863278" start="33332" value="7.999231" time="33332.000000" curveInValue="33209.000000,7.999231" curveOutValue="33799.332031,7.999231" curveOutType="4" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5049407260255866726" start="34734" value="13.443185" time="34734.000000" curveInValue="34266.667969,14.307701" curveOutValue="34880.000000,13.173100" curveOutType="5" curveInType="5"/>
+                <CCutsceneElementPropertyCurve guid="6298650129157069570" start="35172" value="10.121925" time="35172.000000" curveInValue="35026.000000,11.229012" curveOutValue="35173.000000,10.121925" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodeM3A guid="10928339724062972562" name="Ghost_SwarmAnims.m3a" filePath="Assets\Units\Terran\Ghost_SwarmAnims\Ghost_SwarmAnims.m3a"/>
+            <CCutsceneNodePropertyValue guid="12184577161848121230" name="Property - Rotation Y" propertyName="rotationY">
+                <CCutsceneElementPropertyCurve guid="5581689982248773518" start="33332" value="0.000000" time="33332.000000" curveInValue="33331.000000,0.000000" curveOutValue="33945.332031,-3.193074" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="5499243850164299662" start="35172" value="-9.579221" time="35172.000000" curveInValue="34558.667969,-6.386147" curveOutValue="35173.000000,-9.579221" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+            <CCutsceneNodePropertyValue guid="10376028357253096147" name="Property - Rotation X" propertyName="rotationX">
+                <CCutsceneElementPropertyCurve guid="8263466160623936211" start="33332" value="0.000000" time="33332.000000" curveInValue="33331.000000,0.000000" curveOutValue="33945.332031,17.132210" curveOutType="3" curveInType="3"/>
+                <CCutsceneElementPropertyCurve guid="7430055309050340051" start="35172" value="51.396626" time="35172.000000" curveInValue="34558.667969,34.264416" curveOutValue="35173.000000,51.396626" curveOutType="3" curveInType="3"/>
+            </CCutsceneNodePropertyValue>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeFolder guid="10908136754140911747" name="BEAST">
+            <CCutsceneNodeActor guid="10554510854657327452" name="Slayn Elemental" movespeed="200.000000" position="64.814484,77.374451,11.761914" rotation="0.000000,0.000000,-194.000214" modelLink="SlaynElemental" useAnimMovespeed="0" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                <CCutsceneElementObject guid="8582957395043074396" start="8618" duration="133052" lockedToEnd="1"/>
+                <CCutsceneNodeAnimLayer guid="12752535173830721884" name="Animation Layer">
+                    <CCutsceneElementAnim guid="5449189955544465756" duration="21550" anim="Stand" priority="3" originalDuration="4333" movespeed="1000.000000" looping="1"/>
+                    <CCutsceneElementAnim guid="8672686443668776709" start="21553" duration="2669" anim="Stand 02" priority="3" originalDuration="4334" looping="1" blendOutTime="500"/>
+                    <CCutsceneElementAnim guid="7929301306369976069" start="24222" duration="117448" lockedToEnd="1" anim="Stand" priority="3" originalDuration="4333" movespeed="1000.000000" looping="1" blendTime="500"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodeFollowPath guid="12519640731607733623" name="Follow Path">
+                    <CCutsceneElementFollowPath guid="8252660682188413353" start="8618" duration="4208" pathGuid="11036988946819350867"/>
+                    <CCutsceneElementFollowPath guid="7331509472112003562" start="12826" duration="6850" pathGuid="12333395844622366149"/>
+                    <CCutsceneElementFollowPath guid="6243744966652923549" start="19676" duration="14844" pathGuid="12506433113016848840"/>
+                </CCutsceneNodeFollowPath>
+                <CCutsceneNodePropertyValue guid="9354973641128533012" name="Property - Scale X" propertyName="scaleX">
+                    <CCutsceneElementPropertyCurve guid="8300164136048516116" start="8618" value="1.000000" time="8618.000000" curveInValue="8617.000000,1.000000" curveOutValue="10020.666992,0.733333" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="5901965001959922708" start="12826" value="0.200000" time="12826.000000" curveInValue="11423.333008,0.466667" curveOutValue="20926.667969,0.200000" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="7676367004460337186" start="37128" value="0.200000" time="37128.000000" curveInValue="11423.333008,0.466667" curveOutValue="38830.000000,0.466667" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="7474923083802919157" start="42234" value="1.000000" time="42234.000000" curveInValue="40532.000000,0.733333" curveOutValue="42235.000000,1.000000" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11683096755086005926" name="Property - Scale Y" propertyName="scaleY">
+                    <CCutsceneElementPropertyCurve guid="5359974077176714918" start="8618" value="1.000000" time="8618.000000" curveInValue="8617.000000,1.000000" curveOutValue="10020.666992,0.733333" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="9098638195178575526" start="12826" value="0.200000" time="12826.000000" curveInValue="11423.333008,0.466667" curveOutValue="20926.667969,0.200000" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="6897353300965017634" start="37128" value="0.200000" time="37128.000000" curveInValue="11423.333008,0.466667" curveOutValue="38830.000000,0.466667" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="4870472834112078069" start="42234" value="1.000000" time="42234.000000" curveInValue="40532.000000,0.733333" curveOutValue="42235.000000,1.000000" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="9366597568287465999" name="Property - Scale Z" propertyName="scaleZ">
+                    <CCutsceneElementPropertyCurve guid="5744338239512109583" start="8618" value="1.000000" time="8618.000000" curveInValue="8617.000000,1.000000" curveOutValue="10020.666992,0.733333" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6671656656932168207" start="12826" value="0.200000" time="12826.000000" curveInValue="11423.333008,0.466667" curveOutValue="20926.667969,0.200000" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="6835698577279502370" start="37128" value="0.200000" time="37128.000000" curveInValue="11423.333008,0.466667" curveOutValue="38830.000000,0.466667" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="7727002368036880629" start="42234" value="1.000000" time="42234.000000" curveInValue="40532.000000,0.733333" curveOutValue="42235.000000,1.000000" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11565669660993055943" name="Property - Use Anim Movespeed" propertyName="useAnimMovespeed">
+                    <CCutsceneElementPropertyValue guid="7746678470461156551" start="8618" value="1"/>
+                    <CCutsceneElementPropertyValue guid="8364172257978805447" start="12826" value="0"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="12319455823347373665" name="Property - Movespeed" propertyName="movespeed">
+                    <CCutsceneElementPropertyValue guid="6829824381619590753" start="8618" value="0.000000"/>
+                    <CCutsceneElementPropertyValue guid="5211953709235099233" start="12826" value="200.000000"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="12169049474210377800" name="Property - Position X" propertyName="positionX">
+                    <CCutsceneElementPropertyCurve guid="7813695766957305928" start="8618" value="53.687881" time="8618.000000" curveInValue="8617.000000,53.687881" curveOutValue="19562.667969,58.323673" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="5133899047726657608" start="41452" value="67.595261" time="41452.000000" curveInValue="30507.332031,62.959446" curveOutValue="42020.000000,66.668335" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="8936920725376136102" start="43156" value="64.814484" time="43156.000000" curveInValue="42588.000000,64.814484" curveOutValue="43157.000000,64.814484" curveOutType="3" curveInType="4"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11196213251085348936" name="Property - Position Y" propertyName="positionY">
+                    <CCutsceneElementPropertyCurve guid="4625036948903735368" start="8618" value="107.504654" time="8618.000000" curveInValue="8617.000000,107.504654" curveOutValue="19562.667969,96.604492" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="8495206776461242440" start="41452" value="74.804169" time="41452.000000" curveInValue="30507.332031,85.704308" curveOutValue="42020.000000,75.660927" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="7960612579538039718" start="43156" value="77.374451" time="43156.000000" curveInValue="42588.000000,77.374451" curveOutValue="43157.000000,77.374451" curveOutType="3" curveInType="4"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="9423132579566366792" name="Property - Position Z" propertyName="positionZ">
+                    <CCutsceneElementPropertyCurve guid="9069566624036991048" start="8618" value="14.346287" time="8618.000000" curveInValue="8617.000000,14.346287" curveOutValue="19562.667969,14.730350" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="7227995122660978760" start="41452" value="15.498477" time="41452.000000" curveInValue="30507.332031,11.568290" curveOutValue="42020.000000,14.252956" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="8277535647919436710" start="43156" value="11.761914" time="43156.000000" curveInValue="42588.000000,11.761914" curveOutValue="43157.000000,11.761914" curveOutType="3" curveInType="4"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="12745363199101157308" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                    <CCutsceneElementPropertyCurve guid="7893293487523807164" start="8618" value="-90.000000" time="8618.000000" curveInValue="8617.000000,-90.000000" curveOutValue="19562.667969,-132.360977" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="9169505215228067772" start="41452" value="-217.082916" time="41452.000000" curveInValue="30507.332031,-174.000122" curveOutValue="42020.000000,-209.388687" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="7786077430129804460" start="43156" value="-194.000214" time="43156.000000" curveInValue="42588.000000,-194.000214" curveOutValue="43157.000000,-194.000214" curveOutType="3" curveInType="4"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="12301399217517824448" name="Property - Rotation X" propertyName="rotationX">
+                    <CCutsceneElementPropertyCurve guid="9188086400852625856" start="8618" value="0.000000" time="8618.000000" curveInValue="8617.000000,0.000000" curveOutValue="19562.667969,-3.189014" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6882510087633177024" start="41452" value="-9.567042" time="41452.000000" curveInValue="30507.332031,-6.378028" curveOutValue="42020.000000,-6.378028" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="8578569024917227108" start="43156" value="0.000000" time="43156.000000" curveInValue="42588.000000,0.000000" curveOutValue="43157.000000,0.000000" curveOutType="3" curveInType="4"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="12428289366238628288" name="Property - Rotation Y" propertyName="rotationY">
+                    <CCutsceneElementPropertyCurve guid="6274367367336888768" start="8618" value="0.000000" time="8618.000000" curveInValue="8617.000000,0.000000" curveOutValue="19562.667969,-4.295003" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6907423225822251456" start="41452" value="-12.885009" time="41452.000000" curveInValue="30507.332031,-8.590006" curveOutValue="42020.000000,-8.590006" curveOutType="3" curveInType="6"/>
+                    <CCutsceneElementPropertyCurve guid="7089224226663319140" start="43156" value="0.000000" time="43156.000000" curveInValue="42588.000000,0.000000" curveOutValue="43157.000000,0.000000" curveOutType="3" curveInType="4"/>
+                </CCutsceneNodePropertyValue>
+            </CCutsceneNodeActor>
+            <CCutsceneNodeActor guid="11413238823107893600" name="Beast_ChargeUp" position="70.193954,139.112198,66.316071" scale="0.116396,0.116396,0.116396" modelPath="Assets\Effects\Neutral\Aiur_VoidTendril_VoidZone_Missile_Charge\Aiur_VoidTendril_VoidZone_Missile_Charge.m3" shadowBox="0" tintColorBlue="0.000000" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                <CCutsceneElementObject guid="5279656728463087968" start="22254" duration="5048"/>
+                <CCutsceneNodeAnimLayer guid="10680629499698729041" name="Animation Layer">
+                    <CCutsceneElementAnim guid="7780102230599389265" start="22254" duration="3928" anim="Birth" priority="7" originalDuration="667"/>
+                    <CCutsceneElementAnim guid="5139168361274415302" start="26182" duration="1120" anim="Death" priority="11" originalDuration="1000"/>
+                </CCutsceneNodeAnimLayer>
+            </CCutsceneNodeActor>
+            <CCutsceneNodePath guid="11036988946819350867" name="Path Slayn">
+                <CCutsceneNodePathMarker guid="11274649076602605831" name="Path Marker" position="53.243797,104.207535,2.593722">
+                    <CCutsceneElementObject guid="7797934318199083271" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="9820565498257096391" name="Path Marker" position="51.146461,103.764481,12.372206" rotation="0.000000,0.000000,-101.500000">
+                    <CCutsceneElementObject guid="4972483930102054599" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="11035646269372105952" name="Path Marker" position="49.538872,101.177933,23.388050">
+                    <CCutsceneElementObject guid="6764658583239525600" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodePath guid="12333395844622366149" name="Path Slayn 2">
+                <CCutsceneNodePathMarker guid="10469309162954696054" name="Path Marker" position="51.125015,104.333008,14.971560">
+                    <CCutsceneElementObject guid="8744391339865023862" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="9440574546528553035" name="Path Marker" position="52.542580,112.067978,21.734835">
+                    <CCutsceneElementObject guid="5106074086613567563" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="13352350756500398968" name="Path Marker" position="56.447456,119.026840,31.606243">
+                    <CCutsceneElementObject guid="8496922981792998264" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodePath guid="12506433113016848840" name="Path Slayn 3">
+                <CCutsceneNodePathMarker guid="12305438198320273532" name="Path Marker" position="69.451370,139.813477,65.829361">
+                    <CCutsceneElementObject guid="5590428354838206588" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="12405261419347233171" name="Path Marker" position="70.124893,140.001938,66.340019">
+                    <CCutsceneElementObject guid="8518544852324764051" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="12966981680774984891" name="Path Marker" position="70.563416,139.630127,66.494019">
+                    <CCutsceneElementObject guid="4664847066253964475" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="13296759332913341750" name="Path Marker" position="70.236679,139.105621,66.204803" curveInType="4">
+                    <CCutsceneElementObject guid="5876285361418200374" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodePath guid="10053480078761217930" name="Path Slayn Missile">
+                <CCutsceneNodePathMarker guid="11999454368353002371" name="Path Marker" position="70.210953,139.073608,66.272011">
+                    <CCutsceneElementObject guid="7694335612206228355" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="11697327104126696574" name="Path Marker" position="52.527687,94.409363,7.999175">
+                    <CCutsceneElementObject guid="7779804566346087550" duration="141670" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodeActor guid="9561975607015611591" name="Tempest_TalDarim_PlasmaMissile" position="70.210953,139.073608,66.272011" scale="0.378717,0.378717,0.378717" modelPath="Assets\Effects\Protoss\Tempest_TalDarim_PlasmaMissile\Tempest_TalDarim_PlasmaMissile.m3" shadowBox="0" tintColorRed="0.686275" tintColorGreen="0.784314" tintColorBlue="0.000000" teamColorDiffuse="0.000000,0.000000,0.000000,0.000000" teamColorEmissive="0.000000,0.000000,0.000000,0.000000">
+                <CCutsceneElementObject guid="6095091753874726087" start="24543" duration="5962"/>
+                <CCutsceneNodeAnimLayer guid="13519470904710552687" name="Animation Layer">
+                    <CCutsceneElementAnim guid="7670453195407121519" start="24543" duration="1771" anim="Stand Work Start" priority="8" originalDuration="2000"/>
+                    <CCutsceneElementAnim guid="7910249469399559490" start="26314" duration="4191" anim="Stand Work" priority="6" originalDuration="1000" movespeed="1500.000000" looping="1"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodeFollowPath guid="11419636157578356588" name="Follow Path">
+                    <CCutsceneElementFollowPath guid="6367798967422267814" start="26314" duration="4191" pathGuid="10053480078761217930"/>
+                </CCutsceneNodeFollowPath>
+            </CCutsceneNodeActor>
+        </CCutsceneNodeFolder>
+    </CCutsceneNodeFolder>
+    <CCutsceneNodeFolder guid="11618182320514957251" locked="1" name="SET">
+        <CCutsceneNodeActor guid="9786815443033923950" name="SMX2 Aiur1 Debrief Skybox" position="52.844398,96.870804,-15.624851" rotation="0.000000,0.000000,-203.500122" modelLink="SMX2_Aiur1_Debrief_Skybox" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="8640585226891305326" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodeActiveShot guid="9404213507095006265" cameraGUID="10964238379300345893" cameraIndex="0"/>
+            <CCutsceneNodeActiveShot guid="11497057208091628741" cameraGUID="13416194318033830553" cameraIndex="0"/>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="10508971054812729440" name="SMX2 Aiur1 Debrief Skybox" position="52.844398,114.486450,83.583839" rotation="0.000000,0.000000,-203.500122" modelLink="SMX2_Aiur1_Debrief_Skybox" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="6091858926183747680" duration="141670" lockedToEnd="1"/>
+            <CCutsceneNodeActiveShot guid="10811583369883241328" cameraGUID="13690887078051529398" cameraIndex="0"/>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="10207702120266942601" name="Snow Refinery Mountain" position="55.184174,173.615936,-4.245798" scale="1.808105,1.808105,1.808105" modelLink="SnowRefinery_Mountain" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="8261559130284837001" duration="141670" lockedToEnd="1"/>
+        </CCutsceneNodeActor>
+        <CCutsceneNodeActor guid="11992271860621350999" name="Snow Refinery Mountain" position="6.277725,170.569565,-2.120000" scale="1.808105,1.808105,1.808105" rotation="0.000000,0.000000,11.477562" modelLink="SnowRefinery_Mountain" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+            <CCutsceneElementObject guid="8770199111832934487" duration="141670" lockedToEnd="1"/>
+        </CCutsceneNodeActor>
+    </CCutsceneNodeFolder>
+    <CCutsceneNodeFolder guid="11791668189814436255" name="Sounds">
+        <CCutsceneNodeSoundGroup guid="12446391237518999025" name="Sound Group">
+            <CCutsceneNodeSound guid="11719515014848795865" name="DiabloSmall_voxRoar" position="70.189438,139.201981,66.476387" soundLink="DiabloSmall_voxRoar" mode="2" assetDuration="3026" speakerMixLFE="0.000000">
+                <CCutsceneElementObject guid="7264210361986536665" start="21768" duration="6052"/>
+            </CCutsceneNodeSound>
+        </CCutsceneNodeSoundGroup>
+        <CCutsceneNodeSoundGroup guid="10464318143614350583" name="Effects">
+            <CCutsceneNodeSound guid="11153994906998680340" name="SlaynElemental_Death_Charge" position="70.146057,139.254120,66.406609" soundLink="SlaynElemental_Death_Charge" soundIndex="1" mode="2" assetDuration="3637" speakerMixLFE="0.000000">
+                <CCutsceneElementObject guid="5228062888998742804" start="22254" duration="7069"/>
+            </CCutsceneNodeSound>
+            <CCutsceneNodeSound guid="10170514826542997026" name="Void Sphere Blast Split" position="70.165344,139.182266,66.444336" soundLink="PhaseMineBlastSplit" mode="2" assetDuration="1824" speakerMixLFE="0.000000">
+                <CCutsceneElementObject guid="7494096391148428834" start="24943" duration="3648"/>
+            </CCutsceneNodeSound>
+            <CCutsceneNodeSound guid="13571014649678192114" name="Void_Thrasher_Electric_Strike_Impact" position="70.197235,139.203247,66.454948" soundLink="Void_Thrasher_Electric_Strike_Impact" soundIndex="2" mode="2" assetDuration="1897" speakerMixLFE="0.000000">
+                <CCutsceneElementObject guid="6083663948575464946" start="26182" duration="4761"/>
+            </CCutsceneNodeSound>
+            <CCutsceneNodeSound guid="13650258445130368908" name="Zurvan_AttackWhoosh" position="52.670593,93.773987,7.999241" soundLink="Zurvan_AttackWhoosh" soundIndex="2" volumeScale="3.000000" pitchScale="0.800000" mode="2" assetDuration="1238">
+                <CCutsceneElementObject guid="7737630796999395212" start="8833" duration="2605"/>
+            </CCutsceneNodeSound>
+        </CCutsceneNodeSoundGroup>
+        <CCutsceneNodeSoundGroup guid="11499953476755590460" name="Musics">
+            <CCutsceneNodeSound guid="13023665008842342167" name="THanson02MusicAlt" soundLink="THanson02MusicAlt" soundIndex="1" assetDuration="0" speakerMixCenter="0.400000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                <CCutsceneElementObject guid="8911542832934387479" duration="92307"/>
+            </CCutsceneNodeSound>
+        </CCutsceneNodeSoundGroup>
+    </CCutsceneNodeFolder>
+</CutsceneState>

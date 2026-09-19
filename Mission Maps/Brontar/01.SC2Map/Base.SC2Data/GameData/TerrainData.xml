@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTerrain id="KorhalOutskirts">
+        <FogColor value="255,108,112,95"/>
+        <FogDensity value="0.141000"/>
+        <FogFalloff value="0.175000"/>
+        <FogStartingHeight value="1.728000"/>
+        <Ambience value="PKorhal02_Ambience_Disruption"/>
+    </CTerrain>
+</Catalog>

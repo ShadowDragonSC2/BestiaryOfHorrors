@@ -74,7 +74,7 @@
     <ObjectUnit Id="1071323370" Position="63.3603,44.3393,0" Rotation="1.148" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="143248038" Position="66.7741,50.031,0" Rotation="2.5883" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="988812321" Position="63.4916,57.8034,0" Rotation="1.449" Scale="1,1,1" UnitType="Marine" Player="1"/>
-    <ObjectUnit Id="2141076171" Position="45.8613,52.842,0" Rotation="1.378" Scale="1,1,1" UnitType="Energion" Player="1"/>
+    <ObjectUnit Id="2141076171" Position="45.8613,52.842,0" Rotation="1.378" Scale="1,1,1" UnitType="StormElemental" Player="1"/>
     <ObjectUnit Id="1269567704" Position="60.1582,43.8327,0" Rotation="1.1032" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="1077093734" Position="60.6782,44.8044,0" Rotation="5.9475" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="846900806" Position="69.4355,49.9892,0" Rotation="2.4731" Scale="1,1,1" UnitType="Marine" Player="1"/>

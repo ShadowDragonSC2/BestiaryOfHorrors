@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Regions>
+    <region id="1">
+        <name value="Area 01 - Main 1"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="17,12,151,177.3447"/>
+        </shape>
+    </region>
+    <region id="2">
+        <name value="Area 01 - Secondary Cave 1"/>
+        <color value="255,0,0,0"/>
+        <invisible/>
+        <shape type="rect">
+            <quad value="179,12,239,104"/>
+        </shape>
+    </region>
+    <region id="3">
+        <name value="Enter In Cave"/>
+        <shape type="circle">
+            <center value="146.1352,19.614"/>
+            <radius value="1.374"/>
+        </shape>
+    </region>
+    <region id="4">
+        <name value="Crushed Bridge"/>
+        <shape type="rect">
+            <quad value="216.484,56.5732,223.2292,60.9011"/>
+        </shape>
+    </region>
+    <region id="5">
+        <name value="Unburrow Zergs 1"/>
+        <color value="255,255,0,0"/>
+        <shape type="circle">
+            <center value="44.3146,99.3166"/>
+            <radius value="7.8352"/>
+        </shape>
+        <shape type="circle">
+            <center value="49.316,103.7946"/>
+            <radius value="5.1025"/>
+        </shape>
+        <shape type="circle">
+            <center value="52.2478,97.8361"/>
+            <radius value="4.0974"/>
+        </shape>
+        <shape type="circle">
+            <center value="39.433,98.2727"/>
+            <radius value="5.1447"/>
+        </shape>
+    </region>
+    <region id="6">
+        <name value="Trigger - Unburrow Zergs 1"/>
+        <color value="255,0,255,64"/>
+        <shape type="diamond">
+            <center value="33.715,92.2426"/>
+            <width value="1.5771"/>
+            <height value="9.6767"/>
+        </shape>
+    </region>
+    <region id="8">
+        <name value="Зерги - Засада 1"/>
+        <color value="255,251,88,19"/>
+        <shape type="diamond">
+            <center value="49.7106,43.6923"/>
+            <width value="9.4658"/>
+            <height value="6.7197"/>
+        </shape>
+    </region>
+    <region id="7">
+        <name value="Зерги - первый контакт"/>
+        <color value="255,255,175,43"/>
+        <shape type="rect">
+            <quad value="49.5024,26.5815,60.6665,36.0122"/>
+        </shape>
+        <shape type="diamond">
+            <center value="58.625,35.508"/>
+            <width value="12.2724"/>
+            <height value="10.6662"/>
+        </shape>
+    </region>
+    <region id="9">
+        <name value="Сообщение - Взрыв камней"/>
+        <shape type="circle">
+            <center value="34.4165,59.0058"/>
+            <radius value="6.9045"/>
+        </shape>
+    </region>
+    <region id="10">
+        <name value="Convo - Rocks Scantipede"/>
+        <shape type="diamond">
+            <center value="28.5202,66.3698"/>
+            <width value="11.8747"/>
+            <height value="7.3371"/>
+        </shape>
+    </region>
+    <region id="11">
+        <name value="Scene - Boss Fight 2"/>
+        <shape type="diamond">
+            <center value="132.8796,123.686"/>
+            <width value="18.214"/>
+            <height value="7.2097"/>
+        </shape>
+    </region>
+    <region id="12">
+        <name value="BOSS - Storm Elemental - Arena (Reveal)"/>
+        <invisible/>
+        <shape type="circle">
+            <center value="126.678,134.9155"/>
+            <radius value="21.6857"/>
+        </shape>
+    </region>
+</Regions>

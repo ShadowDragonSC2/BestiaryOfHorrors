@@ -1,0 +1,11 @@
+﻿DocInfo/DescLong=Completely devoid of any description whatsoever.
+DocInfo/DescShort=Any
+DocInfo/Name=Just Another StarCraft II Map
+MapInfo/Player00/Name=Neutral
+MapInfo/Player01/Name=Player 1
+MapInfo/Player02/Name=Zergs
+MapInfo/Player03/Name=Beast
+MapInfo/Player04/Name=Hostile
+Param/Value/0F277A06=Boss
+Param/Value/D6D4AD0F=Проверить координаты твари <s val="@@ObjectivePanelProgress">[0/3]</s>
+Param/Value/F879049B=<d stringref="Unit,Vassel,Name"/> погиб.

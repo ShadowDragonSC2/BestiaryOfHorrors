@@ -28,6 +28,7 @@
     
     <CActorUnit id="Vassel" parent="AdvancedStandard_Ground" unitName="Vassel">
         <Macros value="AttackElevationMacro"/>
+        <Macros value="Vassel_Grenade@Animation"/>
         <AnimBlendTime value="-0.800000"/>
         <WalkAnimMoveSpeed value="2.25"/>
         <UnitKillRank Text="UnitKillRank/Vassel"/>
@@ -40,7 +41,6 @@
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-collection-covertops-ghost.dds"/>
         </Wireframe>
-        <Macros value="Vassel_Grenade@Animation"/>
     </CActorUnit>
     
     <CModel id="Vassel" parent="Unit">

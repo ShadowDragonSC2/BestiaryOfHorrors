@@ -1,0 +1,17 @@
+﻿Conversation/BOH_Mission01_Intro/Group00001=Mission Intro
+Conversation/BOH_Mission01_Intro/Line00001=Я на месте.
+Conversation/BOH_Mission01_Intro/Line00002=Да, вижу тебя. Первый объект в относительной близости.
+Conversation/BOH_Mission01_Intro/Line00003=Ну что... Начнём же охоту.
+Conversation/BOH_Mission01_MiscConvo/Choice00001=Рассказать правду
+Conversation/BOH_Mission01_MiscConvo/Choice00002=Солгать
+Conversation/BOH_Mission01_MiscConvo/Group00001=Первая засада зергов
+Conversation/BOH_Mission01_MiscConvo/Group00002=Взрыв камней гранатой
+Conversation/BOH_Mission01_MiscConvo/Line00001=Чёрт! С тыла зашли!
+Conversation/BOH_Mission01_MiscConvo/Line00002=Проход завален. Сейчас быстро расчищу его своей гранатой
+Conversation/BOH_Mission01_MiscConvo/Line00003=Я расскаюсь, это я съел помидор
+Conversation/BOH_Mission01_MiscConvo/Line00004=Ах ты п*дор
+Conversation/BOH_Mission01_MiscConvo/Line00005=Это всё ОН!
+Conversation/BOH_Mission01_RockScantipede/Group00001=Rock Scantipede
+Conversation/BOH_Mission01_RockScantipede/Line00001=Они поедают камни? Интересная однако здесь живность обитает.
+Conversation/BOH_Mission01_RockScantipede/Line00002=Да. Здесь нет флоры вообще, вот и приходится местной фауне чем-то питаться.
+Conversation/BOH_Mission01_RockScantipede/Line00003=Хорошо мы хоть не фауна.

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalog>
+    <const id="$hero_pushpriority" path="CUnit.PushPriority" value="25"/>
+</Catalog>

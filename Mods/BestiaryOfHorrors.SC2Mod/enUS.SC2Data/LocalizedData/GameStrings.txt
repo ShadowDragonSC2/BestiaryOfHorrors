@@ -2,6 +2,7 @@
 Abil/Name/Gargantua_Jump=Jump
 Abil/Name/StoneScantipede_Eating=Eating
 Abil/Name/Vassel_Grenade=Grenade
+Abil/Name/StormElemental_Blast=Громовой снаряд
 Button/Name/Crystalisk=Породить кристаллиска
 Button/Name/Crystalisk_Symbionte=Symbionte
 Button/Name/Gargantua=Породить Гаргантюа
@@ -11,12 +12,18 @@ Button/Name/StoneScantipede_Eating=Eating
 Button/Name/Vassel=Нанять Вассела
 Button/Name/Vassel_BleedingBullets=Bleeding bullets
 Button/Name/Vassel_Grenade=Grenade
+Button/Name/StormElemental_Blast=Громовой снаряд
+Button/Name/StormElemental_Explode=Взрыв грома
 Button/Tooltip/Crystalisk_Symbionte=Выпускает паразита в указанную точку, который при попадании взрывается, нанеся <d ref="Effect,Crystalisk_Symbionte@Damage,Amount"/> ед. урона по площади, Через <d time="[d ref='Effect,Crystalisk_Symbionte@Delay,ExpireDelay'/]"/> в точке куда попал паразит, породиться симбионт.
 Button/Tooltip/Gargantua_Jump=Совершает прыжок на дальнее растояние, после чего в точке приземления наносит <d ref="Effect,Gargantua_Jump@Damage,Amount"/> ед. урона по площади
 Button/Tooltip/StoneScantipede_Eating=Нажмите <k val="E"/>, затем укажите точку, чтобы начать там есть камни.
 Button/Tooltip/Vassel=Спецагент.</n>В прошлом был "Призраком" доминиона.
 Button/Tooltip/Vassel_BleedingBullets=После каждого выстрела атакуемая цель кровоточит в течение <d time="[d ref='Behavior,Vassel_BleedingBullets@Target,Duration'/]"/> получая по <d ref="Effect,Vassel_BleedingBullets@Damage,Amount" precision="1"/> урона.
 Button/Tooltip/Vassel_Grenade=Наносит взрывной урон по области в размере <c val="#ColorLightGoldGradient"><d ref="Effect,Vassel_Grenade@Damage,Amount"/></c> ед.
+Button/Tooltip/StormElemental_Blast=Выпускает <d ref="Effect,StormElemental_Blast,PeriodCount"/> <lang rule="plural">энергетическую сферу,энергетические сферы,энергетических сфер</lang> в случайные точки указанной области. Каждая сфера наносит <d ref="Effect,StormElemental_Blast@Damage,Amount"/> ед. урона по области.
+Button/Tooltip/StormElemental_Explode=Штормовой элементаль концентрирует свои внутренние разряды в течение <d time="[d ref='Abil,StormElemental_Explode,PrepTime[0]'/]"/> после чего взрывается, нанося <d ref="Effect,StormElemental_Explode@Damage,Amount"/> ед. урона в большом радиусе.
+Button/Tooltip/StormElemental=Энергетическое чудовище, близкий родственник каменных элементалей Слейна. Обитает на Бронтаре и обладает аномально высокой энергией.
+Button/Tooltip/RockScantipede=Камнеед.<n/>Прокусывает твёрдые породы мощными жвалами. При угрозе задирает хвост с твёрдой клешнёй. Обмен веществ настолько экономичен, что запаса энергии в породе хватает для выживания.
 DataCollection/Name/Crystalisk_Symbionte=Симбионт
 DataCollection/Name/Gargantua_Jump=Прыжок
 DataCollection/Name/Vassel_BleedingBullets=Bleeding Bullets
@@ -45,9 +52,11 @@ Unit/Name/Crystalisk=Кристаллиск
 Unit/Name/Crystalisk_Symbionte@AttackMissile=Attack Missile
 Unit/Name/Gargantua=Гаргантюа
 Unit/Name/KukulzaGuardian=Древний Страж
-Unit/Name/RockScantipede=Rock Scantipede
+Unit/Name/RockScantipede=Камнеедка
 Unit/Name/Vassel=Вассел
 Unit/Name/Vassel_Grenade@AttackMissile=Attack Missile
+Unit/Name/StormElemental=Штормовой элементаль
+Unit/Name/StormElemental_Blast@AttackMissile=Снаряд
 UnitKillRank/Vassel=Охотник на чудовищ
 Weapon/Name/Gargantua_Weapon=Удар лапой
 Weapon/Name/Vassel_Weapon=Винтовка

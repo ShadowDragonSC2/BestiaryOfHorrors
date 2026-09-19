@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CConversation id="BOH_Mission01_Intro">
+        <EditorCategories value="ConversationType:Mission"/>
+        <ProductionLevel value="2"/>
+        <DefaultSpeaker1 value="Vassel"/>
+        <DefaultSpeaker2 value="Alvine"/>
+        <Lines>
+            <Id value="Line00001"/>
+            <Text value="Conversation/BOH_Mission01_Intro/Line00001"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Vassel"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00002"/>
+            <Text value="Conversation/BOH_Mission01_Intro/Line00002"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Alvine"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00003"/>
+            <Text value="Conversation/BOH_Mission01_Intro/Line00003"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Vassel"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value=""/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Groups Id="Group00001" Name="Conversation/BOH_Mission01_Intro/Group00001">
+            <Children value="Line00001"/>
+            <Children value="Line00002"/>
+            <Children value="Line00003"/>
+        </Groups>
+        <RootItems value="Group00001"/>
+    </CConversation>
+    <CConversation id="BOH_Mission01_MiscConvo">
+        <EditorCategories value="ConversationType:Mission"/>
+        <ProductionLevel value="2"/>
+        <DefaultSpeaker1 value="Vassel"/>
+        <DefaultSpeaker2 value="Alvine"/>
+        <Lines>
+            <Id value="Line00001"/>
+            <Text value="Conversation/BOH_Mission01_MiscConvo/Line00001"/>
+            <FacialBlend value="100"/>
+            <Sound value="BOH_Mission01_MiscConvo_Vassel_001"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Vassel"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00002"/>
+            <Text value="Conversation/BOH_Mission01_MiscConvo/Line00002"/>
+            <FacialBlend value="100"/>
+            <Sound value="BOH_Mission01_MiscConvo_Vassel_002"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Vassel"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Groups Id="Group00001" Name="Conversation/BOH_Mission01_MiscConvo/Group00001">
+            <Children value="Line00001"/>
+        </Groups>
+        <Groups Id="Group00002" Name="Conversation/BOH_Mission01_MiscConvo/Group00002">
+            <Children value="Line00002"/>
+        </Groups>
+        <RootItems value="Group00001"/>
+        <RootItems value="Group00002"/>
+    </CConversation>
+    <CConversation id="BOH_Mission01_RockScantipede">
+        <EditorCategories value="ConversationType:Mission"/>
+        <ProductionLevel value="2"/>
+        <DefaultSpeaker1 value="Vassel"/>
+        <DefaultSpeaker2 value="Alvine"/>
+        <Lines>
+            <Id value="Line00001"/>
+            <Text value="Conversation/BOH_Mission01_RockScantipede/Line00001"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Vassel"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00002"/>
+            <Text value="Conversation/BOH_Mission01_RockScantipede/Line00002"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Alvine"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00003"/>
+            <Text value="Conversation/BOH_Mission01_RockScantipede/Line00003"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <LookAtAttach value="Head"/>
+            <SpeakerCharacter value="Vassel"/>
+            <Objects index="Speaker" value=""/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Groups Id="Group00001" Name="Conversation/BOH_Mission01_RockScantipede/Group00001">
+            <Children value="Line00001"/>
+            <Children value="Line00002"/>
+            <Children value="Line00003"/>
+        </Groups>
+        <RootItems value="Group00001"/>
+    </CConversation>
+</Catalog>

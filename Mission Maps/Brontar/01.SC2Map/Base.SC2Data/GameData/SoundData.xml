@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="BOH_Mission01_MiscConvo_Alvine_004" parent="VO" Portrait="SiegeTankPortrait" Subtitle="BOH_Mission01_MiscConvo" Speaker="Alvine" Line="00004">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="BOH_Mission01_MiscConvo_Vassel_001" parent="VO" Portrait="Vassel@Portrait" Subtitle="BOH_Mission01_MiscConvo" Speaker="Vassel" Line="00001">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="BOH_Mission01_MiscConvo_Vassel_002" parent="VO" Portrait="Vassel@Portrait" Subtitle="BOH_Mission01_MiscConvo" Speaker="Vassel" Line="00002">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="BOH_Mission01_MiscConvo_Vassel_003" parent="VO" Portrait="Vassel@Portrait" Subtitle="BOH_Mission01_MiscConvo" Speaker="Vassel" Line="00003">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="BOH_Mission01_MiscConvo_Vassel_005" parent="VO" Portrait="Vassel@Portrait" Subtitle="BOH_Mission01_MiscConvo" Speaker="Vassel" Line="00005">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+</Catalog>

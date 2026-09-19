@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CutsceneState cutsceneVersion="1.300000">
+    <CCutsceneNodeFolder guid="12294119951568897949" name="CHARACTER">
+        <CCutsceneNodeFolder guid="13777497826550305695" name="Vassel">
+            <CCutsceneNodeActor guid="9294962005368602345" name="Вассел @ Vassel (Unit)" position="12.040230,0.739441,7.999308" rotation="0.000000,0.000000,-69.357025" modelLink="Vassel" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                <CCutsceneElementObject guid="5598593217764228841" duration="18084" lockedToEnd="1"/>
+                <CCutsceneNodeAnimLayer guid="12659775004701900918" name="Animation Layer">
+                    <CCutsceneElementAnim guid="6225609383328366710" duration="18084" lockedToEnd="1" anim="Stand" priority="3" originalDuration="1500" looping="1"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodeAnimLayer guid="13205455279413493481" name="Animation Layer">
+                    <CCutsceneElementAnim guid="4939585268500889321" duration="882" anim="Attack" priority="9" originalDuration="3333"/>
+                    <CCutsceneElementAnim guid="6833362195926857638" start="882" duration="449" anim="Stand Right" priority="3" originalDuration="666" looping="1"/>
+                    <CCutsceneElementAnim guid="8190053063402125490" start="1331" duration="5428" anim="Walk Cover" priority="5" originalDuration="666" originalMoveSpeed="225.000000" movespeed="225.000000" looping="1"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodePropertyValue guid="11635286547353386271" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                    <CCutsceneElementPropertyCurve guid="8033133330585173279" value="6.642998" time="0.000000" curveInValue="-1.000000,6.642998" curveOutValue="343.333344,6.642998" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="9207178587852478283" start="1030" value="6.642998" time="1030.000000" curveInValue="686.666626,6.642998" curveOutValue="1130.333374,-18.690344" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="8272428971080105247" start="1331" value="-69.357025" time="1331.000000" curveInValue="1230.666626,-44.023682" curveOutValue="1332.000000,-69.357025" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodeFollowPath guid="9318002254958366845" name="Follow Path">
+                    <CCutsceneElementFollowPath guid="7005423150089944887" start="1516" duration="1207" pathGuid="9270953213438183858"/>
+                    <CCutsceneElementFollowPath guid="4909685584552507080" start="3433" duration="5361" pathGuid="13743766673420823335"/>
+                </CCutsceneNodeFollowPath>
+            </CCutsceneNodeActor>
+            <CCutsceneNodePath guid="9270953213438183858" name="Vassel Path (1)">
+                <CCutsceneNodePathMarker guid="9384691002893208229" name="Path Marker" position="12.171440,0.657074,7.999308">
+                    <CCutsceneElementObject guid="8121600125400320677" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="10739163670735398783" name="Path Marker" position="13.054878,-2.686562,7.999308">
+                    <CCutsceneElementObject guid="8468209350882011007" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodePath guid="13743766673420823335" name="Vassel Path (2)">
+                <CCutsceneNodePathMarker guid="13052271381549833749" name="Path Marker" position="18.654953,-13.421204,7.999308">
+                    <CCutsceneElementObject guid="7629756978378291030" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="9603988502254778172" name="Path Marker" position="20.374329,-15.868416,7.999308">
+                    <CCutsceneElementObject guid="7575348020969273148" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+        </CCutsceneNodeFolder>
+        <CCutsceneNodeFolder guid="11485184621062630484" name="Mitoscarab">
+            <CCutsceneNodeActor guid="9711426462448209662" name="Ancient Mitosaurus" position="14.585281,1.058846,7.999308" rotation="0.000001,-0.000006,-70.797356" modelLink="Mitosaurus" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                <CCutsceneElementObject guid="6197732289029197566" duration="18084" lockedToEnd="1"/>
+                <CCutsceneNodeAnimLayer guid="13502207886873186046" name="Animation Layer">
+                    <CCutsceneElementAnim guid="4722346469494738686" duration="1978" anim="Run 03" priority="6" originalDuration="667" originalMoveSpeed="750.000000" movespeed="750.000000" looping="1"/>
+                    <CCutsceneElementAnim guid="5359890714330310694" start="1978" duration="16106" lockedToEnd="1" anim="Run End" priority="6" originalDuration="1500"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodeAnimLayer guid="10862019783616214832" name="Animation Layer">
+                    <CCutsceneElementAnim guid="5052582616012011312" start="3633" duration="1500" anim="Spell Start B" priority="9" originalDuration="1500"/>
+                    <CCutsceneElementAnim guid="8286835938080704434" start="6527" duration="1500" anim="Attack" priority="9" originalDuration="1500" looping="1"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodeFollowPath guid="11993454273276856230" name="Follow Path">
+                    <CCutsceneElementFollowPath guid="7146611327165535955" duration="6389" pathGuid="11569997304139569194"/>
+                </CCutsceneNodeFollowPath>
+                <CCutsceneNodePropertyValue guid="12627670511122137188" name="Property - Position X" propertyName="positionX">
+                    <CCutsceneElementPropertyCurve guid="5767162040533401700" value="29.983925" time="0.000000" curveInValue="-1.000000,29.983925" curveOutValue="2175.666748,24.851044" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="5782477772114545373" start="6527" value="14.585281" time="6527.000000" curveInValue="4351.333008,19.718163" curveOutValue="6528.000000,14.585281" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11994442171045134436" name="Property - Position Y" propertyName="positionY">
+                    <CCutsceneElementPropertyCurve guid="6000946069756461156" value="2.914101" time="0.000000" curveInValue="-1.000000,2.914101" curveOutValue="2175.666748,2.295682" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6188156524351376093" start="6527" value="1.058846" time="6527.000000" curveInValue="4351.333008,1.677264" curveOutValue="6528.000000,1.058846" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11745338577592795236" name="Property - Rotation X" propertyName="rotationX">
+                    <CCutsceneElementPropertyCurve guid="7958551043256369252" value="0.000000" time="0.000000" curveInValue="-1.000000,0.000000" curveOutValue="2175.666748,0.000000" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="8743427448587864797" start="6527" value="0.000001" time="6527.000000" curveInValue="4351.333008,0.000000" curveOutValue="6528.000000,0.000001" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11332487333050859620" name="Property - Rotation Y" propertyName="rotationY">
+                    <CCutsceneElementPropertyCurve guid="8108244981532868708" value="0.000000" time="0.000000" curveInValue="-1.000000,0.000000" curveOutValue="2175.666748,-0.000002" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6866683326153542365" start="6527" value="-0.000006" time="6527.000000" curveInValue="4351.333008,-0.000004" curveOutValue="6528.000000,-0.000006" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="13126093442824028260" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                    <CCutsceneElementPropertyCurve guid="7575034237754061583" value="187.997253" time="0.000000" curveInValue="-1.000000,187.997253" curveOutValue="2175.666748,101.732376" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6513900660989807325" start="6527" value="-70.797356" time="6527.000000" curveInValue="4351.333008,15.467522" curveOutValue="6528.000000,-70.797356" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+            </CCutsceneNodeActor>
+            <CCutsceneNodePath guid="11569997304139569194" name="Mitoscarab Path">
+                <CCutsceneNodePathMarker guid="11515973525837015383" name="Path Marker" position="29.320129,2.780968,7.999308">
+                    <CCutsceneElementObject guid="7671258204211341655" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="12778485947880191276" name="Path Marker" position="14.347061,1.031006,7.999308">
+                    <CCutsceneElementObject guid="7817987145065861908" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodeActor guid="9395598395574281164" name="Kraith Spine Volley Attack Missile" position="22.988579,-21.494999,9.069241" rotation="0.007457,0.002725,-68.149658" modelLink="KraithSpineVolleyAttackMissile" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                <CCutsceneElementObject guid="6434435495449551820" start="7136" duration="10948" lockedToEnd="1"/>
+                <CCutsceneNodeAnimLayer guid="12429079597648808518" name="Animation Layer">
+                    <CCutsceneElementAnim guid="9111102887725468230" duration="7564" anim="Stand" priority="3" originalDuration="1667" movespeed="5000.000000" looping="1"/>
+                    <CCutsceneElementAnim guid="6831423561335386923" start="7564" duration="1667" anim="Stand" priority="3" originalDuration="1667" looping="1"/>
+                    <CCutsceneElementAnim guid="5715808305870353195" start="9231" duration="8853" lockedToEnd="1" anim="Stand" priority="3" originalDuration="1667" movespeed="5000.000000" looping="1"/>
+                </CCutsceneNodeAnimLayer>
+                <CCutsceneNodeFollowPath guid="10954180140203355403" name="Follow Path">
+                    <CCutsceneElementFollowPath guid="6117852220545024915" start="7136" duration="1367" pathGuid="12792807274550760666"/>
+                </CCutsceneNodeFollowPath>
+                <CCutsceneNodePropertyValue guid="12484401277892825292" name="Property - Position X" propertyName="positionX">
+                    <CCutsceneElementPropertyCurve guid="8445643982341209962" start="8503" value="22.607727" time="8503.000000" curveInValue="8502.000000,22.607727" curveOutValue="8794.000000,22.734678" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="7329624322328466628" start="9376" value="22.988579" time="9376.000000" curveInValue="9085.000000,22.861628" curveOutValue="9377.000000,22.988579" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="13283654374820417740" name="Property - Position Y" propertyName="positionY">
+                    <CCutsceneElementPropertyCurve guid="5707631120306995050" start="8503" value="-20.545223" time="8503.000000" curveInValue="8502.000000,-20.545223" curveOutValue="8794.000000,-20.861814" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="8688364877417518276" start="9376" value="-21.494999" time="9376.000000" curveInValue="9085.000000,-21.178408" curveOutValue="9377.000000,-21.494999" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11585915276578525388" name="Property - Position Z" propertyName="positionZ">
+                    <CCutsceneElementPropertyCurve guid="7335505201020600170" start="8503" value="9.069383" time="8503.000000" curveInValue="8502.000000,9.069383" curveOutValue="8794.000000,9.069335" curveOutType="3" curveInType="3"/>
+                    <CCutsceneElementPropertyCurve guid="6286939604414338244" start="9376" value="9.069241" time="9376.000000" curveInValue="9085.000000,9.069288" curveOutValue="9377.000000,9.069241" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="10149654027835281612" name="Property - Rotation X" propertyName="rotationX">
+                    <CCutsceneElementPropertyCurve guid="4689882432757628778" start="8503" value="0.007457" time="8503.000000" curveInValue="8502.000000,0.007457" curveOutValue="8514.000000,0.006727" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="11495768147873239244" name="Property - Rotation Y" propertyName="rotationY">
+                    <CCutsceneElementPropertyCurve guid="5837723497859448682" start="8503" value="0.002725" time="8503.000000" curveInValue="8502.000000,0.002725" curveOutValue="8514.000000,-0.000163" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+                <CCutsceneNodePropertyValue guid="10310986958116753612" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                    <CCutsceneElementPropertyCurve guid="6460732028071923418" start="8503" value="-68.149658" time="8503.000000" curveInValue="8502.000000,-68.149658" curveOutValue="8504.000000,-68.149658" curveOutType="3" curveInType="3"/>
+                </CCutsceneNodePropertyValue>
+            </CCutsceneNodeActor>
+            <CCutsceneNodeFolder guid="13189257214745899841" name="test">
+                <CCutsceneNodeActor guid="13556876489701615118" name="Ancient Mitosaurus Test" position="14.585281,1.058846,7.999308" rotation="0.000001,-0.000006,-70.797356" modelLink="Mitosaurus" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                    <CCutsceneElementObject guid="6788666694505227790" duration="1656"/>
+                    <CCutsceneNodeAnimLayer guid="11210605795144263182" name="Animation Layer">
+                        <CCutsceneElementAnim guid="8451856594781758990" duration="1656" anim="Run 03" priority="6" originalDuration="667" originalMoveSpeed="750.000000" movespeed="750.000000" looping="1"/>
+                        <CCutsceneElementAnim guid="8212152578147820974" start="1656" duration="5000" anim="Work" priority="6" originalDuration="1500" looping="1"/>
+                    </CCutsceneNodeAnimLayer>
+                    <CCutsceneNodeFollowPath guid="13771333045901383847" name="Follow Path">
+                        <CCutsceneElementFollowPath guid="7196419586616638630" duration="18084" lockedToEnd="1" pathGuid="10237399232126898206"/>
+                    </CCutsceneNodeFollowPath>
+                    <CCutsceneNodePropertyValue guid="12735455502566006037" name="Property - Position X" propertyName="positionX">
+                        <CCutsceneElementPropertyCurve guid="7338733575069342997" start="1656" value="14.585281" time="1656.000000" curveInValue="1655.000000,14.585281" curveOutValue="1657.000000,14.585281" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="10319237881159064853" name="Property - Position Y" propertyName="positionY">
+                        <CCutsceneElementPropertyCurve guid="5623730950270459157" start="1656" value="1.058846" time="1656.000000" curveInValue="1655.000000,1.058846" curveOutValue="1657.000000,1.058846" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="12035671485981760789" name="Property - Position Z" propertyName="positionZ">
+                        <CCutsceneElementPropertyCurve guid="5487923092233493781" start="1656" value="7.999308" time="1656.000000" curveInValue="1655.000000,7.999308" curveOutValue="1657.000000,7.999308" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="13418928105238404373" name="Property - Rotation X" propertyName="rotationX">
+                        <CCutsceneElementPropertyCurve guid="5371326202004741397" start="1656" value="0.000001" time="1656.000000" curveInValue="1655.000000,0.000001" curveOutValue="1657.000000,0.000001" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="9956159681914809370" name="Property - Rotation Y" propertyName="rotationY">
+                        <CCutsceneElementPropertyCurve guid="7566954398322600986" start="1656" value="-0.000006" time="1656.000000" curveInValue="1655.000000,-0.000006" curveOutValue="1657.000000,-0.000006" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="13722701552166710298" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                        <CCutsceneElementPropertyCurve guid="7313257564980456474" start="1656" value="-70.797356" time="1656.000000" curveInValue="1655.000000,-70.797356" curveOutValue="1657.000000,-70.797356" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                </CCutsceneNodeActor>
+                <CCutsceneNodePath guid="10237399232126898206" name="test">
+                    <CCutsceneNodePathMarker guid="9234974303833805537" name="Path Marker" position="26.438492,-1.018303,7.999307">
+                        <CCutsceneElementObject guid="7030357811156472545" duration="18084" lockedToEnd="1"/>
+                    </CCutsceneNodePathMarker>
+                    <CCutsceneNodePathMarker guid="11288977566610856463" name="Path Marker" position="14.222229,-7.735588,7.679118">
+                        <CCutsceneElementObject guid="5723354259197630991" duration="18084" lockedToEnd="1"/>
+                    </CCutsceneNodePathMarker>
+                </CCutsceneNodePath>
+                <CCutsceneNodeActor guid="10705223979820117042" name="Mitosaurus Death" position="15.216850,-7.259693,7.681951" scale="0.839410,0.839410,0.839410" rotation="0.000001,-0.000006,206.306061" modelLink="MitosaurusDeath" shadowBox="0" teamColorDiffuse="0.705800,0.078300,0.117600,1.000000" teamColorEmissive="0.545100,0.062700,0.086100,1.000000">
+                    <CCutsceneElementObject guid="6414403281470876722" start="1656" duration="16428" lockedToEnd="1"/>
+                    <CCutsceneNodeAnimLayer guid="11441301597396511633" name="Animation Layer">
+                        <CCutsceneElementAnim guid="4769960726522342289" start="1656" duration="16428" lockedToEnd="1" anim="Death" priority="11" originalDuration="6667"/>
+                    </CCutsceneNodeAnimLayer>
+                    <CCutsceneNodePropertyValue guid="11415485463766829390" name="Property - Position X" propertyName="positionX">
+                        <CCutsceneElementPropertyCurve guid="4984002083829385550" start="1656" value="15.216850" time="1656.000000" curveInValue="1655.000000,15.216850" curveOutValue="1657.000000,15.216850" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="13330906754544109902" name="Property - Position Y" propertyName="positionY">
+                        <CCutsceneElementPropertyCurve guid="6671303118756841806" start="1656" value="-7.259693" time="1656.000000" curveInValue="1655.000000,-7.259693" curveOutValue="1657.000000,-7.259693" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="10746837606436505934" name="Property - Position Z" propertyName="positionZ">
+                        <CCutsceneElementPropertyCurve guid="7276820428624300366" start="1656" value="7.681951" time="1656.000000" curveInValue="1655.000000,7.681951" curveOutValue="1657.000000,7.681951" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="13127385812212975950" name="Property - Rotation X" propertyName="rotationX">
+                        <CCutsceneElementPropertyCurve guid="4962671017084651854" start="1656" value="0.000001" time="1656.000000" curveInValue="1655.000000,0.000001" curveOutValue="1657.000000,0.000001" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="10532218223799372110" name="Property - Rotation Y" propertyName="rotationY">
+                        <CCutsceneElementPropertyCurve guid="7712288163493120334" start="1656" value="-0.000006" time="1656.000000" curveInValue="1655.000000,-0.000006" curveOutValue="1657.000000,-0.000006" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                    <CCutsceneNodePropertyValue guid="12119968857472698702" name="Property - Rotation Z (Facing)" propertyName="rotationZ">
+                        <CCutsceneElementPropertyCurve guid="4809171372711676238" start="1656" value="206.306061" time="1656.000000" curveInValue="1655.000000,206.306061" curveOutValue="1657.000000,206.306061" curveOutType="3" curveInType="3"/>
+                    </CCutsceneNodePropertyValue>
+                </CCutsceneNodeActor>
+                <CCutsceneNodeSound guid="10312443349032199557" name="Kraith_DeathRoar" position="16.739365,-9.638508,7.999308" soundLink="Kraith_DeathRoar" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                    <CCutsceneElementObject guid="8707357909524637061" start="1840" duration="2950"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="9370112478269002162" name="Kraith_Vox_DieHit" position="19.646606,-13.107239,7.999308" soundLink="Kraith_Vox_DieHit" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                    <CCutsceneElementObject guid="5945246951609848242" start="1656" duration="1668"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="11912456689056805381" name="Kraith_DeadHeartBeat" soundLink="Kraith_DeadHeartBeat" soundIndex="2" assetDuration="0" speakerMixCenter="0.800000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                    <CCutsceneElementObject guid="6949047389214011909" start="3502" duration="808"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="11110828411938533862" name="Kraith_DeadHeartBeat" soundLink="Kraith_DeadHeartBeat" soundIndex="2" assetDuration="0" speakerMixCenter="0.800000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                    <CCutsceneElementObject guid="4633333648654463462" start="3742" duration="808"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="9491269415328619064" name="Kraith_DeadHeartBeat" soundLink="Kraith_DeadHeartBeat" soundIndex="2" assetDuration="0" speakerMixCenter="0.800000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                    <CCutsceneElementObject guid="5855632418772425272" start="4162" duration="808"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="12996379031454685752" name="Kraith_DeadHeartBeat" soundLink="Kraith_DeadHeartBeat" soundIndex="2" assetDuration="0" speakerMixCenter="0.800000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                    <CCutsceneElementObject guid="7201157299362142776" start="4402" duration="808"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="12447090779015518155" name="Kraith_DeadHeartBeat" soundLink="Kraith_DeadHeartBeat" soundIndex="2" assetDuration="0" speakerMixCenter="0.800000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                    <CCutsceneElementObject guid="5048754086871209931" start="4830" duration="808"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="13751935481724180427" name="Kraith_DeadHeartBeat" soundLink="Kraith_DeadHeartBeat" soundIndex="2" assetDuration="0" speakerMixCenter="0.800000" speakerMixLFE="0.000000" speakerMixBackLeft="0.700000" speakerMixBackRight="0.700000" speakerMixSideLeft="0.500000" speakerMixSideRight="0.500000">
+                    <CCutsceneElementObject guid="7999646972866893771" start="5070" duration="808"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="13246766332160647621" name="Kraith_FoleyMovement" position="23.111588,-10.122414,7.999308" soundLink="Kraith_FoleyMovement" soundIndex="1" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                    <CCutsceneElementObject guid="7010252387034735045" duration="637"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="11905584446240585516" name="Kraith_FoleyMovement" position="23.111588,-10.122414,7.999308" soundLink="Kraith_FoleyMovement" soundIndex="1" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                    <CCutsceneElementObject guid="8407730344137455404" start="637" duration="637"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="12553108697899379348" name="Kraith_FoleyMovement" position="23.111588,-10.122414,7.999308" soundLink="Kraith_FoleyMovement" soundIndex="1" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                    <CCutsceneElementObject guid="7181265892450806420" start="1274" duration="637"/>
+                </CCutsceneNodeSound>
+                <CCutsceneNodeSound guid="11519390952620368425" name="Kraith_Foley_LargeFootSteps" position="18.696030,-12.436584,7.999308" soundLink="Kraith_Foley_LargeFootSteps" soundIndex="3" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                    <CCutsceneElementObject guid="5842048691070378537" start="1537" duration="1230"/>
+                </CCutsceneNodeSound>
+            </CCutsceneNodeFolder>
+            <CCutsceneNodePath guid="12792807274550760666" name="Mitoscarab Missile (1)">
+                <CCutsceneNodePathMarker guid="11014490391464424311" name="Path Marker" position="15.570328,-1.284431,9.232183">
+                    <CCutsceneElementObject guid="7216819513079149431" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+                <CCutsceneNodePathMarker guid="9948302545870664093" name="Path Marker" position="22.607727,-20.545223,9.069383">
+                    <CCutsceneElementObject guid="7983085863825060253" duration="18084" lockedToEnd="1"/>
+                </CCutsceneNodePathMarker>
+            </CCutsceneNodePath>
+            <CCutsceneNodeSound guid="13743864358462123252" name="Spell_SpineVolley_Launch" position="15.011253,1.522110,10.200057" soundLink="Spell_SpineVolley_Launch" soundIndex="6" mode="2" assetDuration="0" speakerMixLFE="0.000000">
+                <CCutsceneElementObject guid="7749227460187507624" start="7136" duration="983"/>
+            </CCutsceneNodeSound>
+        </CCutsceneNodeFolder>
+    </CCutsceneNodeFolder>
+</CutsceneState>
