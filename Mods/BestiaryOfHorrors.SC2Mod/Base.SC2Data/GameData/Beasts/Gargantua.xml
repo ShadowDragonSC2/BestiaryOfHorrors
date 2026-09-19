@@ -347,6 +347,7 @@
         <DataRecord Entry="Actor,Gargantua_Weapon@AttackForce"/>
     </CDataCollectionUnit>
     <CUnit id="Gargantua" parent="Generic_Unit_Ground" race="Zerg">
+        <PushPriority value="25"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
         <LifeRegenDelay value="2.5"/>
