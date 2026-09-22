@@ -29,7 +29,6 @@ const int gv_p3_BEASTS = 3;
 //--------------------------------------------------------------------------------------------------
 // Global Variables
 //--------------------------------------------------------------------------------------------------
-int gv_current_Cutscene;
 int gv_oBJECTIVE_MAIN;
 unit gv_kARAK_VICTIM;
 unit gv_sCANTIPEDE_HUNTER;
@@ -40,6 +39,7 @@ unit gv_aREA_01ROCKSCANTIPEDE;
 unit gv_bOSS_STORM_ELEMENTAL;
 actor gv_pING_AREA_01_DEBRIS_ROCKS;
 actor gv_pING_AREA_01_ROCKS_SCANTIPEDE;
+int gv_current_Cutscene;
 int gv_scene_Brigde;
 bool gv_sceneBridge_isCreated;
 int gv_currentPoint;
@@ -48,7 +48,6 @@ revealer gv_revealerArena;
 revealer gv_revealerArenaP3;
 
 void InitGlobals () {
-    gv_current_Cutscene = c_cutsceneNone;
     gv_oBJECTIVE_MAIN = c_invalidObjectiveId;
     gv_kARAK_VICTIM = UnitFromId(292004532);
     gv_sCANTIPEDE_HUNTER = UnitFromId(1935110580);
@@ -57,6 +56,7 @@ void InitGlobals () {
     gv_aREA_01DEBRIS_ROCKS = UnitFromId(1245760615);
     gv_aREA_01ROCKSCANTIPEDE = UnitFromId(494724233);
     gv_bOSS_STORM_ELEMENTAL = UnitFromId(1034094003);
+    gv_current_Cutscene = c_cutsceneNone;
     gv_scene_Brigde = c_cutsceneNone;
     gv_currentPoint = 2;
     gv_strpoint = "BOSS - Storm Elemental - Move";
@@ -84,7 +84,7 @@ trigger gt_StormElementalAttackManager;
 trigger gt_StormElementalAttackVariant1;
 trigger gt_StormElementalAttackVariant2;
 trigger gt_Objective1Setup;
-trigger gt_Objectve1Incompletepart1;
+trigger gt_Objective1Incompletepart1;
 trigger gt_TransmissionExplodingRocks;
 trigger gt_TransmissionExplodingRocksZergsDies;
 trigger gt_ConvoIntroMission;
@@ -688,7 +688,7 @@ bool gt_Objective1Setup_Func (bool testConds, bool runActions) {
 
     ObjectiveCreate(StringExternal("Param/Value/D6D4AD0F"), StringToText(""), c_objectiveStateActive, true);
     gv_oBJECTIVE_MAIN = ObjectiveLastCreated();
-    TriggerEnable(gt_Objectve1Incompletepart1, true);
+    TriggerEnable(gt_Objective1Incompletepart1, true);
     return true;
 }
 
@@ -698,17 +698,17 @@ void gt_Objective1Setup_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Objectve 1 - Incomplete part 1
+// Trigger: Objective 1 - Incomplete part 1
 //--------------------------------------------------------------------------------------------------
-bool gt_Objectve1Incompletepart1_Func (bool testConds, bool runActions) {
+bool gt_Objective1Incompletepart1_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void gt_Objectve1Incompletepart1_Init () {
-    gt_Objectve1Incompletepart1 = TriggerCreate("gt_Objectve1Incompletepart1_Func");
-    TriggerEnable(gt_Objectve1Incompletepart1, false);
+void gt_Objective1Incompletepart1_Init () {
+    gt_Objective1Incompletepart1 = TriggerCreate("gt_Objective1Incompletepart1_Func");
+    TriggerEnable(gt_Objective1Incompletepart1, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1005,7 +1005,7 @@ void InitTriggers () {
     gt_StormElementalAttackVariant1_Init();
     gt_StormElementalAttackVariant2_Init();
     gt_Objective1Setup_Init();
-    gt_Objectve1Incompletepart1_Init();
+    gt_Objective1Incompletepart1_Init();
     gt_TransmissionExplodingRocks_Init();
     gt_TransmissionExplodingRocksZergsDies_Init();
     gt_ConvoIntroMission_Init();

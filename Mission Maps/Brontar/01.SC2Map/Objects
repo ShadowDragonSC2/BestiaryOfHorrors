@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlacedObjects Version="27">
-    <ObjectDoodad Id="1073786509" Variation="4" Position="96.3854,95.5341,7.9895" Rotation="4.2756" Scale="0.9084,0.9084,0.9084" Type="CharDuneRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1923986863" Variation="8" Position="144.4826,60.03,7.9926" Rotation="3.7485" Scale="0.9211,0.9211,0.9211" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="34485396" Variation="3" Position="36.1684,43.6154,7.999" Rotation="1.8212" Scale="1.0913,1.0913,1.0913" Type="RockVolcanicGiant">
+    <ObjectDoodad Id="1073786509" Variation="4" Position="96.3854,95.5341,7.9895" Rotation="4.2756" Scale="0.9084,0.9084,0.9084" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1851670478" Position="229.1401,40.917,9.9995" Rotation="1.4992" Scale="0.9052,0.9052,0.9052" Type="CharFallingRock">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="381874752" Variation="4" Position="193.7827,56.8286,3.0588" Rotation="5.5761" Scale="2.037,2.037,0.142" Type="JarbanMinor_Medium_Rock">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="34485396" Variation="3" Position="36.1684,43.6154,7.999" Rotation="1.8212" Scale="1.0913,1.0913,1.0913" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2057577571" Variation="3" Position="201.8527,29.1667,7.9997" Rotation="1.1984" Scale="0.9338,0.9338,0.9338" Type="ChiseledRockLarge" TintColor="213,211,193 0.700000">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="381874752" Variation="4" Position="193.7827,56.8286,3.0588" Rotation="5.5761" Scale="2.037,2.037,0.142" Type="JarbanMinor_Medium_Rock">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1764289376" Variation="6" Position="74.3828,85.3637,11.2265" Rotation="3.3647" Scale="1.1633,1.1633,1.1633" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
@@ -51,36 +51,36 @@
     <ObjectDoodad Id="85772210" Position="56.3344,82.7214,7.9992" Scale="1,1,1" Type="Fog_Aiur">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="956293815" Variation="4" Position="117.7846,117.6218,-0.0007" Rotation="2.454" Scale="1.341,1.341,1.341" Type="RockVolcanicGiant">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1191897812" Position="208.209,83.785,7.9992" Rotation="1.442" Scale="1.0327,1.0327,1.0327" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="663056581" Variation="7" Position="110.241,158.752,7.9992" Rotation="2.55" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1191897812" Position="208.209,83.785,7.9992" Rotation="1.442" Scale="1.0327,1.0327,1.0327" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="956293815" Variation="4" Position="117.7846,117.6218,-0.0007" Rotation="2.454" Scale="1.341,1.341,1.341" Type="RockVolcanicGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="773040167" Position="65.7551,32.9272,11.9873" Rotation="3.264" Scale="0.9846,0.9846,0.9846" Type="Slayn_CliffSpires">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="488484373" Variation="4" Position="100.2563,101.8144,8.0041" Rotation="2.2277" Scale="1.0612,1.0612,1.0612" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="773040167" Position="65.7551,32.9272,11.9873" Rotation="3.264" Scale="0.9846,0.9846,0.9846" Type="Slayn_CliffSpires">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="801315384" Position="128.5002,143.5744,10.3564" Rotation="3.6435" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="413041048" Variation="2" Position="78.478,82.1738,9.2631" Rotation="2.4697" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1503747645" Variation="1" Position="44.614,35.8872,10.1667" Rotation="5.6354" Scale="0.7485,0.8901,0.7087" Type="Rock_Cliff_Chunks">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1503747645" Variation="1" Position="44.614,35.8872,10.1667" Rotation="5.6354" Scale="0.7485,0.8901,0.7087" Type="Rock_Cliff_Chunks">
+    <ObjectDoodad Id="413041048" Variation="2" Position="78.478,82.1738,9.2631" Rotation="2.4697" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -96,34 +96,34 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="95697308" Variation="5" Position="198.1408,56.489,-2.7722" Rotation="1.3017" Scale="1.0075,1.0075,1.0075" Type="Rock_Cliff" TintColor="255,255,255 0.500000" Pitch="0.0346" Roll="6.248">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1034706931" Position="100.7854,28.6535,10.1433" Rotation="2.9758" Scale="1.4765,1.6552,1.5732" Type="ChiseledRock">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="95697308" Variation="5" Position="198.1408,56.489,-2.7722" Rotation="1.3017" Scale="1.0075,1.0075,1.0075" Type="Rock_Cliff" TintColor="255,255,255 0.500000" Pitch="0.0346" Roll="6.248">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="874790709" Variation="4" Position="103.2954,149.0412,7.9992" Rotation="3.8488" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1533153176" Position="115.6657,144.7961,10.118" Scale="1,1,1" Type="Fog_Aiur">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2015305866" Variation="6" Position="126.2236,156.5366,8.1604" Rotation="2.953" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1533153176" Position="115.6657,144.7961,10.118" Scale="1,1,1" Type="Fog_Aiur">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="789507200" Position="212.4003,48.462,9.9965" Rotation="4.3093" Scale="1,1,0.6916" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1152876673" Variation="2" Position="43.8288,92.8122,7.5051" Rotation="0.2238" Scale="1,1,1" Type="CliffSpires" Pitch="5.6018" Roll="6.281">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="789507200" Position="212.4003,48.462,9.9965" Rotation="4.3093" Scale="1,1,0.6916" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="930008572" Variation="4" Position="71.4194,120.454,10.0222" Rotation="5.145" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
@@ -137,12 +137,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1409642662" Variation="11" Position="85.6218,89.7163,7.9953" Rotation="1.2246" Scale="0.8142,0.8142,0.8142" Type="CharDuneRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="405343030" Variation="4" Position="194.0251,40.3144,7.9921" Rotation="0.13" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="405343030" Variation="4" Position="194.0251,40.3144,7.9921" Rotation="0.13" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="1409642662" Variation="11" Position="85.6218,89.7163,7.9953" Rotation="1.2246" Scale="0.8142,0.8142,0.8142" Type="CharDuneRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -164,13 +164,13 @@
     <ObjectDoodad Id="664015073" Variation="3" Position="115.5,151.5,8.0187" Rotation="1.9" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1822145730" Variation="3" Position="12.9245,23.8203,-0.001" Rotation="0.9291" Scale="0.916,0.916,0.916" Type="RockVolcanicGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="10107751" Variation="5" Position="103.2822,147.3842,7.9992" Rotation="5.6655" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1822145730" Variation="3" Position="12.9245,23.8203,-0.001" Rotation="0.9291" Scale="0.916,0.916,0.916" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1711828567" Position="108.1528,160.0925,7.9848" Rotation="1.413" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
@@ -181,29 +181,29 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="548185872" Position="207.5141,64.1154,5.972" Rotation="0.2734" Scale="0.8891,0.8891,0.8891" Type="DesertCaveEntrance">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="573392700" Variation="3" Position="66.8476,30.9558,12.0092" Rotation="3.6345" Scale="1.0092,1.0092,1.0092" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="573392700" Variation="3" Position="66.8476,30.9558,12.0092" Rotation="3.6345" Scale="1.0092,1.0092,1.0092" Type="Slayn_CliffSpires">
+    <ObjectDoodad Id="548185872" Position="207.5141,64.1154,5.972" Rotation="0.2734" Scale="0.8891,0.8891,0.8891" Type="DesertCaveEntrance">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1330446114" Position="195.8298,57.97,3.1396" Rotation="5.4973" Scale="1,1,1" Type="SnowRefinery_RockRamps_Medium" TintColor="255,255,255 0.350000">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="547011263" Variation="4" Position="203.702,68.3886,9.9995" Scale="1,1,1" Type="JarbanMinor_Small_Rock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="24787642" Variation="5" Position="54.2814,60.528,0.0026" Rotation="2.3395" Scale="1.0771,1.0771,1.0771" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="547011263" Variation="4" Position="203.702,68.3886,9.9995" Scale="1,1,1" Type="JarbanMinor_Small_Rock">
+    <ObjectDoodad Id="1323082220" Variation="5" Position="50.3903,21.8918,7.9995" Rotation="3.964" Scale="0.9841,0.9841,0.9841" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1314420151" Position="20.0432,34.9458,5.4914" Rotation="6.1635" Scale="1,1,1" Type="Fog_Hazy">
         <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1323082220" Variation="5" Position="50.3903,21.8918,7.9995" Rotation="3.964" Scale="0.9841,0.9841,0.9841" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="988740315" Position="109.6025,158.7062,7.999" Rotation="1.6787" Scale="0.4445,0.4445,0.4445" Type="Spires">
@@ -252,19 +252,19 @@
     <ObjectDoodad Id="420940488" Variation="1" Position="199.5,23.5,9.9997" Rotation="0.8356" Scale="0.984,0.984,0.984" Type="ZerusSwampPlants">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1099585499" Variation="1" Position="28.0922,19.6386,0" Scale="1.002,1.002,1.236" Type="Rock_Cliff" TintColor="255,255,255 0.700000">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="950801376" Position="58.2563,19.923,7.9997" Rotation="2.1601" Scale="0.9667,0.9667,0.9667" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1126625292" Variation="5" Position="73.9362,101.8774,9.9914" Rotation="1.0954" Scale="1.009,1.009,1.009" Type="Slayn_CliffSpires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1099585499" Variation="1" Position="28.0922,19.6386,0" Scale="1.002,1.002,1.236" Type="Rock_Cliff" TintColor="255,255,255 0.700000">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="690025436" Variation="3" Position="142.1762,22.5917,10.0134" Rotation="0.9846" Scale="0.87,0.87,0.87" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1126625292" Variation="5" Position="73.9362,101.8774,9.9914" Rotation="1.0954" Scale="1.009,1.009,1.009" Type="Slayn_CliffSpires">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="670782940" Variation="4" Position="108.7204,35.5107,7.9997" Rotation="1.1423" Scale="1.0546,1.0546,0.5734" Type="Rock_Cliff_Chunks">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -281,12 +281,12 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="199078414" Variation="7" Position="103.9223,146.7434,7.9992" Rotation="0.422" Scale="1,1,1" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1598749523" Variation="1" Position="114.2272,140.6733,10.522" Rotation="2.1848" Scale="1.1894,1.1894,1.1894" Type="CliffSpikes">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1598749523" Variation="1" Position="114.2272,140.6733,10.522" Rotation="2.1848" Scale="1.1894,1.1894,1.1894" Type="CliffSpikes">
+    <ObjectDoodad Id="199078414" Variation="7" Position="103.9223,146.7434,7.9992" Rotation="0.422" Scale="1,1,1" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -305,11 +305,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="668186357" Position="194.0817,37.943,7.9997" Rotation="1.257" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="1847374904" Position="219.417,97.4277,7.9992" Rotation="4.6723" Scale="1.0715,1.0715,1.0715" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1847374904" Position="219.417,97.4277,7.9992" Rotation="4.6723" Scale="1.0715,1.0715,1.0715" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="668186357" Position="194.0817,37.943,7.9997" Rotation="1.257" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -317,12 +317,12 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1716888630" Variation="1" Position="140.9536,48.8725,-0.0007" Rotation="1.8764" Scale="1.4174,1.4174,1.4174" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="184420860" Variation="4" Position="60.547,57.0957,-0.0004" Rotation="2.3395" Scale="1.0771,1.0771,1.0771" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1716888630" Variation="1" Position="140.9536,48.8725,-0.0007" Rotation="1.8764" Scale="1.4174,1.4174,1.4174" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1363221868" Position="137.3715,145.3132,10.7797" Rotation="1.3334" Scale="1,1,1" Type="JarbanMinor_Medium_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -347,8 +347,7 @@
     <ObjectDoodad Id="1609546200" Variation="3" Position="135.706,27.4394,7.9992" Scale="1,1,1" Type="BrokenRocksSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1587020311" Variation="2" Position="80.2905,79.861,11.2658" Rotation="5.1728" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="2100418770" Position="115.642,41.2768,10.0043" Rotation="4.4326" Scale="0.918,0.918,0.918" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -356,7 +355,8 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2100418770" Position="115.642,41.2768,10.0043" Rotation="4.4326" Scale="0.918,0.918,0.918" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="1587020311" Variation="2" Position="80.2905,79.861,11.2658" Rotation="5.1728" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -406,12 +406,12 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1119059339" Position="205.6137,62.7702,-3.7832" Scale="0.6345,1,0.6345" Type="JarbanMinor_SandDrifts">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1479017528" Variation="2" Position="47.8762,34.1784,10.0122" Rotation="5.0114" Scale="0.9284,0.9284,0.9284" Type="ChiseledRockLarge" TintColor="213,211,193 0.700000">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1479017528" Variation="2" Position="47.8762,34.1784,10.0122" Rotation="5.0114" Scale="0.9284,0.9284,0.9284" Type="ChiseledRockLarge" TintColor="213,211,193 0.700000">
+    <ObjectDoodad Id="1119059339" Position="205.6137,62.7702,-3.7832" Scale="0.6345,1,0.6345" Type="JarbanMinor_SandDrifts">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -426,11 +426,11 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="925208934" Variation="5" Position="53.007,93.4125,9.7651" Rotation="0.3537" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1435" Roll="6.2658">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="448985049" Position="45.973,47.5207,11.999" Rotation="3.404" Scale="0.8283,0.8283,0.8283" Type="WindEmitterBrownSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="448985049" Position="45.973,47.5207,11.999" Rotation="3.404" Scale="0.8283,0.8283,0.8283" Type="WindEmitterBrownSmall">
+    <ObjectDoodad Id="925208934" Variation="5" Position="53.007,93.4125,9.7651" Rotation="0.3537" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1435" Roll="6.2658">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1919192482" Variation="1" Position="50.506,33.595,9.9995" Rotation="5.3913" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
@@ -440,10 +440,10 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="748563858" Variation="3" Position="117.7233,159.2326,7.9978" Rotation="1.6232" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group" TintColor="255,255,255 1.300000">
+    <ObjectDoodad Id="909184639" Position="185.6337,24.8847,9.9997" Rotation="0.1635" Scale="0.9301,0.9301,0.9301" Type="DesertCaveEntrance">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="909184639" Position="185.6337,24.8847,9.9997" Rotation="0.1635" Scale="0.9301,0.9301,0.9301" Type="DesertCaveEntrance">
+    <ObjectDoodad Id="748563858" Variation="3" Position="117.7233,159.2326,7.9978" Rotation="1.6232" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group" TintColor="255,255,255 1.300000">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1262918479" Variation="1" Position="142.8283,51.844,7.0612" Rotation="0.9631" Scale="0.7348,0.7348,0.7348" Type="CliffSpires" Pitch="5.87" Roll="6.1616">
@@ -483,11 +483,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1118118896" Variation="12" Position="85.0336,114.197,7.9995" Rotation="0.103" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1354448275" Variation="5" Position="105.6132,158.0795,9.9863" Rotation="5.7614" Scale="1.1618,1.1618,1.1618" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1354448275" Variation="5" Position="105.6132,158.0795,9.9863" Rotation="5.7614" Scale="1.1618,1.1618,1.1618" Type="DesertRockGiant">
+    <ObjectDoodad Id="1118118896" Variation="12" Position="85.0336,114.197,7.9995" Rotation="0.103" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1626801236" Variation="6" Position="134.1511,39.6564,10" Rotation="4.5983" Scale="1.125,1.125,1.125" Type="CharDuneRock">
@@ -499,32 +499,36 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="2051708781" Variation="1" Position="227.6682,56.2358,7.9992" Rotation="0.844" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1470550507" Variation="3" Position="40.6875,114.7683,7.9997" Rotation="1.308" Scale="1.0771,1.0771,1.0771" Type="RockVolcanicGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2051708781" Variation="1" Position="227.6682,56.2358,7.9992" Rotation="0.844" Scale="1,1,1" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1677973138" Variation="3" Position="23.6252,22.1552,0.048" Rotation="0.4138" Scale="1.002,1.002,1.236" Type="Rock_Cliff" TintColor="255,255,255 0.700000">
         <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1888927007" Position="196.643,89.561,7.9997" Rotation="1.856" Scale="0.8891,0.8891,0.8891" Type="DesertCaveEntrance">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="43920505" Position="214.1218,50.1396,7.9997" Rotation="4.0585" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1888927007" Position="196.643,89.561,7.9997" Rotation="1.856" Scale="0.8891,0.8891,0.8891" Type="DesertCaveEntrance">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1447720301" Variation="3" Position="213.7944,81.9765,7.9995" Scale="1,1,1" Type="JarbanMinor_Small_Rock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="476864344" Variation="5" Position="97.9941,59.9685,7.999" Rotation="5.2058" Scale="1.015,1.015,1.015" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2144441174" Variation="4" Position="76.0715,100.785,7.9995" Rotation="1.0954" Scale="1.009,1.009,1.009" Type="Slayn_CliffSpires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="476864344" Variation="5" Position="97.9941,59.9685,7.999" Rotation="5.2058" Scale="1.015,1.015,1.015" Type="DesertRockGiant">
+    <ObjectDoodad Id="411612830" Variation="4" Position="98.358,57.121,7.9895" Rotation="3.8591" Scale="1.015,1.015,1.015" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -533,14 +537,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="411612830" Variation="4" Position="98.358,57.121,7.9895" Rotation="3.8591" Scale="1.015,1.015,1.015" Type="DesertRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="776986695" Variation="5" Position="22.8305,56.3276,8.0092" Rotation="1.827" Scale="1.0212,1.0212,1.0212" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="580150738" Position="201.6743,74.0935,10.0217" Rotation="0.6748" Scale="0.8891,0.8891,0.8891" Type="DesertCaveEntrance">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="46634120" Position="214.8046,39.9531,9.9997" Rotation="1.707" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="390782077" Variation="1" Position="21.5498,96.9104,7.8696" Rotation="0.741" Scale="1.041,1.041,1.041" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
@@ -548,30 +551,27 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="46634120" Position="214.8046,39.9531,9.9997" Rotation="1.707" Scale="1,1,1" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1752742437" Variation="1" Position="79.72,74.5893,8.0434" Rotation="4.5166" Scale="0.8693,0.8693,0.8693" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1169892012" Position="117,137,10.7016" Rotation="0.5437" Scale="1.1613,1.1613,1.1613" Type="CliffSpikes">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1189138255" Variation="1" Position="143.7905,21.671,8.0126" Rotation="3.698" Scale="0.87,0.87,0.87" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1323690610" Variation="4" Position="78.5976,78.4931,8.5883" Rotation="5.552" Scale="1,1,1" Type="ShearedRocksDesert">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1622534658" Variation="6" Position="59.3823,118.72,13.999" Rotation="0.4965" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1189138255" Variation="1" Position="143.7905,21.671,8.0126" Rotation="3.698" Scale="0.87,0.87,0.87" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1169892012" Position="117,137,10.7016" Rotation="0.5437" Scale="1.1613,1.1613,1.1613" Type="CliffSpikes">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1392103645" Position="212.0822,38.0327,9.9997" Rotation="5.8281" Scale="1.0922,1.0922,1.0922" Type="CliffSpikesDestructible">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1622534658" Variation="6" Position="59.3823,118.72,13.999" Rotation="0.4965" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -597,10 +597,10 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="325184903" Variation="4" Position="142.9145,144.8295,12.8547" Rotation="4.171" Scale="0.8803,0.8803,0.8803" Type="DesertRockGiant">
+    <ObjectDoodad Id="1034937" Variation="4" Position="30.6782,48.3723,7.9902" Rotation="5.7873" Scale="1.0012,1.0012,1.0012" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1034937" Variation="4" Position="30.6782,48.3723,7.9902" Rotation="5.7873" Scale="1.0012,1.0012,1.0012" Type="Slayn_CliffSpires">
+    <ObjectDoodad Id="325184903" Variation="4" Position="142.9145,144.8295,12.8547" Rotation="4.171" Scale="0.8803,0.8803,0.8803" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1488927497" Variation="5" Position="143.515,137.4257,10.4218" Rotation="4.1652" Scale="1,1,1" Type="Spires">
@@ -614,12 +614,12 @@
     <ObjectDoodad Id="1640373984" Variation="5" Position="68.342,15.131,-0.0007" Rotation="5.2001" Scale="0.9626,0.9626,0.9626" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="433961235" Variation="8" Position="101.095,152.4484,11.9963" Rotation="0.2551" Scale="1.1813,1.1813,1.1813" Type="DesertRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1610407835" Variation="3" Position="48.95,34.1901,9.9843" Rotation="1.1984" Scale="0.9338,0.9338,0.9338" Type="ChiseledRockLarge" TintColor="213,211,193 0.700000">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="433961235" Variation="8" Position="101.095,152.4484,11.9963" Rotation="0.2551" Scale="1.1813,1.1813,1.1813" Type="DesertRockGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1558940135" Position="130.2416,114.4143,7.9567" Scale="1,1,1" Type="JarbanMinor_Medium_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -649,13 +649,13 @@
     <ObjectDoodad Id="861055379" Variation="7" Position="26.5,93.5,9.9995" Rotation="4.8801" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1461095694" Variation="1" Position="110.1342,157.8713,7.9992" Rotation="5.775" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="413814015" Variation="4" Position="195.11,55.8442,3.066" Rotation="2.312" Scale="1.7121,1.7121,0.142" Type="JarbanMinor_Medium_Rock">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1461095694" Variation="1" Position="110.1342,157.8713,7.9992" Rotation="5.775" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="717471245" Variation="7" Position="126.5004,158.6105,8.046" Rotation="5.7807" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -665,30 +665,30 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1941596487" Variation="3" Position="28.0368,38.4553,-0.0007" Rotation="0.805" Scale="0.9868,0.9868,0.9868" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="519841206" Position="186.0744,18.5717,9.9997" Rotation="5.0751" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1208726571" Variation="6" Position="73.3977,57.4887,7.9992" Rotation="2.753" Scale="1.2473,1.2473,1.2473" Type="DesertRockGiant">
+    <ObjectDoodad Id="1941596487" Variation="3" Position="28.0368,38.4553,-0.0007" Rotation="0.805" Scale="0.9868,0.9868,0.9868" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1918596469" Variation="11" Position="153.4738,69.6171,10.0073" Rotation="4.0244" Scale="0.8303,0.8303,0.8303" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1208726571" Variation="6" Position="73.3977,57.4887,7.9992" Rotation="2.753" Scale="1.2473,1.2473,1.2473" Type="DesertRockGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="840694912" Variation="1" Position="197.961,38.4694,8.003" Rotation="0.5451" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="902920288" Position="127.773,39.6176,10.0056" Rotation="5.107" Scale="1.0397,1.0397,1.0397" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="754997510" Variation="4" Position="32.5,76.5,9.9995" Rotation="4.2136" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="902920288" Position="127.773,39.6176,10.0056" Rotation="5.107" Scale="1.0397,1.0397,1.0397" Type="CharDuneRock">
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="335588515" Position="36.2927,54.4621,11.999" Rotation="3.404" Scale="0.8283,0.8283,0.8283" Type="WindEmitterBrownSmall">
         <Flag Index="HeightOffset" Value="1"/>
@@ -699,7 +699,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1927044591" Variation="4" Position="199.5,20.5,9.9997" Rotation="3.0344" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="2044439642" Variation="6" Position="153.3894,71.9958,7.999" Rotation="3.359" Scale="1.1674,1.1674,1.1674" Type="CharDuneRockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -707,7 +707,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2044439642" Variation="6" Position="153.3894,71.9958,7.999" Rotation="3.359" Scale="1.1674,1.1674,1.1674" Type="CharDuneRockLarge">
+    <ObjectDoodad Id="1927044591" Variation="4" Position="199.5,20.5,9.9997" Rotation="3.0344" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -754,12 +754,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="81201172" Variation="1" Position="110.8752,150.8076,8.0051" Rotation="2.4807" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="724740161" Variation="2" Position="127.0041,156.8283,8.1618" Rotation="4.184" Scale="0.6354,0.6354,0.6354" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="81201172" Variation="1" Position="110.8752,150.8076,8.0051" Rotation="2.4807" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="343764069" Variation="1" Position="18.2702,98.1601,7.999" Rotation="6.2187" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
@@ -787,13 +787,13 @@
     <ObjectDoodad Id="1698902308" Variation="2" Position="127.0876,116.8293,9.9958" Rotation="1.8754" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="662238680" Variation="3" Position="72.8286,84.5876,8.0495" Rotation="5.234" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="5.7993" Roll="0.1313">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="923142509" Variation="7" Position="108.5937,158.715,7.999" Rotation="5.833" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="662238680" Variation="3" Position="72.8286,84.5876,8.0495" Rotation="5.234" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="5.7993" Roll="0.1313">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1158787952" Variation="3" Position="141.5556,146.205,12.8918" Rotation="3.7126" Scale="0.8803,0.8803,0.8803" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -808,27 +808,27 @@
     <ObjectDoodad Id="1755620849" Variation="3" Position="103.5517,74.9943,-0.0007" Rotation="1.5268" Scale="0.95,0.95,0.95" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="171668365" Variation="13" Position="202.4565,27.788,7.9997" Rotation="2.8823" Scale="0.9167,0.9167,0.9167" Type="ZerusPlantlife">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1734189687" Variation="2" Position="135.401,130.6813,10.2731" Rotation="5.7744" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="171668365" Variation="13" Position="202.4565,27.788,7.9997" Rotation="2.8823" Scale="0.9167,0.9167,0.9167" Type="ZerusPlantlife">
+    <ObjectDoodad Id="425182721" Variation="1" Position="63,35,9.9997" Rotation="5.7961" Scale="0.832,0.832,0.832" Type="ChiseledRockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1407452032" Variation="5" Position="126.4348,157.291,8.1057" Rotation="5.1237" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="425182721" Variation="1" Position="63,35,9.9997" Rotation="5.7961" Scale="0.832,0.832,0.832" Type="ChiseledRockLarge">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1768058373" Position="113.5,160.5,8.001" Rotation="1.7846" Scale="0.9548,0.9548,0.9548" Type="ChiseledRockEx1">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="2014915759" Variation="2" Position="91.5585,99.392,7.9992" Rotation="5.0168" Scale="1.0864,1.0864,1.0864" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1768058373" Position="113.5,160.5,8.001" Rotation="1.7846" Scale="0.9548,0.9548,0.9548" Type="ChiseledRockEx1">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1700345756" Variation="2" Position="17.9794,99.6513,7.8505" Rotation="0.3933" Scale="1.3227,1.3227,1.3227" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
@@ -850,8 +850,7 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1914089746" Variation="4" Position="116.2426,151.9882,7.997" Rotation="6.0122" Scale="0.4445,0.4445,0.4445" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1734222369" Position="185.9807,23.934,9.9997" Rotation="3.4631" Scale="0.9033,0.9033,0.9033" Type="LightOmniOrange">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -859,7 +858,8 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1734222369" Position="185.9807,23.934,9.9997" Rotation="3.4631" Scale="0.9033,0.9033,0.9033" Type="LightOmniOrange">
+    <ObjectDoodad Id="1914089746" Variation="4" Position="116.2426,151.9882,7.997" Rotation="6.0122" Scale="0.4445,0.4445,0.4445" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -879,12 +879,12 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="784165650" Variation="1" Position="109.0908,159.5971,7.999" Rotation="0.9277" Scale="0.4445,0.4445,0.4445" Type="Spires">
+    <ObjectDoodad Id="2048214741" Variation="5" Position="193.661,54.5773,3.061" Rotation="2.312" Scale="0.9826,0.9826,0.142" Type="JarbanMinor_Medium_Rock">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2048214741" Variation="5" Position="193.661,54.5773,3.061" Rotation="2.312" Scale="0.9826,0.9826,0.142" Type="JarbanMinor_Medium_Rock">
+    <ObjectDoodad Id="784165650" Variation="1" Position="109.0908,159.5971,7.999" Rotation="0.9277" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -894,22 +894,22 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1178914270" Variation="3" Position="113.7797,156.0097,7.998" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group" TintColor="255,255,255 1.300000">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1701935029" Position="15.4787,20.7033,5.4914" Rotation="6.1635" Scale="1,1,1" Type="Fog_Hazy">
         <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1178914270" Variation="3" Position="113.7797,156.0097,7.998" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group" TintColor="255,255,255 1.300000">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1852006174" Variation="6" Position="141.0131,142.3874,10.905" Rotation="3.933" Scale="1,1,1" Type="JarbanMinor_Medium_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1242947468" Variation="3" Position="125.295,127.6796,10.116" Rotation="5.789" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="34839941" Variation="8" Position="107.8503,157.5495,7.999" Rotation="2.55" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1242947468" Variation="3" Position="125.295,127.6796,10.116" Rotation="5.789" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2048594658" Variation="4" Position="127.2336,158.592,8.0427" Rotation="4.841" Scale="0.6354,0.6354,0.6354" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -955,11 +955,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1668565664" Variation="11" Position="68.953,99.7795,9.9958" Rotation="2.5451" Scale="0.8364,0.8364,0.8364" Type="CharDuneRock">
+    <ObjectDoodad Id="1677981576" Position="145.0324,24.0705,9.9904" Rotation="3.698" Scale="0.87,0.87,0.87" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1677981576" Position="145.0324,24.0705,9.9904" Rotation="3.698" Scale="0.87,0.87,0.87" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="1668565664" Variation="11" Position="68.953,99.7795,9.9958" Rotation="2.5451" Scale="0.8364,0.8364,0.8364" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -970,22 +970,22 @@
     <ObjectDoodad Id="1461221190" Variation="3" Position="58.6,70.4465,7.9992" Rotation="0.5214" Scale="1.2148,1.2148,1.2148" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="586807805" Position="49.3791,39.316,11.999" Rotation="3.404" Scale="0.8283,0.8283,0.8283" Type="WindEmitterBrownSmall">
+    <ObjectDoodad Id="971918362" Position="217.0871,70.2482,9.993" Rotation="0.7492" Scale="1,1,1" Type="InvisibleWalkablePlatform4x4" Pitch="6.2658" Roll="0.0021">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="628066899" Variation="4" Position="213.5664,62.269,-0.4477" Rotation="0.8083" Scale="0.9763,0.9763,0.9763" Type="Rock_Cliff" TintColor="255,255,255 0.500000">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2061392135" Variation="3" Position="139.1325,15.3481,8.0124" Rotation="2.6481" Scale="0.87,0.87,0.87" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="971918362" Position="217.0871,70.2482,9.993" Rotation="0.7492" Scale="1,1,1" Type="InvisibleWalkablePlatform4x4" Pitch="6.2658" Roll="0.0021">
+    <ObjectDoodad Id="628066899" Variation="4" Position="213.5664,62.269,-0.4477" Rotation="0.8083" Scale="0.9763,0.9763,0.9763" Type="Rock_Cliff" TintColor="255,255,255 0.500000">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="586807805" Position="49.3791,39.316,11.999" Rotation="3.404" Scale="0.8283,0.8283,0.8283" Type="WindEmitterBrownSmall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="603265623" Variation="9" Position="95.0727,111.8317,7.9816" Rotation="5.9963" Scale="0.8596,0.8596,0.8596" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1000,12 +1000,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1421261675" Variation="2" Position="35.4367,114.1408,7.8691" Rotation="2.3913" Scale="1.041,1.041,1.041" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="950223970" Variation="5" Position="123.6098,157.5158,8.0041" Rotation="1.794" Scale="0.6157,0.5327,0.5722" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="950223970" Variation="5" Position="123.6098,157.5158,8.0041" Rotation="1.794" Scale="0.6157,0.5327,0.5722" Type="Spires">
+    <ObjectDoodad Id="1421261675" Variation="2" Position="35.4367,114.1408,7.8691" Rotation="2.3913" Scale="1.041,1.041,1.041" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1032,11 +1032,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="561546535" Variation="1" Position="145.0107,134.0156,8.0705" Rotation="3.6047" Scale="1.9912,2.1496,2.1596" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1972553744" Position="221.7414,35.0556,9.9997" Rotation="6.145" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1972553744" Position="221.7414,35.0556,9.9997" Rotation="6.145" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+    <ObjectDoodad Id="561546535" Variation="1" Position="145.0107,134.0156,8.0705" Rotation="3.6047" Scale="1.9912,2.1496,2.1596" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1174788957" Variation="11" Position="138.8698,69.655,10.0124" Rotation="4.3691" Scale="0.9597,0.9597,0.9597" Type="CharDuneRock">
@@ -1094,13 +1094,13 @@
     <ObjectDoodad Id="1149870950" Variation="1" Position="107.656,145.117,8.03" Rotation="1.046" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="600873945" Variation="4" Position="50.89,112.6191,13.999" Rotation="0.4997" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1211408191" Variation="4" Position="146.9875,76.1552,7.9853" Rotation="5.2221" Scale="1.1716,1.1716,1.1716" Type="CharDuneRockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="600873945" Variation="4" Position="50.89,112.6191,13.999" Rotation="0.4997" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="359155434" Variation="5" Position="123.2263,158.078,8.026" Rotation="6.138" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
@@ -1120,15 +1120,19 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="2112672597" Variation="2" Position="210.2563,51.25,8.3127" Rotation="4.2463" Scale="0.8244,0.8244,0.516" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="59536935" Variation="4" Position="78.9216,81.8847,9.2651" Rotation="1.7358" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2112672597" Variation="2" Position="210.2563,51.25,8.3127" Rotation="4.2463" Scale="0.8244,0.8244,0.516" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1454196588" Variation="3" Position="117.3198,150.9006,8.0317" Rotation="4.5263" Scale="0.4445,0.4445,0.4445" Type="Spires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1223604596" Variation="6" Position="152.6875,69.0102,8.015" Rotation="3.7368" Scale="0.9421,0.9421,0.9421" Type="CharDuneRockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1137,24 +1141,20 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1223604596" Variation="6" Position="152.6875,69.0102,8.015" Rotation="3.7368" Scale="0.9421,0.9421,0.9421" Type="CharDuneRockLarge">
+    <ObjectDoodad Id="1083478604" Position="218.475,37.84,9.9995" Rotation="0.991" Scale="0.905,0.905,0.905" Type="CharFallingRock">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1094772999" Variation="5" Position="103.1318,145.6345,7.9912" Rotation="3.9768" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1083478604" Position="218.475,37.84,9.9995" Rotation="0.991" Scale="0.905,0.905,0.905" Type="CharFallingRock">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1341784112" Variation="1" Position="41.9992,20.0524,0" Rotation="5.7595" Scale="1.051,1.051,1.2822" Type="Rock_Cliff" TintColor="255,255,255 0.700000">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1098043686" Variation="13" Position="140.4963,70.0773,10.0041" Rotation="5.9291" Scale="1.0874,1.0874,1.0874" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1341784112" Variation="1" Position="41.9992,20.0524,0" Rotation="5.7595" Scale="1.051,1.051,1.2822" Type="Rock_Cliff" TintColor="255,255,255 0.700000">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1986558193" Variation="6" Position="72.4,122.6433,12.021" Rotation="0.1281" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
@@ -1176,19 +1176,19 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1175479168" Position="223.4763,30.4201,11.9973" Rotation="1.0883" Scale="0.7937,0.7937,0.7937" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1261567999" Variation="7" Position="200.3757,29.561,7.9997" Rotation="5.5166" Scale="1.0031,1.0031,1.0031" Type="ZerusPlantlife">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1620565550" Variation="17" Position="73.1442,103.3295,9.998" Rotation="2.8833" Scale="1.1137,1.1137,1.1137" Type="CharDuneRock">
+    <ObjectDoodad Id="1175479168" Position="223.4763,30.4201,11.9973" Rotation="1.0883" Scale="0.7937,0.7937,0.7937" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="800155046" Variation="10" Position="103.9865,158.547,11.995" Rotation="1.0954" Scale="0.8386,0.8386,0.8386" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1620565550" Variation="17" Position="73.1442,103.3295,9.998" Rotation="2.8833" Scale="1.1137,1.1137,1.1137" Type="CharDuneRock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1420186356" Position="131.4904,148.431,10.7512" Rotation="6.0275" Scale="0.82,0.82,0.82" Type="CliffSpikesDestructible">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1238,13 +1238,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1769456377" Variation="3" Position="134.9492,113.7878,7.9995" Rotation="4.6782" Scale="1,1,1" Type="SnowRefinery_Rock">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1914604449" Variation="3" Position="195.58,54.9941,3.066" Rotation="0.6538" Scale="0.9826,0.9826,0.142" Type="JarbanMinor_Medium_Rock">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1769456377" Variation="3" Position="134.9492,113.7878,7.9995" Rotation="4.6782" Scale="1,1,1" Type="SnowRefinery_Rock">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="475891760" Position="192.8566,59.903,2.8747" Rotation="3.832" Scale="1.1406,1.1406,1.1406" Type="Shakuras_Tall_Rock_Chunk">
         <Flag Index="HeightOffset" Value="1"/>
@@ -1259,26 +1259,22 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="68851268" Variation="4" Position="55.6867,93.0415,11.5925" Rotation="5.738" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1435">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="812815607" Variation="6" Position="127.971,157.004,8.1716" Rotation="2.4387" Scale="0.6157,0.5327,0.5722" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="812815607" Variation="6" Position="127.971,157.004,8.1716" Rotation="2.4387" Scale="0.6157,0.5327,0.5722" Type="Spires">
+    <ObjectDoodad Id="68851268" Variation="4" Position="55.6867,93.0415,11.5925" Rotation="5.738" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1435">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="809056809" Variation="2" Position="112.7434,38.903,7.9995" Rotation="0.0895" Scale="1.0546,1.0546,0.8051" Type="Rock_Cliff_Chunks">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1409953770" Variation="1" Position="29.767,102.069,6.3071" Rotation="2.9235" Scale="1,1,1" Type="CliffSpires" Pitch="5.9514">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="770503441" Variation="4" Position="35.3437,71.7463,7.9992" Rotation="1.0957" Scale="1.009,1.009,1.009" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="89516832" Variation="5" Position="68.4294,98.0642,7.9948" Rotation="5.5095" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
+    <ObjectDoodad Id="1409953770" Variation="1" Position="29.767,102.069,6.3071" Rotation="2.9235" Scale="1,1,1" Type="CliffSpires" Pitch="5.9514">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -1286,17 +1282,21 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="89516832" Variation="5" Position="68.4294,98.0642,7.9948" Rotation="5.5095" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1399721641" Variation="13" Position="70.3486,100.5805,9.9904" Rotation="0.984" Scale="1.1391,1.1391,1.1391" Type="CharDuneRock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="868740521" Variation="5" Position="134.4077,132.0263,10.208" Rotation="4.082" Scale="0.9333,0.9333,0.9333" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="544440184" Position="27.54,100.9868,7.956" Rotation="4.442" Scale="1,1,1" Type="CliffSpires" Pitch="6.0473">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="868740521" Variation="5" Position="134.4077,132.0263,10.208" Rotation="4.082" Scale="0.9333,0.9333,0.9333" Type="CharDuneRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="778738151" Position="186.5,21.5,9.9997" Rotation="3.952" Scale="1.412,1.412,1.412" Type="LightOmniOrangeLarge">
         <Flag Index="HeightOffset" Value="1"/>
@@ -1329,12 +1329,12 @@
     <ObjectDoodad Id="1635852984" Variation="4" Position="67.454,29.625,7.989" Rotation="4.4594" Scale="1.1347,1.1347,1.1347" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="156801677" Variation="1" Position="227.2512,31.2546,10.0251" Rotation="3.358" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1189650841" Variation="4" Position="65.2104,44.8696,-0.0004" Rotation="4.1333" Scale="1.0771,1.0771,1.0771" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="156801677" Variation="1" Position="227.2512,31.2546,10.0251" Rotation="3.358" Scale="1,1,1" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="384875600" Variation="5" Position="49.6057,53.5571,11.993" Rotation="0.3398" Scale="0.9638,0.9638,0.9638" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1365,21 +1365,21 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1493019486" Variation="3" Position="90.1853,89.68,8.0058" Rotation="5.9965" Scale="0.8115,0.8115,0.8115" Type="CharDuneRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="635554144" Variation="5" Position="200.2631,83.7578,7.9992" Rotation="3.9167" Scale="0.9853,0.9853,0.9853" Type="ShakurasRockColumn">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="618054269" Variation="3" Position="113.2653,147.8381,10.0441" Rotation="2.8322" Scale="1,1,1" Type="Void_CliffRocks_Mass_A">
+    <ObjectDoodad Id="1493019486" Variation="3" Position="90.1853,89.68,8.0058" Rotation="5.9965" Scale="0.8115,0.8115,0.8115" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="194718557" Variation="4" Position="122.8664,156.3364,8.0764" Rotation="2.9633" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="618054269" Variation="3" Position="113.2653,147.8381,10.0441" Rotation="2.8322" Scale="1,1,1" Type="Void_CliffRocks_Mass_A">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1304141794" Variation="14" Position="203.4558,29.4895,7.9997" Rotation="2.3242" Scale="0.9655,0.9655,0.9655" Type="ZerusPlantlife">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1406,13 +1406,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="777042553" Variation="12" Position="58.886,116.7121,12.3452" Rotation="4.7487" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="603320925" Variation="6" Position="146.0251,60.3437,7.991" Rotation="4.864" Scale="0.8715,0.8715,0.8715" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="777042553" Variation="12" Position="58.886,116.7121,12.3452" Rotation="4.7487" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="493913344" Position="41.385,69.3696,5.492" Rotation="6.1635" Scale="1,1,1" Type="Fog_Hazy">
         <Flag Index="HeightOffset" Value="1"/>
@@ -1487,12 +1487,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1047875478" Variation="7" Position="100.7458,61.761,9.6232" Rotation="2.7507" Scale="1.015,1.015,1.015" Type="DesertRockGiant" Pitch="6.2453" Roll="0.2631">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1739663441" Position="44.458,58.6145,9.9946" Rotation="6.0983" Scale="1,1,1" Type="SpiresLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1739663441" Position="44.458,58.6145,9.9946" Rotation="6.0983" Scale="1,1,1" Type="SpiresLarge">
+    <ObjectDoodad Id="1047875478" Variation="7" Position="100.7458,61.761,9.6232" Rotation="2.7507" Scale="1.015,1.015,1.015" Type="DesertRockGiant" Pitch="6.2453" Roll="0.2631">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1525,13 +1525,13 @@
     <ObjectDoodad Id="236870478" Variation="6" Position="40.9663,38.4575,10.0031" Rotation="0.2614" Scale="1.0158,1.0158,1.0158" Type="Purifier_Rock_Blend">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="590674539" Variation="3" Position="24.0783,15.9934,-0.001" Rotation="2.37" Scale="0.803,0.803,0.803" Type="RockVolcanicGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="872080803" Variation="2" Position="109.2136,158.5263,7.999" Rotation="3.6442" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="590674539" Variation="3" Position="24.0783,15.9934,-0.001" Rotation="2.37" Scale="0.803,0.803,0.803" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="244311801" Variation="9" Position="69.5,115.5,9.998" Rotation="0.0461" Scale="0.9421,0.9421,0.9421" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1540,11 +1540,11 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1639372881" Position="121.3605,123.7534,8.0095" Rotation="0.1535" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1423493100" Position="221.3564,45.5751,7.9465" Rotation="4.0747" Scale="0.8632,0.8442,0.7165" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1423493100" Position="221.3564,45.5751,7.9465" Rotation="4.0747" Scale="0.8632,0.8442,0.7165" Type="Aiur_Rock_Cliff">
+    <ObjectDoodad Id="1639372881" Position="121.3605,123.7534,8.0095" Rotation="0.1535" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="509374293" Variation="2" Position="123.9106,128.352,10.155" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
@@ -1566,12 +1566,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="999625814" Variation="2" Position="53.366,35.572,9.9995" Rotation="1.276" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1341759563" Variation="2" Position="123.6682,156.6335,8.0524" Rotation="6.0202" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="999625814" Variation="2" Position="53.366,35.572,9.9995" Rotation="1.276" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="736275438" Variation="2" Position="28.0383,102.4172,9.8796" Rotation="3.8046" Scale="1,1,1" Type="CliffSpires">
         <Flag Index="HeightOffset" Value="1"/>
@@ -1598,12 +1598,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="322034836" Variation="2" Position="36.3764,119.4797,7.8691" Rotation="1.4914" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1059122672" Variation="2" Position="211.8862,22.9243,7.989" Rotation="3.4677" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1059122672" Variation="2" Position="211.8862,22.9243,7.989" Rotation="3.4677" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="322034836" Variation="2" Position="36.3764,119.4797,7.8691" Rotation="1.4914" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1631,11 +1631,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="625788682" Variation="4" Position="128.1542,152.9692,12.6618" Rotation="5.4833" Scale="1,1,1" Type="ShearedRocksDesert">
+    <ObjectDoodad Id="77060187" Variation="2" Position="206.9775,82.4494,8.0004" Rotation="5.471" Scale="0.9401,0.9401,0.9401" Type="ShakurasRockColumn">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="77060187" Variation="2" Position="206.9775,82.4494,8.0004" Rotation="5.471" Scale="0.9401,0.9401,0.9401" Type="ShakurasRockColumn">
+    <ObjectDoodad Id="625788682" Variation="4" Position="128.1542,152.9692,12.6618" Rotation="5.4833" Scale="1,1,1" Type="ShearedRocksDesert">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1647,8 +1647,7 @@
     <ObjectDoodad Id="1027900629" Variation="4" Position="116.5725,84.595,-0.0007" Rotation="6.075" Scale="0.95,0.95,0.95" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1951692006" Variation="4" Position="52.3903,92.5576,9.7678" Rotation="5.738" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1435">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1271394538" Variation="3" Position="101.378,80.947,-0.0007" Rotation="1.171" Scale="1.1022,1.1022,1.1022" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1710242405" Variation="8" Position="102.302,147.8996,7.9992" Rotation="3.5202" Scale="1,1,1" Type="Spires">
@@ -1656,7 +1655,8 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1271394538" Variation="3" Position="101.378,80.947,-0.0007" Rotation="1.171" Scale="1.1022,1.1022,1.1022" Type="RockVolcanicGiant">
+    <ObjectDoodad Id="1951692006" Variation="4" Position="52.3903,92.5576,9.7678" Rotation="5.738" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1435">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="97319555" Variation="6" Position="124.2258,156.2517,8.0983" Rotation="5.6916" Scale="1,1,1" Type="Spires">
@@ -1701,14 +1701,14 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="699653459" Variation="1" Position="216.8005,46.471,7.9997" Rotation="3.8737" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1359091996" Variation="5" Position="48.9228,113.1787,13.999" Rotation="6.0632" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="699653459" Variation="1" Position="216.8005,46.471,7.9997" Rotation="3.8737" Scale="1,1,1" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="959892847" Variation="8" Position="77.2731,56.754,7.9987" Rotation="0.1652" Scale="0.6047,0.6047,0.6047" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1717,10 +1717,10 @@
     <ObjectDoodad Id="1914698830" Variation="8" Position="28.5,93.5,9.9882" Rotation="2.5327" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="943392253" Variation="3" Position="37.5,87.5,9.9914" Rotation="0.9943" Scale="1,1,1" Type="Spires">
+    <ObjectDoodad Id="555325956" Variation="3" Position="65.5488,8.9521,-0.0007" Rotation="3.7998" Scale="1.1303,1.1303,1.1303" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="555325956" Variation="3" Position="65.5488,8.9521,-0.0007" Rotation="3.7998" Scale="1.1303,1.1303,1.1303" Type="RockVolcanicGiant">
+    <ObjectDoodad Id="943392253" Variation="3" Position="37.5,87.5,9.9914" Rotation="0.9943" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1298248960" Position="121.2556,59.9338,9.9992" Rotation="4.8925" Scale="0.7976,0.5852,0.6735" Type="CliffSpikesDestructible">
@@ -1736,12 +1736,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="976305959" Position="31.6887,110.383,7.9987" Rotation="3.4455" Scale="1,1,1" Type="Spires">
+    <ObjectDoodad Id="255532657" Position="143.2746,42.6225,9.654" Rotation="0.8725" Scale="1,1.1865,0.5363" Type="SnowRefinery_RockRampSmall">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="255532657" Position="143.2746,42.6225,9.654" Rotation="0.8725" Scale="1,1.1865,0.5363" Type="SnowRefinery_RockRampSmall">
+    <ObjectDoodad Id="976305959" Position="31.6887,110.383,7.9987" Rotation="3.4455" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -1766,12 +1766,12 @@
     <ObjectDoodad Id="1408424368" Variation="5" Position="62.5,95.5,11.9897" Rotation="3.9257" Scale="0.8295,0.8295,0.8295" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1194663867" Variation="4" Position="66.455,22.0666,-0.0007" Rotation="3.6333" Scale="1.3376,1.3376,1.3376" Type="RockVolcanicGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1600203405" Variation="11" Position="153.3813,70.2084,10.006" Rotation="3.2761" Scale="1.0097,1.0097,1.0097" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1194663867" Variation="4" Position="66.455,22.0666,-0.0007" Rotation="3.6333" Scale="1.3376,1.3376,1.3376" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1971034121" Variation="3" Position="116.713,139.6235,10.5187" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1797,11 +1797,11 @@
     <ObjectDoodad Id="1173429768" Variation="1" Position="40.559,24.2658,7.9772" Scale="1.0083,1.0083,0.7756" Type="Rock_Cliff_Chunks">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2097518243" Variation="7" Position="107.9772,158.4147,7.995" Rotation="4.3271" Scale="1,1,1" Type="Spires">
+    <ObjectDoodad Id="1163443046" Variation="2" Position="203.858,41.855,8.0078" Rotation="1.7802" Scale="0.9228,0.9228,0.9228" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1163443046" Variation="2" Position="203.858,41.855,8.0078" Rotation="1.7802" Scale="0.9228,0.9228,0.9228" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="2097518243" Variation="7" Position="107.9772,158.4147,7.995" Rotation="4.3271" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1809,12 +1809,12 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="834618913" Variation="10" Position="111.427,70.4572,9.9943" Rotation="5.7807" Scale="0.9321,0.9321,0.9321" Type="DesertRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1262246637" Variation="11" Position="149.8017,60.2678,7.991" Rotation="4.2043" Scale="1.0056,1.0056,1.0056" Type="CharDuneRockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="834618913" Variation="10" Position="111.427,70.4572,9.9943" Rotation="5.7807" Scale="0.9321,0.9321,0.9321" Type="DesertRockGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1548734187" Variation="6" Position="204.1782,76.034,10.0021" Rotation="6.2416" Scale="0.8483,0.8483,0.8483" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1862,29 +1862,29 @@
     <ObjectDoodad Id="1483952378" Variation="1" Position="182.7282,18.8535,9.9997" Rotation="3.827" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1550803606" Variation="11" Position="56.2954,92.8066,9.066" Rotation="5.636" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant" Pitch="6.1633" Roll="0.3991">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1841564982" Variation="6" Position="82.2436,77.8342,7.9992" Rotation="4.8483" Scale="1.2673,1.2673,1.2673" Type="JarbanMinor_Large_Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="741524748" Variation="5" Position="123.5671,110.182,-0.0007" Rotation="0.4821" Scale="1.787,1.787,1.787" Type="RockVolcanicGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1841564982" Variation="6" Position="82.2436,77.8342,7.9992" Rotation="4.8483" Scale="1.2673,1.2673,1.2673" Type="JarbanMinor_Large_Rock">
+    <ObjectDoodad Id="1550803606" Variation="11" Position="56.2954,92.8066,9.066" Rotation="5.636" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant" Pitch="6.1633" Roll="0.3991">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1694072452" Position="219,61,8.5585" Scale="1,1.0485,1" Type="InvisibleWalkablePlatform4x4" Pitch="0.314">
         <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1354002683" Variation="1" Position="190.494,38.352,7.9997" Rotation="2.9885" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="787551609" Position="118.036,54.1801,9.9992" Rotation="3.9143" Scale="0.5964,0.5964,0.5964" Type="CliffSpikesDestructible">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1354002683" Variation="1" Position="190.494,38.352,7.9997" Rotation="2.9885" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="407319658" Variation="1" Position="188.5852,42.8493,9.9997" Rotation="3.432" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1941,23 +1941,23 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="272869104" Variation="4" Position="113.8857,97.5593,-0.0007" Rotation="0.9362" Scale="1.787,1.787,1.787" Type="RockVolcanicGiant">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="745876105" Variation="4" Position="146.2834,44.4213,9.9926" Scale="1,1,1" Type="BrokenRocksSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="745876105" Variation="4" Position="146.2834,44.4213,9.9926" Scale="1,1,1" Type="BrokenRocksSmall">
+    <ObjectDoodad Id="272869104" Variation="4" Position="113.8857,97.5593,-0.0007" Rotation="0.9362" Scale="1.787,1.787,1.787" Type="RockVolcanicGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2006137193" Variation="3" Position="64.0505,118.623,12.2873" Rotation="5.6203" Scale="0.6904,0.6904,0.6904" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1115425405" Position="39.1943,119.983,7.8693" Rotation="2.079" Scale="1.041,1.041,1.041" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="2015301272" Variation="1" Position="193.6784,32.9277,7.9997" Rotation="2.81" Scale="1.0793,1.0793,1.0793" Type="ZerusSwampPlants">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2015301272" Variation="1" Position="193.6784,32.9277,7.9997" Rotation="2.81" Scale="1.0793,1.0793,1.0793" Type="ZerusSwampPlants">
+    <ObjectDoodad Id="1115425405" Position="39.1943,119.983,7.8693" Rotation="2.079" Scale="1.041,1.041,1.041" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1966,43 +1966,43 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1420556420" Variation="14" Position="113.0908,162.3444,8.0014" Rotation="0.5134" Scale="1.1442,1.1442,1.1442" Type="CharDuneRock">
+    <ObjectDoodad Id="1841972625" Variation="5" Position="223.4113,72.0261,9.9995" Rotation="4.5041" Scale="1.166,1.166,1.166" Type="JarbanMinor_Large_Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1298382718" Variation="5" Position="111.0502,86.287,-0.0007" Rotation="0.2258" Scale="1.2612,1.2612,1.2612" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1841972625" Variation="5" Position="223.4113,72.0261,9.9995" Rotation="4.5041" Scale="1.166,1.166,1.166" Type="JarbanMinor_Large_Rock">
+    <ObjectDoodad Id="1420556420" Variation="14" Position="113.0908,162.3444,8.0014" Rotation="0.5134" Scale="1.1442,1.1442,1.1442" Type="CharDuneRock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1203083826" Variation="2" Position="189.699,28.0341,7.9968" Rotation="3.5695" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1360031792" Variation="2" Position="113.16,133.967,10.4643" Rotation="5.952" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1203083826" Variation="2" Position="189.699,28.0341,7.9968" Rotation="3.5695" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+    <ObjectDoodad Id="621335501" Variation="3" Position="76.9052,30.4587,-0.0007" Rotation="0.4582" Scale="0.8654,0.8654,0.8654" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="621335501" Variation="3" Position="76.9052,30.4587,-0.0007" Rotation="0.4582" Scale="0.8654,0.8654,0.8654" Type="RockVolcanicGiant">
+    <ObjectDoodad Id="204758426" Position="195.7373,43.7214,0" Rotation="0.1916" Scale="1,1,1" Type="SnowRefinery_RockRamps_Medium" TintColor="255,255,255 0.350000">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1049669924" Variation="2" Position="56.4638,104.9587,9.9987" Rotation="0.7551" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1613126472" Variation="20" Position="63.2673,95.3203,11.9946" Rotation="4.87" Scale="0.976,0.976,0.976" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1049669924" Variation="2" Position="56.4638,104.9587,9.9987" Rotation="0.7551" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="204758426" Position="195.7373,43.7214,0" Rotation="0.1916" Scale="1,1,1" Type="SnowRefinery_RockRamps_Medium" TintColor="255,255,255 0.350000">
+    <ObjectDoodad Id="518366797" Variation="3" Position="107.1713,32.7854,8.0095" Rotation="0.8056" Scale="0.844,0.714,0.5231" Type="Rock_Cliff_Chunks" Pitch="0.0871" Roll="6.283">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="493501562" Variation="2" Position="32.6372,71.521,8.0104" Rotation="1.8686" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="518366797" Variation="3" Position="107.1713,32.7854,8.0095" Rotation="0.8056" Scale="0.844,0.714,0.5231" Type="Rock_Cliff_Chunks" Pitch="0.0871" Roll="6.283">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1457485611" Position="201.5344,30.0961,7.9997" Rotation="3.6284" Scale="0.953,0.953,0.7172" Type="ChiseledRockLarge" TintColor="213,211,193 0.700000">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2020,14 +2020,14 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1288193241" Variation="4" Position="73.9924,119.7248,9.998" Scale="1,1,1" Type="BrokenRocksSmall">
+    <ObjectDoodad Id="1868356773" Variation="3" Position="69.7597,33.4733,8.0222" Rotation="5.1242" Scale="1.0771,1.0771,1.0771" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="500434024" Position="111.3061,132.5512,10.1455" Rotation="5.8925" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1868356773" Variation="3" Position="69.7597,33.4733,8.0222" Rotation="5.1242" Scale="1.0771,1.0771,1.0771" Type="RockVolcanicGiant">
+    <ObjectDoodad Id="1288193241" Variation="4" Position="73.9924,119.7248,9.998" Scale="1,1,1" Type="BrokenRocksSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="189724035" Variation="2" Position="101.2402,145.8737,7.99" Rotation="2.0993" Scale="0.6354,0.6354,0.6354" Type="Spires">
@@ -2045,22 +2045,22 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="815350759" Variation="8" Position="18.102,100.9458,7.9924" Rotation="1.7954" Scale="1,1,1" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1714180006" Variation="1" Position="138.7907,148.491,8.4953" Rotation="5.1545" Scale="1.231,1.231,1.231" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1554748689" Variation="15" Position="81.7695,116.6662,9.9914" Rotation="3.9035" Scale="0.9265,0.9265,0.9265" Type="CharDuneRock">
+    <ObjectDoodad Id="815350759" Variation="8" Position="18.102,100.9458,7.9924" Rotation="1.7954" Scale="1,1,1" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1253534706" Variation="5" Position="68.9362,118.2626,9.9995" Rotation="1.38" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1554748689" Variation="15" Position="81.7695,116.6662,9.9914" Rotation="3.9035" Scale="0.9265,0.9265,0.9265" Type="CharDuneRock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1738351050" Variation="4" Position="64.8315,26.7331,8.0002" Rotation="3.111" Scale="1.1535,1.1535,1.1535" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2088,12 +2088,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="57252499" Variation="12" Position="99.4572,149.0598,10.0087" Rotation="5.9792" Scale="1.0776,1.0776,1.0776" Type="DesertRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="2052070083" Variation="2" Position="195.999,38.5825,7.9863" Rotation="5.0605" Scale="0.9746,0.9746,0.9746" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="57252499" Variation="12" Position="99.4572,149.0598,10.0087" Rotation="5.9792" Scale="1.0776,1.0776,1.0776" Type="DesertRockGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1718111776" Variation="6" Position="51.9865,76.4855,11.9802" Rotation="2.6086" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.1347">
         <Flag Index="HeightOffset" Value="1"/>
@@ -2126,12 +2126,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1519062282" Variation="5" Position="126.7412,158.0334,8.075" Rotation="6.0615" Scale="0.4445,0.4445,0.4445" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1175737309" Variation="17" Position="142.2724,71.966,9.9995" Rotation="3.8952" Scale="1.1511,1.1511,1.1511" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1175737309" Variation="17" Position="142.2724,71.966,9.9995" Rotation="3.8952" Scale="1.1511,1.1511,1.1511" Type="CharDuneRock">
+    <ObjectDoodad Id="1519062282" Variation="5" Position="126.7412,158.0334,8.075" Rotation="6.0615" Scale="0.4445,0.4445,0.4445" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2177,13 +2177,13 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="877362318" Variation="4" Position="58.3676,25.7072,7.9997" Rotation="0.3955" Scale="0.9404,0.9404,0.7077" Type="Rock_Cliff_Chunks">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1813053913" Variation="8" Position="128.487,157.623,8.1071" Rotation="3.1516" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="877362318" Variation="4" Position="58.3676,25.7072,7.9997" Rotation="0.3955" Scale="0.9404,0.9404,0.7077" Type="Rock_Cliff_Chunks">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="974940746" Position="38.518,31.5751,9.999" Rotation="3.4042" Scale="0.8283,0.8283,0.8283" Type="WindEmitterBrownSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2208,22 +2208,22 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="531649411" Position="138.9304,144.3027,10.9216" Scale="1,1,1" Type="Fog_Aiur">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="375978601" Variation="6" Position="104.3508,149.2136,7.9992" Rotation="6.1374" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="531649411" Position="138.9304,144.3027,10.9216" Scale="1,1,1" Type="Fog_Aiur">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1092064196" Variation="7" Position="149.12,78.3095,9.983" Rotation="4.6308" Scale="1.197,1.197,1.197" Type="CharDuneRockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1363973661" Variation="7" Position="46.7963,111.0632,12.0798" Rotation="4.2014" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1612469355" Variation="4" Position="17.3298,17.5065,-0.001" Rotation="1.9995" Scale="1.1262,1.1262,1.1262" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1612469355" Variation="4" Position="17.3298,17.5065,-0.001" Rotation="1.9995" Scale="1.1262,1.1262,1.1262" Type="RockVolcanicGiant">
+    <ObjectDoodad Id="1363973661" Variation="7" Position="46.7963,111.0632,12.0798" Rotation="4.2014" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="209202539" Variation="3" Position="43.0197,11.5651,-0.001" Rotation="0.6093" Scale="1.0974,1.0974,1.0974" Type="RockVolcanicGiant">
@@ -2240,10 +2240,10 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1371141492" Variation="3" Position="75.011,87.8742,7.983" Rotation="1.4794" Scale="0.8112,0.8112,0.8112" Type="DesertRockGiant">
+    <ObjectDoodad Id="2121459050" Position="215.5,101.5,7.9992" Rotation="5.6237" Scale="0.7512,0.7512,0.7512" Type="ShakurasRockColumn">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2121459050" Position="215.5,101.5,7.9992" Rotation="5.6237" Scale="0.7512,0.7512,0.7512" Type="ShakurasRockColumn">
+    <ObjectDoodad Id="1371141492" Variation="3" Position="75.011,87.8742,7.983" Rotation="1.4794" Scale="0.8112,0.8112,0.8112" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="572432106" Variation="7" Position="110.8193,160.4458,7.9992" Rotation="6.213" Scale="0.4445,0.4445,0.4445" Type="Spires">
@@ -2259,11 +2259,11 @@
     <ObjectDoodad Id="1220813942" Position="109.6616,146.715,8.0334" Rotation="2.9453" Scale="1,1,1" Type="Void_CliffRocks_Rubble" TintColor="255,255,255 0.600000">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="317698695" Variation="3" Position="208.8508,63.2983,6.0385" Rotation="1.0905" Scale="0.558,0.558,0.558" Type="JarbanMinor_SandDrifts">
+    <ObjectDoodad Id="160438953" Position="31.3981,14.9396,5.4914" Rotation="6.1635" Scale="1,1,1" Type="Fog_Hazy">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="160438953" Position="31.3981,14.9396,5.4914" Rotation="6.1635" Scale="1,1,1" Type="Fog_Hazy">
+    <ObjectDoodad Id="317698695" Variation="3" Position="208.8508,63.2983,6.0385" Rotation="1.0905" Scale="0.558,0.558,0.558" Type="JarbanMinor_SandDrifts">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -2305,19 +2305,19 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1673295343" Position="27.5,70.2797,9.999" Scale="1,1,1" Type="Fog_Aiur_Thick" TintColor="241,214,163">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1761499208" Variation="2" Position="68.3156,114.3295,9.9985" Rotation="1.8684" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1673295343" Position="27.5,70.2797,9.999" Scale="1,1,1" Type="Fog_Aiur_Thick" TintColor="241,214,163">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="243207689" Variation="8" Position="45.4282,112.0761,11.9987" Rotation="3.4111" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
+    <ObjectDoodad Id="1114522789" Variation="1" Position="142.4584,135.1914,8.2124" Rotation="3.2321" Scale="1.048,1.01,1.0075" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1114522789" Variation="1" Position="142.4584,135.1914,8.2124" Rotation="3.2321" Scale="1.048,1.01,1.0075" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+    <ObjectDoodad Id="243207689" Variation="8" Position="45.4282,112.0761,11.9987" Rotation="3.4111" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -2329,38 +2329,38 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1287425508" Variation="19" Position="99.3764,102.1782,7.99" Rotation="4.27" Scale="0.8537,0.8537,0.8537" Type="CharDuneRock">
+    <ObjectDoodad Id="720112394" Position="185.4501,28.1965,11.9997" Rotation="1.8776" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1598361200" Variation="6" Position="68.3657,122.7966,13.6367" Rotation="0.9145" Scale="1.3928,1.3928,1.3928" Type="ShearedRocksDesert" Pitch="5.8815">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="720112394" Position="185.4501,28.1965,11.9997" Rotation="1.8776" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+    <ObjectDoodad Id="1287425508" Variation="19" Position="99.3764,102.1782,7.99" Rotation="4.27" Scale="0.8537,0.8537,0.8537" Type="CharDuneRock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1842449567" Variation="3" Position="33.5,76.5,9.9995" Rotation="4.899" Scale="1,1,1" Type="Spires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="863879833" Variation="5" Position="22.1325,70.5935,9.9995" Rotation="2.0981" Scale="0.9831,0.9831,0.9831" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1920298294" Variation="11" Position="93.5058,112.6572,7.9814" Rotation="1.0678" Scale="1.014,1.014,1.014" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="863879833" Variation="5" Position="22.1325,70.5935,9.9995" Rotation="2.0981" Scale="0.9831,0.9831,0.9831" Type="Slayn_CliffSpires">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1842449567" Variation="3" Position="33.5,76.5,9.9995" Rotation="4.899" Scale="1,1,1" Type="Spires">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1534583545" Variation="3" Position="74.7687,36.6105,-0.0007" Rotation="5.7507" Scale="0.8325,0.8325,0.8325" Type="RockVolcanicGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="2025858342" Variation="3" Position="36.1914,16.426,-0.0002" Rotation="3.5937" Scale="1.1667,1.1667,1.1667" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="305977301" Variation="6" Position="109.2,159.1477,7.999" Rotation="4.6125" Scale="0.6354,0.6354,0.6354" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="2025858342" Variation="3" Position="36.1914,16.426,-0.0002" Rotation="3.5937" Scale="1.1667,1.1667,1.1667" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1393405905" Position="186.8337,22.5815,9.9995" Rotation="5.0026" Scale="0.9553,0.9553,0.9553" Type="CharFallingRock">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2372,7 +2372,10 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1032750095" Position="117.665,132.0844,10.3806" Scale="1,1,1" Type="Fog_Aiur">
+    <ObjectDoodad Id="1115519424" Position="84.136,25.5141,7.9992" Scale="1,1,1" Type="Fog_Aiur">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1289511749" Variation="1" Position="121.7646,120.8161,7.9072" Rotation="0.7412" Scale="1.3227,1.3227,1.3227" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -2380,20 +2383,17 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1289511749" Variation="1" Position="121.7646,120.8161,7.9072" Rotation="0.7412" Scale="1.3227,1.3227,1.3227" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+    <ObjectDoodad Id="1032750095" Position="117.665,132.0844,10.3806" Scale="1,1,1" Type="Fog_Aiur">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1115519424" Position="84.136,25.5141,7.9992" Scale="1,1,1" Type="Fog_Aiur">
+    <ObjectDoodad Id="975871203" Variation="1" Position="141.46,36.385,9.9855" Scale="1,1,1" Type="BrokenRocksSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1221720764" Variation="4" Position="79.6982,83.421,9.1682" Rotation="5.6054" Scale="1.4562,1.4562,1.4562" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="975871203" Variation="1" Position="141.46,36.385,9.9855" Scale="1,1,1" Type="BrokenRocksSmall">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="384932705" Variation="9" Position="91.8715,112.8364,7.9855" Rotation="1.207" Scale="0.8193,0.8193,0.8193" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2406,7 +2406,8 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1518800528" Variation="6" Position="72.6145,54.2861,7.999" Rotation="4.156" Scale="0.918,0.918,0.918" Type="DesertRockGiant">
+    <ObjectDoodad Id="896870117" Position="207.8723,62.5661,6.0183" Rotation="4.8957" Scale="0.8955,0.7812,1" Type="InvisibleWalkablePlatform4x8">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2415,18 +2416,17 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="896870117" Position="207.8723,62.5661,6.0183" Rotation="4.8957" Scale="0.8955,0.7812,1" Type="InvisibleWalkablePlatform4x8">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="2064289683" Variation="3" Position="115.6672,150.3056,8.0183" Rotation="2.8376" Scale="0.4445,0.4445,0.4445" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1518800528" Variation="6" Position="72.6145,54.2861,7.999" Rotation="4.156" Scale="0.918,0.918,0.918" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="611646413" Position="25.9416,25.8032,7.9992" Scale="1,1,1" Type="Fog_Aiur">
         <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="2064289683" Variation="3" Position="115.6672,150.3056,8.0183" Rotation="2.8376" Scale="0.4445,0.4445,0.4445" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1934670733" Variation="2" Position="112.1403,161.466,8.004" Rotation="5.2026" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2443,12 +2443,12 @@
     <ObjectDoodad Id="1640584045" Variation="3" Position="131.1147,117.6904,9.9995" Rotation="0.761" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="551909110" Variation="2" Position="107.892,160.6042,7.9968" Rotation="6.2072" Scale="1,1,1" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1457300629" Variation="13" Position="122.9843,60.9211,9.9992" Rotation="2.041" Scale="1.175,1.175,1.175" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1457300629" Variation="13" Position="122.9843,60.9211,9.9992" Rotation="2.041" Scale="1.175,1.175,1.175" Type="CharDuneRock">
+    <ObjectDoodad Id="551909110" Variation="2" Position="107.892,160.6042,7.9968" Rotation="6.2072" Scale="1,1,1" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2468,26 +2468,26 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1331359821" Variation="4" Position="102.501,61.0563,11.2578" Rotation="3.8115" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1760239079" Variation="1" Position="189.3867,24.6525,9.9995" Rotation="0.0185" Scale="1.1992,1.1992,1.1992" Type="CharTendrilsCliff" Pitch="0.1293" Roll="0.1228">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1760239079" Variation="1" Position="189.3867,24.6525,9.9995" Rotation="0.0185" Scale="1.1992,1.1992,1.1992" Type="CharTendrilsCliff" Pitch="0.1293" Roll="0.1228">
+    <ObjectDoodad Id="1331359821" Variation="4" Position="102.501,61.0563,11.2578" Rotation="3.8115" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="281487982" Variation="4" Position="32.5,73.5,7.9992" Rotation="4.329" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="559963957" Variation="2" Position="154.2653,60.2253,6.221" Rotation="5.6765" Scale="1,1,1" Type="CliffSpires" Pitch="5.672" Roll="0.0012">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1979248741" Position="108.5163,160.417,7.985" Rotation="0.2048" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="559963957" Variation="2" Position="154.2653,60.2253,6.221" Rotation="5.6765" Scale="1,1,1" Type="CliffSpires" Pitch="5.672" Roll="0.0012">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="824986305" Variation="2" Position="62.9326,117.348,12.4228" Rotation="5.7597" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
@@ -2551,13 +2551,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1953864670" Position="229.6518,53.0805,7.9997" Rotation="0.0004" Scale="1,1.1086,1.2702" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="313442333" Position="138.5,47.5,9.7502" Rotation="4.0141" Scale="1,1,0.5363" Type="SnowRefinery_RockRampSmall">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1953864670" Position="229.6518,53.0805,7.9997" Rotation="0.0004" Scale="1,1.1086,1.2702" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="743864244" Variation="5" Position="72.9907,87.0107,7.9946" Rotation="5.0754" Scale="1.1633,1.1633,1.1633" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2578,16 +2578,19 @@
     <ObjectDoodad Id="943805694" Variation="1" Position="58.4887,68.3342,12" Rotation="2.6391" Scale="1,1,1" Type="ShearedRocksDesert">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="115734517" Variation="2" Position="119.3266,129.0341,10.2861" Rotation="4.8857" Scale="1.1591,1.1591,1.1591" Type="CliffSpikes">
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="2030047628" Variation="4" Position="126.4272,162.2265,0.0007" Rotation="0.296" Scale="1.5773,1.5773,1.5773" Type="RockVolcanicGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="115734517" Variation="2" Position="119.3266,129.0341,10.2861" Rotation="4.8857" Scale="1.1591,1.1591,1.1591" Type="CliffSpikes">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1459480317" Variation="4" Position="53.975,17.7133,7.9995" Rotation="5.9335" Scale="1.0327,1.0327,1.0327" Type="RockVolcanicGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1342612827" Variation="4" Position="78.0393,10.8952,-0.0007" Rotation="1.1264" Scale="1.1743,1.1743,1.1743" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="61805031" Variation="4" Position="100.5156,58.62,9.2973" Rotation="4.8637" Scale="1.0754,1.0754,1.0754" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
@@ -2595,15 +2598,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1342612827" Variation="4" Position="78.0393,10.8952,-0.0007" Rotation="1.1264" Scale="1.1743,1.1743,1.1743" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1067002212" Variation="1" Position="44.9882,92.9438,10.0366" Rotation="0.3046" Scale="1,1,1" Type="CliffSpires" Pitch="5.96" Roll="0.0004">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="477942633" Variation="1" Position="193.2468,35.3164,7.9997" Rotation="4.0563" Scale="0.9687,0.9687,0.9687" Type="ZerusSwampPlants">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="477942633" Variation="1" Position="193.2468,35.3164,7.9997" Rotation="4.0563" Scale="0.9687,0.9687,0.9687" Type="ZerusSwampPlants">
+    <ObjectDoodad Id="1067002212" Variation="1" Position="44.9882,92.9438,10.0366" Rotation="0.3046" Scale="1,1,1" Type="CliffSpires" Pitch="5.96" Roll="0.0004">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2625,13 +2625,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="609124830" Variation="4" Position="48.717,110.589,12.0644" Rotation="5.124" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1982802259" Variation="4" Position="197.805,20.6718,9.9997" Rotation="3.2768" Scale="0.9211,0.9211,0.9211" Type="ZerusSwampPlants">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="609124830" Variation="4" Position="48.717,110.589,12.0644" Rotation="5.124" Scale="1.0295,1.0295,1.0295" Type="DesertRockGiant">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="361458852" Position="119.1865,141.4406,10.2058" Rotation="3.2292" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightOffset" Value="1"/>
@@ -2696,12 +2696,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1709873363" Variation="4" Position="124.4313,157.1337,8.0544" Rotation="4.652" Scale="0.4445,0.4445,0.4445" Type="Spires">
+    <ObjectDoodad Id="1782842812" Variation="2" Position="121.9536,134.0937,10.205" Rotation="1.8525" Scale="1.1967,1.1967,1.1967" Type="RedstoneRockSpires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1782842812" Variation="2" Position="121.9536,134.0937,10.205" Rotation="1.8525" Scale="1.1967,1.1967,1.1967" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="1709873363" Variation="4" Position="124.4313,157.1337,8.0544" Rotation="4.652" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -2710,12 +2710,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1175298831" Variation="2" Position="97.87,94.9885,8.0051" Rotation="5.1135" Scale="0.8825,0.8825,0.8825" Type="CharDuneRock">
+    <ObjectDoodad Id="43812940" Position="133.0434,133.3315,10.151" Rotation="5.4" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="43812940" Position="133.0434,133.3315,10.151" Rotation="5.4" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1175298831" Variation="2" Position="97.87,94.9885,8.0051" Rotation="5.1135" Scale="0.8825,0.8825,0.8825" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2740,11 +2740,11 @@
     <ObjectDoodad Id="816407217" Position="61.2656,30.6093,9.9997" Rotation="4.3581" Scale="0.9196,0.9196,0.9196" Type="Purifier_Rock_Blend">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1186965191" Variation="7" Position="48.5837,112.727,13.999" Rotation="0.4997" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="235051123" Position="62.6274,28.1826,11.9975" Rotation="3.23" Scale="1.0246,1.0246,1.0246" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="235051123" Position="62.6274,28.1826,11.9975" Rotation="3.23" Scale="1.0246,1.0246,1.0246" Type="Slayn_CliffSpires">
+    <ObjectDoodad Id="1186965191" Variation="7" Position="48.5837,112.727,13.999" Rotation="0.4997" Scale="1,1,1" Type="ShearedRocksDesert" Pitch="6.004">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1701491874" Variation="6" Position="102.5607,59.2395,11.2602" Rotation="4.4895" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
@@ -2875,10 +2875,18 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1056751272" Variation="3" Position="42.4016,26.0786,9.996" Rotation="4.364" Scale="0.7485,0.8901,0.7087" Type="Rock_Cliff_Chunks">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="2033135884" Position="112.8942,145.0112,10.076" Rotation="0.3925" Scale="1,1,1" Type="Void_CliffRocks_Rubble" TintColor="255,255,255 0.600000">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1056751272" Variation="3" Position="42.4016,26.0786,9.996" Rotation="4.364" Scale="0.7485,0.8901,0.7087" Type="Rock_Cliff_Chunks">
+    <ObjectDoodad Id="1994617521" Variation="12" Position="198.1198,72.2148,10.0041" Rotation="4.4287" Scale="0.81,0.81,0.81" Type="DesertRockGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="809341088" Position="200.2497,60.2558,4.6933" Rotation="5.0603" Scale="1.2888,1.2587,1" Type="InvisibleWalkablePlatform4x8" Pitch="0.2714" Roll="6.2666">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2886,20 +2894,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="809341088" Position="200.2497,60.2558,4.6933" Rotation="5.0603" Scale="1.2888,1.2587,1" Type="InvisibleWalkablePlatform4x8" Pitch="0.2714" Roll="6.2666">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1994617521" Variation="12" Position="198.1198,72.2148,10.0041" Rotation="4.4287" Scale="0.81,0.81,0.81" Type="DesertRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1577968213" Position="127.9746,152.8796,12.6643" Rotation="3.4067" Scale="1,1,1" Type="ShearedRocksDesert">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="1823331874" Position="204.1882,80.171,7.9992" Rotation="4.1367" Scale="0.9824,0.9824,0.9824" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1577968213" Position="127.9746,152.8796,12.6643" Rotation="3.4067" Scale="1,1,1" Type="ShearedRocksDesert">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="960038438" Variation="4" Position="75.9243,121.0837,10.0117" Rotation="1.8684" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
@@ -2911,12 +2911,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1333664112" Variation="4" Position="33.6677,25.4736,7.9992" Rotation="0.122" Scale="0.951,1.139,0.5415" Type="Rock_Cliff_Chunks">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="800356146" Variation="1" Position="221.4858,95.035,7.9992" Rotation="3.1816" Scale="0.8916,0.8916,0.8916" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1333664112" Variation="4" Position="33.6677,25.4736,7.9992" Rotation="0.122" Scale="0.951,1.139,0.5415" Type="Rock_Cliff_Chunks">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="762663018" Variation="4" Position="62.208,65.2448,11.0661" Rotation="0.4794" Scale="1.3225,1.3225,1.3225" Type="DesertRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -2938,18 +2938,18 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1690151694" Variation="4" Position="140.3745,20.104,7.9948" Scale="1,1,1" Type="BrokenRocksSmall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="275152246" Variation="4" Position="26.1596,34.923,0" Rotation="2.7812" Scale="1.002,1.002,1.236" Type="Rock_Cliff" TintColor="255,255,255 0.700000">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1690151694" Variation="4" Position="140.3745,20.104,7.9948" Scale="1,1,1" Type="BrokenRocksSmall">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1498283770" Position="201.7895,82.4458,7.9992" Rotation="1.496" Scale="0.7988,0.7988,0.7988" Type="ShakurasRockColumn">
+    <ObjectDoodad Id="996245526" Variation="10" Position="123.4001,60.1718,9.9992" Rotation="6.1816" Scale="0.9411,0.9411,0.9411" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="996245526" Variation="10" Position="123.4001,60.1718,9.9992" Rotation="6.1816" Scale="0.9411,0.9411,0.9411" Type="CharDuneRock">
+    <ObjectDoodad Id="1498283770" Position="201.7895,82.4458,7.9992" Rotation="1.496" Scale="0.7988,0.7988,0.7988" Type="ShakurasRockColumn">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2963,12 +2963,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1070898787" Variation="2" Position="38.0261,117.9614,7.9987" Rotation="1.2734" Scale="1,1,1" Type="Spires">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1530179462" Variation="2" Position="130.5764,38.9055,7.9995" Rotation="3.0654" Scale="0.979,0.979,0.979" Type="RedstoneRockSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="720360956" Variation="1" Position="32.91,112.7963,7.8691" Rotation="1.8037" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+    <ObjectDoodad Id="206634420" Variation="7" Position="65.2834,60.803,7.9892" Rotation="0.2233" Scale="1.3225,1.3225,1.3225" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -2977,12 +2976,13 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="206634420" Variation="7" Position="65.2834,60.803,7.9892" Rotation="0.2233" Scale="1.3225,1.3225,1.3225" Type="DesertRockGiant">
+    <ObjectDoodad Id="720360956" Variation="1" Position="32.91,112.7963,7.8691" Rotation="1.8037" Scale="1,1,1" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1530179462" Variation="2" Position="130.5764,38.9055,7.9995" Rotation="3.0654" Scale="0.979,0.979,0.979" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="1070898787" Variation="2" Position="38.0261,117.9614,7.9987" Rotation="1.2734" Scale="1,1,1" Type="Spires">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -3023,11 +3023,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1349398410" Position="89.7587,88.9887,8.0012" Rotation="4.8767" Scale="0.983,0.983,0.983" Type="CharDuneRock">
+    <ObjectDoodad Id="63331133" Variation="6" Position="22.29,75.3244,9.9995" Rotation="0.8234" Scale="0.9655,0.9655,0.9655" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="63331133" Variation="6" Position="22.29,75.3244,9.9995" Rotation="0.8234" Scale="0.9655,0.9655,0.9655" Type="Slayn_CliffSpires">
+    <ObjectDoodad Id="1349398410" Position="89.7587,88.9887,8.0012" Rotation="4.8767" Scale="0.983,0.983,0.983" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -3049,19 +3049,19 @@
     <ObjectDoodad Id="918234601" Position="107.0761,143.798,8.0512" Rotation="0.27" Scale="1,1,1" Type="JarbanMinor_Small_Rock_Group">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1673293413" Variation="1" Position="205.8771,42.2697,10.0024" Rotation="3.8483" Scale="0.8691,0.8691,0.8691" Type="RedstoneRockSpires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="845332661" Variation="8" Position="107.876,155.4436,7.999" Rotation="1.4062" Scale="0.4445,0.4445,0.4445" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1673293413" Variation="1" Position="205.8771,42.2697,10.0024" Rotation="3.8483" Scale="0.8691,0.8691,0.8691" Type="RedstoneRockSpires">
+    <ObjectDoodad Id="543663014" Position="219.5764,42.5603,10.0876" Rotation="2.8623" Scale="0.7246,0.7246,0.7246" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="620178895" Variation="6" Position="26.3271,48.065,8.0085" Rotation="3.1257" Scale="1.0314,1.0314,1.0314" Type="Slayn_CliffSpires">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="543663014" Position="219.5764,42.5603,10.0876" Rotation="2.8623" Scale="0.7246,0.7246,0.7246" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="346730048" Variation="8" Position="63.6994,95.2812,11.994" Rotation="5.8063" Scale="1.148,1.148,1.148" Type="CharDuneRock">
@@ -3074,12 +3074,12 @@
     <ObjectDoodad Id="454409171" Variation="1" Position="116.5,150.5,8.0146" Rotation="5.8945" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="488640288" Variation="18" Position="73.4875,102.1328,9.998" Rotation="2.787" Scale="1.1555,1.1555,1.1555" Type="CharDuneRock">
+    <ObjectDoodad Id="184664319" Variation="5" Position="63.4016,62.8903,11.9982" Rotation="1.9763" Scale="1,1,1" Type="ShearedRocksDesert">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="184664319" Variation="5" Position="63.4016,62.8903,11.9982" Rotation="1.9763" Scale="1,1,1" Type="ShearedRocksDesert">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="488640288" Variation="18" Position="73.4875,102.1328,9.998" Rotation="2.787" Scale="1.1555,1.1555,1.1555" Type="CharDuneRock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -3102,19 +3102,19 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1480280711" Variation="11" Position="134.5,133.5,10.1958" Rotation="4.6835" Scale="0.8637,0.8637,0.8637" Type="CharDuneRockGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="530950115" Position="219.2531,34.521,10.4531" Rotation="4.7038" Scale="0.9345,0.9345,0.9345" Type="CharTendrilsCliff" Pitch="5.5761">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1480280711" Variation="11" Position="134.5,133.5,10.1958" Rotation="4.6835" Scale="0.8637,0.8637,0.8637" Type="CharDuneRockGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="184810418" Position="82.8481,117.2763,8.0314" Rotation="4.359" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
+    <ObjectDoodad Id="1652011882" Variation="4" Position="64.2302,61.9812,12.0136" Rotation="6.259" Scale="1,1,1" Type="ShearedRocksDesert">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1652011882" Variation="4" Position="64.2302,61.9812,12.0136" Rotation="6.259" Scale="1,1,1" Type="ShearedRocksDesert">
+    <ObjectDoodad Id="184810418" Position="82.8481,117.2763,8.0314" Rotation="4.359" Scale="1.5942,1.5942,1.5942" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -3175,13 +3175,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1628371125" Position="232.8095,39.64,10.0056" Rotation="5.747" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="458805669" Variation="1" Position="35.704,117.1406,7.8691" Rotation="1.7314" Scale="1.3227,1.3227,1.3227" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1628371125" Position="232.8095,39.64,10.0056" Rotation="5.747" Scale="1,1,1" Type="Aiur_Rock_Cliff">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="700661652" Variation="7" Position="102.4665,57.417,11.256" Rotation="4.4892" Scale="0.9482,0.9482,0.9482" Type="ShearedRocksDesert" Pitch="5.7326" Roll="0.0026">
         <Flag Index="HeightOffset" Value="1"/>
@@ -3196,10 +3196,10 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="708094177" Position="181.777,25.4487,11.9997" Rotation="2.8986" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+    <ObjectDoodad Id="345826530" Position="226.0354,35.8063,9.9997" Rotation="3.435" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="345826530" Position="226.0354,35.8063,9.9997" Rotation="3.435" Scale="1,1,1" Type="Aiur_Rock_Cliff">
+    <ObjectDoodad Id="708094177" Position="181.777,25.4487,11.9997" Rotation="2.8986" Scale="1,1,1" Type="Aiur_Rock_Cliff">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1956412614" Variation="2" Position="45.9785,24.0034,7.9997" Rotation="0.8007" Scale="1.0083,1.0083,1.0083" Type="Rock_Cliff_Chunks">
@@ -3209,7 +3209,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2057285267" Position="32.9887,110.364,7.8691" Rotation="2.0437" Scale="1.3227,1.3227,1.3227" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
+    <ObjectDoodad Id="277184134" Position="219,64.9697,9.518" Scale="1,1.04,1" Type="InvisibleWalkablePlatform4x4" Pitch="0.1657">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -3217,7 +3217,7 @@
     <ObjectDoodad Id="372654916" Variation="2" Position="116,140,10.5317" Rotation="5.4914" Scale="0.9604,0.9604,0.9604" Type="CliffSpikes">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="277184134" Position="219,64.9697,9.518" Scale="1,1.04,1" Type="InvisibleWalkablePlatform4x4" Pitch="0.1657">
+    <ObjectDoodad Id="2057285267" Position="32.9887,110.364,7.8691" Rotation="2.0437" Scale="1.3227,1.3227,1.3227" Type="CliffSpires" Pitch="4.7707" Roll="1.5952">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -3243,12 +3243,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1208711996" Variation="5" Position="72.271,57.148,8.3388" Rotation="1.1054" Scale="1.2502,1.2502,1.2502" Type="ShearedRocksDesert" Pitch="5.3666" Roll="0.0058">
+    <ObjectDoodad Id="1279011240" Variation="8" Position="103.1027,150.1271,8.0031" Rotation="0.5112" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1279011240" Variation="8" Position="103.1027,150.1271,8.0031" Rotation="0.5112" Scale="1,1,1" Type="Spires">
+    <ObjectDoodad Id="1208711996" Variation="5" Position="72.271,57.148,8.3388" Rotation="1.1054" Scale="1.2502,1.2502,1.2502" Type="ShearedRocksDesert" Pitch="5.3666" Roll="0.0058">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -3271,12 +3271,12 @@
     <ObjectDoodad Id="47513705" Variation="7" Position="53.5,49.5,11.9995" Rotation="2.3041" Scale="1,1,1" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="13514745" Variation="8" Position="100.5761,59.0043,10.502" Rotation="2.7915" Scale="1.015,1.015,1.015" Type="DesertRockGiant">
+    <ObjectDoodad Id="44752743" Position="138.7077,46.4965,9.624" Rotation="4.0063" Scale="0.9218,2.0073,1" Type="SnowRefinery_RockRampSmall" Pitch="0.0573" Roll="3.145">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="44752743" Position="138.7077,46.4965,9.624" Rotation="4.0063" Scale="0.9218,2.0073,1" Type="SnowRefinery_RockRampSmall" Pitch="0.0573" Roll="3.145">
+    <ObjectDoodad Id="13514745" Variation="8" Position="100.5761,59.0043,10.502" Rotation="2.7915" Scale="1.015,1.015,1.015" Type="DesertRockGiant">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -3296,12 +3296,12 @@
     <ObjectDoodad Id="1005354414" Variation="3" Position="12.8093,15.0578,-0.001" Rotation="2.439" Scale="1.1953,1.1953,1.1953" Type="RockVolcanicGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1152579255" Variation="4" Position="21.03,38.56,-0.001" Rotation="1.1691" Scale="1.18,1.18,1.18" Type="RockVolcanicGiant">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1039834579" Position="115.0937,152.124,8.01" Rotation="0.9602" Scale="0.6354,0.6354,0.6354" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1152579255" Variation="4" Position="21.03,38.56,-0.001" Rotation="1.1691" Scale="1.18,1.18,1.18" Type="RockVolcanicGiant">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="187516149" Variation="2" Position="63.8498,30.8088,11.9978" Rotation="2.3508" Scale="0.963,0.963,0.963" Type="Slayn_CliffSpires">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -3322,11 +3322,11 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="853109008" Variation="1" Position="88.1743,89.7707,7.989" Rotation="4.5493" Scale="1.0117,1.0117,1.0117" Type="CharDuneRockGiant">
+    <ObjectDoodad Id="1487090271" Variation="4" Position="109.0427,157.759,7.9992" Rotation="2.6467" Scale="0.6354,0.6354,0.6354" Type="Spires">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1487090271" Variation="4" Position="109.0427,157.759,7.9992" Rotation="2.6467" Scale="0.6354,0.6354,0.6354" Type="Spires">
+    <ObjectDoodad Id="853109008" Variation="1" Position="88.1743,89.7707,7.989" Rotation="4.5493" Scale="1.0117,1.0117,1.0117" Type="CharDuneRockGiant">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -3336,19 +3336,19 @@
     </ObjectDoodad>
     <ObjectPoint Id="2054715614" Position="117.8422,125.9941,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 040" Color="0,0,0,0"/>
     <ObjectPoint Id="1720430299" Position="65.3151,30.43,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 011" Color="0,0,0,0"/>
-    <ObjectPoint Id="1954198887" Position="58.457,32.7841,0" Scale="1,1,1" Type="Normal" Name="Pan Camera - Zergs Group 1" Color="0,0,0,0"/>
     <ObjectPoint Id="1112006150" Position="185.83,22.7326,0" Rotation="1.0312" Scale="1,1,1" Type="Normal" Name="Cine - Enter In Cave 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="1954198887" Position="58.457,32.7841,0" Scale="1,1,1" Type="Normal" Name="Pan Camera - Zergs Group 1" Color="0,0,0,0"/>
     <ObjectPoint Id="2131678848" Position="151.887,82.7211,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 024" Color="0,0,0,0"/>
     <ObjectPoint Id="313999649" Position="132.5275,150.568,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 036" Color="0,0,0,0"/>
     <ObjectPoint Id="1357470718" Position="189.0703,42.9531,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 030" Color="0,0,0,0"/>
-    <ObjectPoint Id="140775476" Position="38.5083,31.5141,0" Rotation="1.3981" Scale="1,1,1" Type="Normal" Name="Drop Hero" Color="0,0,0,0"/>
-    <ObjectPoint Id="1518145710" Position="188.2365,21.7416,0" Rotation="1.031" Scale="1,1,1" Type="Normal" Name="Cine - Enter In Cave 3" Color="0,0,0,0"/>
     <ObjectPoint Id="202851815" Position="51.7812,118.5341,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 006" Color="0,0,0,0"/>
+    <ObjectPoint Id="1518145710" Position="188.2365,21.7416,0" Rotation="1.031" Scale="1,1,1" Type="Normal" Name="Cine - Enter In Cave 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="140775476" Position="38.5083,31.5141,0" Rotation="1.3981" Scale="1,1,1" Type="Normal" Name="Drop Hero" Color="0,0,0,0"/>
     <ObjectPoint Id="12360709" Position="54.0512,9.8815,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 009" Color="0,0,0,0"/>
-    <ObjectPoint Id="1654166390" Position="154.5297,45.957,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 003" Color="0,0,0,0"/>
     <ObjectPoint Id="1354989298" Position="145.707,146.7678,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 033" Color="0,0,0,0"/>
-    <ObjectPoint Id="844725463" Position="54.242,21.8332,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 010" Color="0,0,0,0"/>
+    <ObjectPoint Id="1654166390" Position="154.5297,45.957,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 003" Color="0,0,0,0"/>
     <ObjectPoint Id="2087379344" Position="139.6245,87.7927,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 019" Color="0,0,0,0"/>
+    <ObjectPoint Id="844725463" Position="54.242,21.8332,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 010" Color="0,0,0,0"/>
     <ObjectPoint Id="312839848" Position="91.6796,10.4362,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 004" Color="0,0,0,0"/>
     <ObjectPoint Id="944279782" Position="174.4736,21.0534,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 026" Color="0,0,0,0"/>
     <ObjectPoint Id="163920265" Position="226.5551,95.625,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 032" Color="0,0,0,0"/>
@@ -3362,11 +3362,11 @@
     <ObjectPoint Id="456942872" Position="128.1606,130.3754,0" Rotation="3.0407" Scale="1,1,1" Type="Normal" Name="BOSS - Storm Elemental - Move 2" Color="0,0,0,0"/>
     <ObjectPoint Id="178684457" Position="150.0888,127.3903,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 038" Color="0,0,0,0"/>
     <ObjectPoint Id="2099074179" Position="122.0515,120.2441,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 039" Color="0,0,0,0"/>
-    <ObjectPoint Id="1991910073" Position="223.9177,32.9167,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 028" Color="0,0,0,0"/>
     <ObjectPoint Id="1341617409" Position="144.5793,125.009,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 037" Color="0,0,0,0"/>
+    <ObjectPoint Id="1991910073" Position="223.9177,32.9167,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 028" Color="0,0,0,0"/>
     <ObjectPoint Id="391579254" Position="102.4772,156.6013,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 035" Color="0,0,0,0"/>
-    <ObjectPoint Id="276563502" Position="79.9274,78.458,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 015" Color="0,0,0,0"/>
     <ObjectPoint Id="701738428" Position="166.6342,20.5236,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 025" Color="0,0,0,0"/>
+    <ObjectPoint Id="276563502" Position="79.9274,78.458,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 015" Color="0,0,0,0"/>
     <ObjectPoint Id="1261518033" Position="75.909,84.5336,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 013" Color="0,0,0,0"/>
     <ObjectPoint Id="377668121" Position="51.3847,29.1975,0" Rotation="2.1682" Scale="1,1,1" Type="Normal" Name="Движение - Вассел 1" Color="0,0,0,0"/>
     <ObjectPoint Id="762974740" Position="210.2951,43.6374,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 027" Color="0,0,0,0"/>
@@ -3377,18 +3377,18 @@
     <ObjectPoint Id="252547883" Position="91.4538,80.3942,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 017" Color="0,0,0,0"/>
     <ObjectPoint Id="824813908" Position="128.6613,136.3908,0" Scale="1,1,1" Type="Normal" Name="BOSS - Storm Elemental - Center Arena" Color="0,0,0,0"/>
     <ObjectPoint Id="1273038365" Position="108.4924,71.5705,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 018" Color="0,0,0,0"/>
-    <ObjectPoint Id="240113568" Position="185.932,24.2456,0" Rotation="3.6218" Scale="1,1,1" Type="Normal" Name="Cine - Enter In Cave 1" Color="0,0,0,0"/>
     <ObjectPoint Id="937542490" Position="106.8366,138.1784,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 041" Color="0,0,0,0"/>
+    <ObjectPoint Id="240113568" Position="185.932,24.2456,0" Rotation="3.6218" Scale="1,1,1" Type="Normal" Name="Cine - Enter In Cave 1" Color="0,0,0,0"/>
     <ObjectPoint Id="599630456" Position="16.3337,74.3637,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 007" Color="0,0,0,0"/>
     <ObjectPoint Id="533481049" Position="123.078,140.02,0" Rotation="0.9077" Scale="1,1,1" Type="Normal" Name="BOSS - Storm Elemental - Move 3" Color="0,0,0,0"/>
-    <ObjectPoint Id="329035253" Position="113.3476,55.884,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 001" Color="0,0,0,0"/>
     <ObjectPoint Id="2106424237" Position="88.0751,41.8615,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 008" Color="0,0,0,0"/>
+    <ObjectPoint Id="329035253" Position="113.3476,55.884,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 001" Color="0,0,0,0"/>
     <ObjectPoint Id="593920457" Position="34.7172,93.8225,0" Rotation="2.168" Scale="1,1,1" Type="Normal" Name="Движение - Вассел 2" Color="0,0,0,0"/>
-    <ObjectPoint Id="883477851" Position="49.6828,72.2036,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 005" Color="0,0,0,0"/>
     <ObjectPoint Id="1865282616" Position="118.593,142.7246,0" Rotation="1.6225" Scale="1,1,1" Type="Normal" Name="Scene - Move Vassel After" Color="0,0,0,0"/>
+    <ObjectPoint Id="883477851" Position="49.6828,72.2036,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 005" Color="0,0,0,0"/>
     <ObjectPoint Id="1849597194" Position="34.1987,43.6791,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 012" Color="0,0,0,0"/>
-    <ObjectPoint Id="796453002" Position="149.3051,28.7143,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 002" Color="0,0,0,0"/>
     <ObjectPoint Id="1396574470" Position="188.6186,33.7937,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 029" Color="0,0,0,0"/>
+    <ObjectPoint Id="796453002" Position="149.3051,28.7143,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 002" Color="0,0,0,0"/>
     <ObjectPoint Id="107436393" Position="84.8447,87.7167,0" Scale="1,1,1" Type="BlockPathing" Name="Pathing Cliff Fill 016" Color="0,0,0,0"/>
     <ObjectCamera Id="979327880" Position="187.886,22.3356,0" Rotation="4.2624" Scale="1,1,1" Name="Cine - Enter In Cave 2" Color="0,0,0,0" CameraTarget="187.886,22.3356">
         <CameraValue Index="FieldOfView" Value="27.7995"/>
@@ -3433,6 +3433,22 @@
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
+    <ObjectCamera Id="597725963" Position="187.886,22.3356,0" Rotation="3.14" Scale="1,1,1" Name="Cine - Enter In Cave 3 (Final)" Color="0,0,0,0" CameraTarget="187.886,22.3356">
+        <CameraValue Index="FieldOfView" Value="27.7995"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="600"/>
+        <CameraValue Index="ShadowClip" Value="75"/>
+        <CameraValue Index="Distance" Value="34"/>
+        <CameraValue Index="Pitch" Value="56"/>
+        <CameraValue Index="Yaw" Value="179.9025"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="0.0002"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+        <CameraValue Index="FalloffStartNear" Value="0.0002"/>
+        <CameraValue Index="FalloffEndNear" Value="0.0002"/>
+        <CameraValue Index="BokehFStop" Value="0.0097"/>
+        <CameraValue Index="BokehMaxCoC" Value="1"/>
+    </ObjectCamera>
     <ObjectCamera Id="1876192207" Position="58.308,33.4692,0" Rotation="3.309" Scale="1,1,1" Name="Intro - Start" Color="0,0,0,0" CameraTarget="58.308,33.4692">
         <CameraValue Index="FieldOfView" Value="26.7995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
@@ -3451,22 +3467,6 @@
         <CameraValue Index="BokehFStop" Value="0.0097"/>
         <CameraValue Index="BokehMaxCoC" Value="1"/>
     </ObjectCamera>
-    <ObjectCamera Id="597725963" Position="187.886,22.3356,0" Rotation="3.14" Scale="1,1,1" Name="Cine - Enter In Cave 3 (Final)" Color="0,0,0,0" CameraTarget="187.886,22.3356">
-        <CameraValue Index="FieldOfView" Value="27.7995"/>
-        <CameraValue Index="NearClip" Value="0.0998"/>
-        <CameraValue Index="FarClip" Value="600"/>
-        <CameraValue Index="ShadowClip" Value="75"/>
-        <CameraValue Index="Distance" Value="34"/>
-        <CameraValue Index="Pitch" Value="56"/>
-        <CameraValue Index="Yaw" Value="179.9025"/>
-        <CameraValue Index="FocalDepth" Value="8"/>
-        <CameraValue Index="FalloffStart" Value="0.0002"/>
-        <CameraValue Index="FalloffEnd" Value="8"/>
-        <CameraValue Index="FalloffStartNear" Value="0.0002"/>
-        <CameraValue Index="FalloffEndNear" Value="0.0002"/>
-        <CameraValue Index="BokehFStop" Value="0.0097"/>
-        <CameraValue Index="BokehMaxCoC" Value="1"/>
-    </ObjectCamera>
     <ObjectUnit Id="1283596123" Position="41.444,96.227,0" Rotation="2.1262" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="562994897" Position="69.4204,105.404,0" Rotation="5.0266" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
     <ObjectUnit Id="1354218767" Position="207.2578,62.0046,0" Rotation="2.2658" Scale="1,1,1" UnitType="Marine">
@@ -3477,20 +3477,20 @@
     <ObjectUnit Id="559729472" Position="41.9943,100.748,0" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
     <ObjectUnit Id="1245760615" Position="33,63,0" Scale="0.7883,0.7883,0.7883" UnitType="AiurRockDebris4x4"/>
     <ObjectUnit Id="616125286" Position="84.8195,58.1684,0" Rotation="4.0144" Scale="1,1,1" UnitType="Mitosaurus" Player="3"/>
-    <ObjectUnit Id="1413431618" Position="62,108,0" Rotation="5.4975" Scale="1.1533,1.1533,1.1533" UnitType="DestructibleRockEx16x6"/>
     <ObjectUnit Id="1795863909" Position="37.4707,62.0747,0" Rotation="0.602" Scale="1,1,1" UnitType="Zergling" Player="2"/>
+    <ObjectUnit Id="1413431618" Position="62,108,0" Rotation="5.4975" Scale="1.1533,1.1533,1.1533" UnitType="DestructibleRockEx16x6"/>
     <ObjectUnit Id="822292258" Position="28.997,57.62,0" Rotation="0.1374" Scale="1,1,1" UnitType="Zergling" Player="2"/>
     <ObjectUnit Id="1795917456" Position="33.3371,85.0388,0" Rotation="5.4807" Scale="1,1,1" UnitType="Scantipede"/>
-    <ObjectUnit Id="821721496" Position="43.046,102.21,0" Rotation="0.5683" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="931357695" Position="43.3793,49.6457,0" Rotation="5.7431" Scale="1,1,1" UnitType="Zergling" Player="2"/>
+    <ObjectUnit Id="821721496" Position="43.046,102.21,0" Rotation="0.5683" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="1284550328" Position="43.4411,95.6984,0" Rotation="0.2104" Scale="1,1,1" UnitType="CarrionBird"/>
     <ObjectUnit Id="1935110580" Position="44.7873,99.6447,0" Rotation="5.5693" Scale="1,1,1" UnitType="ScantipedeParasitic" Player="3"/>
-    <ObjectUnit Id="1055586975" Position="44.0598,101.4445,0" Rotation="0.3532" Scale="1,1,1" UnitType="RoachBurrowed" Player="2"/>
     <ObjectUnit Id="1120536030" Position="32.2082,52.074,0" Rotation="2.0327" Scale="1,1,1" UnitType="Zergling" Player="2"/>
+    <ObjectUnit Id="1055586975" Position="44.0598,101.4445,0" Rotation="0.3532" Scale="1,1,1" UnitType="RoachBurrowed" Player="2"/>
     <ObjectUnit Id="1039009716" Position="70.7973,102.181,0" Rotation="1.4992" Scale="1,1,1" UnitType="RockScantipede"/>
     <ObjectUnit Id="414976104" Position="47.5864,98.1804,0" Rotation="4.9833" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
-    <ObjectUnit Id="1939955355" Position="41.5737,99.0317,0" Rotation="2.7736" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="387332384" Position="40.2443,101.0012,0" Rotation="6.1811" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
+    <ObjectUnit Id="1939955355" Position="41.5737,99.0317,0" Rotation="2.7736" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="394863217" Position="59.8994,37.068,0" Rotation="5.7402" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="1517074932" Position="48.516,100.897,0" Rotation="5.6394" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="753525589" Position="40.6242,59.1594,0" Rotation="5.3608" Scale="1,1,1" UnitType="Zergling" Player="2"/>
@@ -3514,26 +3514,26 @@
     </ObjectUnit>
     <ObjectUnit Id="1161819970" Position="56.9194,35.6748,0" Rotation="6.0092" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="528323600" Position="58.8581,38.1022,0" Rotation="0.0212" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
+    <ObjectUnit Id="1034922772" Position="61.3566,35.6123,0" Rotation="5.3835" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="122442976" Position="45.2478,103.7932,0" Rotation="2.7543" Scale="1,1,1" UnitType="CarrionBird">
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectUnit>
-    <ObjectUnit Id="1034922772" Position="61.3566,35.6123,0" Rotation="5.3835" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="1808923155" Position="70.2641,113.2058,0" Rotation="4.073" Scale="1,1,1" UnitType="RockScantipede"/>
-    <ObjectUnit Id="556029258" Position="58.7954,35.1923,0" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="108931906" Position="35.3957,67.8164,0" Scale="1,1,1" UnitType="Scantipede"/>
+    <ObjectUnit Id="556029258" Position="58.7954,35.1923,0" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="1636040239" Position="227,92,0" Rotation="5.4975" Scale="1,1,1" UnitType="DestructibleRockEx16x6"/>
     <ObjectUnit Id="2027274278" Position="43.4724,50.9672,0" Rotation="4.8281" Scale="1,1,1" UnitType="Zergling" Player="2"/>
-    <ObjectUnit Id="1182710534" Position="70.6865,106.9111,0" Rotation="4.0202" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
-    <ObjectUnit Id="1854059390" Position="45.4895,102.3696,0" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
-    <ObjectUnit Id="408532031" Position="46.2307,97.1486,0" Rotation="4.9794" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
     <ObjectUnit Id="686152563" Position="59.8977,35.4716,0" Rotation="5.7976" Scale="1,1,1" UnitType="Hydralisk" Player="2">
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectUnit>
+    <ObjectUnit Id="408532031" Position="46.2307,97.1486,0" Rotation="4.9794" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
+    <ObjectUnit Id="1854059390" Position="45.4895,102.3696,0" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
+    <ObjectUnit Id="1182710534" Position="70.6865,106.9111,0" Rotation="4.0202" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
     <ObjectUnit Id="1250296474" Position="37.3652,31.279,0" Rotation="1.327" Scale="1,1,1" UnitType="Vassel" Player="1"/>
-    <ObjectUnit Id="1218234128" Position="67.4042,102.3093,0" Rotation="1.1938" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
     <ObjectUnit Id="494724233" Position="27.2514,67.8742,0" Rotation="5.294" Scale="1,1,1" UnitType="RockScantipede"/>
-    <ObjectUnit Id="446456561" Position="45.7502,95.4794,0" Rotation="1.829" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
+    <ObjectUnit Id="1218234128" Position="67.4042,102.3093,0" Rotation="1.1938" Scale="1,1,1" UnitType="ScantipedeParasiticSmall" Player="3"/>
     <ObjectUnit Id="258388796" Position="32.456,56.3422,0" Rotation="1.3317" Scale="1,1,1" UnitType="Zergling" Player="2"/>
+    <ObjectUnit Id="446456561" Position="45.7502,95.4794,0" Rotation="1.829" Scale="1,1,1" UnitType="ZerglingBurrowed" Player="2"/>
     <ObjectUnit Id="975188006" Position="43.6955,97.359,0" Rotation="2.038" Scale="1,1,1" UnitType="RoachBurrowed" Player="2">
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectUnit>

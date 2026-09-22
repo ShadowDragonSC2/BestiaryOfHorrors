@@ -11,23 +11,12 @@
         <Item Type="Category" Id="56CAB477"/>
     </Root>
     <Element Type="Category" Id="65FD95D1">
-        <Item Type="Variable" Id="6B5077CF"/>
         <Item Type="Category" Id="A1DF7D7E"/>
         <Item Type="Category" Id="DCF16CE5"/>
         <Item Type="Category" Id="9BAD246E"/>
         <Item Type="Category" Id="E0C2195F"/>
         <Item Type="Category" Id="4D19AA4F"/>
         <Item Type="Category" Id="CFC11A9C"/>
-    </Element>
-    <Element Type="Variable" Id="6B5077CF">
-        <VariableType>
-            <Type Value="preset"/>
-            <TypeElement Type="Preset" Library="Ntve" Id="DF249F5E"/>
-        </VariableType>
-        <Value Type="Param" Id="A5DC4D90"/>
-    </Element>
-    <Element Type="Param" Id="A5DC4D90">
-        <Preset Type="PresetValue" Library="Ntve" Id="A2833C70"/>
     </Element>
     <Element Type="Category" Id="A1DF7D7E">
         <Label Type="Label" Library="Ntve" Id="00000035"/>
@@ -181,7 +170,18 @@
     </Element>
     <Element Type="Category" Id="4D19AA4F">
         <Label Type="Label" Library="Ntve" Id="ACD748EC"/>
+        <Item Type="Variable" Id="6B5077CF"/>
         <Item Type="Variable" Id="E9F7AE61"/>
+    </Element>
+    <Element Type="Variable" Id="6B5077CF">
+        <VariableType>
+            <Type Value="preset"/>
+            <TypeElement Type="Preset" Library="Ntve" Id="DF249F5E"/>
+        </VariableType>
+        <Value Type="Param" Id="A5DC4D90"/>
+    </Element>
+    <Element Type="Param" Id="A5DC4D90">
+        <Preset Type="PresetValue" Library="Ntve" Id="A2833C70"/>
     </Element>
     <Element Type="Variable" Id="E9F7AE61">
         <VariableType>
